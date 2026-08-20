@@ -1,0 +1,256 @@
+{
+  "model": "glm-5.2",
+  "created_at": "2026-08-20T06:33:28.264211+00:00",
+  "extractions": {
+    "actt1": {
+      "doc_id": null,
+      "nct_id": "NCT04280705",
+      "brief_title": "Adaptive COVID-19 Treatment Trial (ACTT)",
+      "official_title": "A Multicenter, Adaptive, Randomized Blinded Controlled Trial of the Safety and Efficacy of Investigational Therapeutics for the Treatment of COVID-19 in Hospitalized Adults",
+      "lead_sponsor": "National Institute of Allergy and Infectious Diseases (NIAID)",
+      "sponsor_class": "NIH",
+      "collaborators": [],
+      "conditions": [
+        "COVID-19"
+      ],
+      "phases": [
+        "Phase 3"
+      ],
+      "study_type": "INTERVENTIONAL",
+      "allocation": "RANDOMIZED",
+      "primary_purpose": "TREATMENT",
+      "masking": "DOUBLE",
+      "who_masked": [
+        "PARTICIPANT",
+        "INVESTIGATOR"
+      ],
+      "enrollment_count": 1062,
+      "enrollment_type": "ACTUAL",
+      "overall_status": "COMPLETED",
+      "start_date": "2020-02-21",
+      "primary_completion_date": "2020-05-21",
+      "completion_date": "2020-05-21",
+      "arms": [
+        {
+          "description": "200 mg of Remdesivir placebo administered intravenously on Day 1, followed by a 100 mg once-daily maintenance dose of Remdesivir placebo while hospitalized for up to a 10 days total course. n=286.",
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR"
+        },
+        {
+          "description": "200 mg of Remdesivir administered intravenously on Day 1, followed by a 100 mg once-daily maintenance dose of Remdesivir while hospitalized for up to a 10 days total course. n=286.",
+          "label": "Remdesivir",
+          "type": "EXPERIMENTAL"
+        }
+      ],
+      "interventions": [
+        {
+          "description": "The supplied placebo lyophilized formulation is identical in physical appearance to the active lyophilized formulation and contains the same inactive ingredients. Alternatively, a placebo of normal saline of equal volume may be given if there are limitations on matching placebo supplies.",
+          "name": "Placebo",
+          "type": "OTHER"
+        },
+        {
+          "description": "Drug Remdesivir is a single diastereomer monophosphoramidate prodrug designed for the intracellular delivery of a modified adenine nucleoside analog GS-441524. In addition to the active ingredient, the lyophilized formulation of Remdesivir contains the following inactive ingredients: water for injection, sulfobutylether beta-cyclodextrin sodium (SBECD), and hydrochloric acid and/or sodium hydroxide.",
+          "name": "Remdesivir",
+          "type": "DRUG"
+        }
+      ],
+      "eligibility_sex": "ALL",
+      "eligibility_min_age": "18 Years",
+      "eligibility_max_age": "99 Years",
+      "healthy_volunteers": false,
+      "inclusion_criteria": [
+        "Admitted to a hospital with symptoms suggestive of COVID-19 infection.",
+        "Subject (or legally authorized representative) provides informed consent prior to initiation of any study procedures.",
+        "Subject (or legally authorized representative) understands and agrees to comply with planned study procedures.",
+        "Male or non-pregnant female adult > / = 18 years of age at time of enrollment.",
+        "Has laboratory-confirmed SARS-CoV-2 infection as determined by polymerase chain reaction (PCR) or other commercial or public health assay in any specimen, as documented by either or the following: 1. PCR positive in sample collected < 72 hours prior to randomization; OR 2. PCR positive in sample collected >/= 72 hours prior to randomization, documented inability to obtain a repeat sample (e.g. due to lack of testing supplies, limited testing capacity, results taking >24 hours, etc.) AND progressive disease suggestive of ongoing SARS-CoV-2 infection.",
+        "Illness of any duration, and at least one of the following: 1. Radiographic infiltrates by imaging (chest x-ray, CT scan, etc.), OR 2. SpO2 < / = 94% on room air, OR 3. Requiring supplemental oxygen, OR 4. Requiring mechanical ventilation.",
+        "Women of childbearing potential must agree to either abstinence or use at least one primary form of contraception not including hormonal contraception from the time of screening through Day 29.",
+        "Agrees to not participate in another clinical trial for the treatment of COVID-19 or SARS-CoV-2 through Day 29."
+      ],
+      "exclusion_criteria": [
+        "Alanine Transaminase (ALT) or Aspartate Transaminase (AST) > 5 times the upper limit of normal.",
+        "Estimated glomerular filtration rate (eGFR) < 30 ml/min (including patients receiving hemodialysis or hemofiltration).",
+        "Pregnancy or breast feeding.",
+        "Anticipated discharge from the hospital or transfer to another hospital which is not a study site within 72 hours.",
+        "Allergy to any study medication."
+      ],
+      "primary_outcomes": [
+        {
+          "measure": "Time to Recovery",
+          "time_frame": "Day 1 through Day 29"
+        },
+        {
+          "measure": "Time to Recovery by Race",
+          "time_frame": "Day 1 through Day 29"
+        },
+        {
+          "measure": "Time to Recovery by Ethnicity",
+          "time_frame": "Day 1 through Day 29"
+        },
+        {
+          "measure": "Time to Recovery by Sex",
+          "time_frame": "Day 1 through Day 29"
+        }
+      ],
+      "secondary_outcomes": [
+        {
+          "measure": "Change From Baseline in Alanine Transaminase (ALT)",
+          "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+        },
+        {
+          "measure": "Change From Baseline in Aspartate Transaminase (AST)",
+          "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+        },
+        {
+          "measure": "Change From Baseline in Creatinine",
+          "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+        },
+        {
+          "measure": "Change From Baseline in Glucose",
+          "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+        },
+        {
+          "measure": "Change From Baseline in Hemoglobin",
+          "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+        },
+        {
+          "measure": "Change From Baseline in Platelets",
+          "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+        },
+        {
+          "measure": "Change From Baseline in Prothrombin Time (PT)",
+          "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+        },
+        {
+          "measure": "Change From Baseline in Total Bilirubin",
+          "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+        },
+        {
+          "measure": "Change From Baseline in White Blood Cell Count (WBC)",
+          "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+        },
+        {
+          "measure": "Change From Baseline in Neutrophils",
+          "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+        },
+        {
+          "measure": "Change From Baseline in Lymphocytes",
+          "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+        },
+        {
+          "measure": "Change From Baseline in Monocytes",
+          "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+        },
+        {
+          "measure": "Change From Baseline in Basophils",
+          "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+        },
+        {
+          "measure": "Change From Baseline in Eosinophils",
+          "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+        },
+        {
+          "measure": "Change in National Early Warning Score (NEWS) From Baseline",
+          "time_frame": "Days 1, 3, 5, 8, 11, 15, 22, and 29"
+        },
+        {
+          "measure": "Percentage of Participants at Each Clinical Status Using Ordinal Scale at Day 1",
+          "time_frame": "Day 1"
+        },
+        {
+          "measure": "Percentage of Participants at Each Clinical Status Using Ordinal Scale at Day 3",
+          "time_frame": "Day 3"
+        },
+        {
+          "measure": "Percentage of Participants at Each Clinical Status Using Ordinal Scale at Day 5",
+          "time_frame": "Day 5"
+        },
+        {
+          "measure": "Percentage of Participants at Each Clinical Status Using Ordinal Scale at Day 8",
+          "time_frame": "Day 8"
+        },
+        {
+          "measure": "Percentage of Participants at Each Clinical Status Using Ordinal Scale at Day 11",
+          "time_frame": "Day 11"
+        },
+        {
+          "measure": "Percentage of Participants at Each Clinical Status Using Ordinal Scale at Day 15",
+          "time_frame": "Day 15"
+        },
+        {
+          "measure": "Percentage of Participants at Each Clinical Status Using Ordinal Scale at Day 22",
+          "time_frame": "Day 22"
+        },
+        {
+          "measure": "Percentage of Participants at Each Clinical Status Using Ordinal Scale at Day 29",
+          "time_frame": "Day 29"
+        },
+        {
+          "measure": "Percentage of Participants Reporting Grade 3 and 4 Clinical and/or Laboratory Adverse Events (AEs)",
+          "time_frame": "Day 1 through Day 29"
+        },
+        {
+          "measure": "Percentage of Participants Reporting Serious Adverse Events (SAEs)",
+          "time_frame": "Day 1 through Day 29"
+        },
+        {
+          "measure": "Percentage of Participants Discontinued or Temporarily Suspended From Investigational Therapeutics",
+          "time_frame": "Day 1 through Day 10"
+        },
+        {
+          "measure": "Duration of Hospitalization",
+          "time_frame": "Day 1 through Day 29"
+        },
+        {
+          "measure": "Duration of New Non-invasive Ventilation or High Flow Oxygen Use",
+          "time_frame": "Day 1 through Day 29"
+        },
+        {
+          "measure": "Duration of New Oxygen Use",
+          "time_frame": "Day 1 through Day 29"
+        },
+        {
+          "measure": "Duration of New Ventilator or Extracorporeal Membrane Oxygenation (ECMO) Use",
+          "time_frame": "Day 1 through Day 29"
+        },
+        {
+          "measure": "Percentage of Participants Requiring New Non-invasive Ventilation or High-flow Oxygen Use",
+          "time_frame": "Day 1 through Day 29"
+        },
+        {
+          "measure": "Percentage of Participants Requiring New Oxygen Use",
+          "time_frame": "Day 1 through Day 29"
+        },
+        {
+          "measure": "Percentage of Participants Requiring New Ventilator or Extracorporeal Membrane Oxygenation (ECMO) Use",
+          "time_frame": "Day 1 through Day 29"
+        },
+        {
+          "measure": "Mean Change in the Ordinal Scale",
+          "time_frame": "Day 1, 3, 5, 8, 11, 15, 22, and 29"
+        },
+        {
+          "measure": "14-day Participant Mortality",
+          "time_frame": "Day 1 through Day 15"
+        },
+        {
+          "measure": "29-day Participant Mortality",
+          "time_frame": "Day 1 through Day 29"
+        },
+        {
+          "measure": "Time to an Improvement by at Least One Category Using an Ordinal Scale",
+          "time_frame": "Day 1 through Day 29"
+        },
+        {
+          "measure": "Time to an Improvement of at Least Two Categories Using an Ordinal Scale",
+          "time_frame": "Day 1 through Day 29"
+        },
+        {
+          "measure": "Time to Discharge or to a NEWS of 2 or Less and Maintained for 24 Hours, Whichever Occurs First",
+          "time_frame": "Day 1 through Day 29"
+        }
+      ]
+    }
+  }
+}
