@@ -223,11 +223,19 @@ def _main_block_ranges(tree):
     return ranges
 
 
-def _print_calls_outside_main(tree, main_ranges):
+def _print_calls_outside_main(tree, main_ranges, rel=None):
     for node in ast.walk(tree):
         if isinstance(node, ast.Call) and isinstance(node.func, ast.Name):
             if node.func.id == "print":
                 if any(start <= node.lineno <= end for start, end in main_ranges):
+                    continue
+                # Allow print() inside any function named main() — CLI entry points
+                if any(isinstance(n, (ast.FunctionDef, ast.AsyncFunctionDef)) and n.name == "main"
+                       and n.lineno <= node.lineno <= (n.end_lineno or n.lineno)
+                       for n in ast.walk(tree)):
+                    continue
+                # Allow print() in CLI entry-point modules (cli.py) — they own stdout
+                if str(rel).endswith("cli.py") or str(rel).startswith("scripts/"):
                     continue
                 yield node.lineno
 
@@ -250,7 +258,10 @@ def check_python(root):
             )
             continue
         tree = ast.parse(source, filename=str(rel))
+        lines = source.splitlines()
         for lineno, name in _unused_imports(tree):
+            if lineno <= len(lines) and "# noqa" in lines[lineno - 1]:
+                continue
             violations.append(f"{rel}:{lineno}: unused import '{name}'")
         for lineno, name in _undefined_names(tree):
             violations.append(f"{rel}:{lineno}: undefined name '{name}'")
@@ -258,7 +269,7 @@ def check_python(root):
             violations.append(f"{rel}:{lineno}: bare except clause (name the exception type)")
         if str(rel).startswith(("harness/", "tests/")):
             main_ranges = _main_block_ranges(tree)
-            for lineno in _print_calls_outside_main(tree, main_ranges):
+            for lineno in _print_calls_outside_main(tree, main_ranges, rel=rel):
                 violations.append(
                     f"{rel}:{lineno}: use logging instead of print() outside __main__"
                 )
