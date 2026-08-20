@@ -1,0 +1,4736 @@
+{
+  "deepseek-v4-pro:0813": {
+    "model": "deepseek-v4-pro:0813",
+    "per_document": {
+      "actt1": {
+        "doc_id": "actt1",
+        "per_field": {
+          "doc_id": {
+            "correct": false,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "reason": "",
+            "field": "doc_id",
+            "category": "string",
+            "gold": "actt1",
+            "predicted": null
+          },
+          "nct_id": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "nct_id",
+            "category": "string",
+            "gold": "NCT04280705",
+            "predicted": "NCT04280705"
+          },
+          "brief_title": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "brief_title",
+            "category": "string",
+            "gold": "Adaptive COVID-19 Treatment Trial (ACTT)",
+            "predicted": "Adaptive COVID-19 Treatment Trial (ACTT)"
+          },
+          "official_title": {
+            "correct": false,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "reason": "",
+            "field": "official_title",
+            "category": "string",
+            "gold": "A Multicenter, Adaptive, Randomized Blinded Controlled Trial of the Safety and Efficacy of Investigational Therapeutics for the Treatment of COVID-19",
+            "predicted": "A Multicenter, Adaptive, Randomized Blinded Controlled Trial of the Safety and Efficacy of Investigational Therapeutics for the Treatment of COVID-19 in Hospitalized Adults"
+          },
+          "lead_sponsor": {
+            "correct": false,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "reason": "",
+            "field": "lead_sponsor",
+            "category": "string",
+            "gold": "National Institute of Allergy and Infectious Diseases (NIAID)",
+            "predicted": "National Institute of Allergy and Infectious Diseases (NIAID) (NIH)"
+          },
+          "sponsor_class": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "sponsor_class",
+            "category": "categorical",
+            "gold": "NIH",
+            "predicted": "NIH"
+          },
+          "collaborators": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "collaborators",
+            "category": "list",
+            "gold": [],
+            "predicted": []
+          },
+          "conditions": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "conditions",
+            "category": "list",
+            "gold": [
+              "COVID-19"
+            ],
+            "predicted": [
+              "COVID-19"
+            ]
+          },
+          "phases": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "phases",
+            "category": "list",
+            "gold": [
+              "Phase 3"
+            ],
+            "predicted": [
+              "Phase 3"
+            ]
+          },
+          "study_type": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "study_type",
+            "category": "categorical",
+            "gold": "INTERVENTIONAL",
+            "predicted": "INTERVENTIONAL"
+          },
+          "allocation": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "allocation",
+            "category": "categorical",
+            "gold": "RANDOMIZED",
+            "predicted": "RANDOMIZED"
+          },
+          "primary_purpose": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "primary_purpose",
+            "category": "categorical",
+            "gold": "TREATMENT",
+            "predicted": "TREATMENT"
+          },
+          "masking": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "masking",
+            "category": "categorical",
+            "gold": "DOUBLE",
+            "predicted": "DOUBLE"
+          },
+          "who_masked": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "who_masked",
+            "category": "list",
+            "gold": [
+              "PARTICIPANT",
+              "INVESTIGATOR"
+            ],
+            "predicted": [
+              "PARTICIPANT",
+              "INVESTIGATOR"
+            ]
+          },
+          "enrollment_count": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "enrollment_count",
+            "category": "numeric",
+            "gold": 1062,
+            "predicted": 1062
+          },
+          "enrollment_type": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "enrollment_type",
+            "category": "categorical",
+            "gold": "ACTUAL",
+            "predicted": "ACTUAL"
+          },
+          "overall_status": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "overall_status",
+            "category": "categorical",
+            "gold": "COMPLETED",
+            "predicted": "COMPLETED"
+          },
+          "start_date": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "start_date",
+            "category": "date",
+            "gold": "2020-02-21",
+            "predicted": "2020-02-21"
+          },
+          "primary_completion_date": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "primary_completion_date",
+            "category": "date",
+            "gold": "2020-05-21",
+            "predicted": "2020-05-21"
+          },
+          "completion_date": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "completion_date",
+            "category": "date",
+            "gold": "2020-05-21",
+            "predicted": "2020-05-21"
+          },
+          "arms": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "arms",
+            "category": "list",
+            "gold": [
+              {
+                "label": "Placebo",
+                "type": "PLACEBO_COMPARATOR",
+                "description": "200 mg of Remdesivir placebo administered intravenously on Day 1, followed by a 100 mg dose daily for up to 10 days"
+              },
+              {
+                "label": "Remdesivir",
+                "type": "EXPERIMENTAL",
+                "description": "200 mg of Remdesivir administered intravenously on Day 1, followed by a 100 mg dose daily for up to 10 days"
+              }
+            ],
+            "predicted": [
+              {
+                "description": "200 mg of Remdesivir placebo administered intravenously on Day 1, followed by a 100 mg once-daily maintenance dose of Remdesivir placebo while hospitalized for up to a 10 days total course. n=286.",
+                "label": "Placebo",
+                "type": "PLACEBO_COMPARATOR"
+              },
+              {
+                "description": "200 mg of Remdesivir administered intravenously on Day 1, followed by a 100 mg once-daily maintenance dose of Remdesivir while hospitalized for up to a 10 days total course. n=286.",
+                "label": "Remdesivir",
+                "type": "EXPERIMENTAL"
+              }
+            ]
+          },
+          "interventions": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "interventions",
+            "category": "list",
+            "gold": [
+              {
+                "type": "OTHER",
+                "name": "Placebo",
+                "description": "The supplied placebo lyophilized formulation is identical in physical appearance to Remdesivir"
+              },
+              {
+                "type": "DRUG",
+                "name": "Remdesivir",
+                "description": "Drug Remdesivir is a single diastereomer monophosphoramidate prodrug"
+              }
+            ],
+            "predicted": [
+              {
+                "description": "The supplied placebo lyophilized formulation is identical in physical appearance to the active lyophilized formulation and contains the same inactive ingredients. Alternatively, a placebo of normal saline of equal volume may be given if there are limitations on matching placebo supplies.",
+                "name": "Placebo",
+                "type": "OTHER"
+              },
+              {
+                "description": "Drug Remdesivir is a single diastereomer monophosphoramidate prodrug designed for the intracellular delivery of a modified adenine nucleoside analog GS-441524. In addition to the active ingredient, the lyophilized formulation of Remdesivir contains the following inactive ingredients: water for injection, sulfobutylether beta-cyclodextrin sodium (SBECD), and hydrochloric acid and/or sodium hydroxide.",
+                "name": "Remdesivir",
+                "type": "DRUG"
+              }
+            ]
+          },
+          "eligibility_sex": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "eligibility_sex",
+            "category": "categorical",
+            "gold": "ALL",
+            "predicted": "ALL"
+          },
+          "eligibility_min_age": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "eligibility_min_age",
+            "category": "string",
+            "gold": "18 Years",
+            "predicted": "18 Years"
+          },
+          "eligibility_max_age": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "eligibility_max_age",
+            "category": "string",
+            "gold": "99 Years",
+            "predicted": "99 Years"
+          },
+          "healthy_volunteers": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "healthy_volunteers",
+            "category": "boolean",
+            "gold": false,
+            "predicted": false
+          },
+          "inclusion_criteria": {
+            "correct": false,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "field": "inclusion_criteria",
+            "category": "list",
+            "gold": [
+              "Admitted to a hospital with symptoms suggestive of COVID-19 infection",
+              "Subject or legally authorized representative provides informed consent prior to initiation of any study procedures",
+              "Male or non-pregnant female adult >= 18 years of age at time of enrollment",
+              "Has laboratory-confirmed SARS-CoV-2 infection as determined by PCR or other commercial or public health assay",
+              "Illness of any duration with at least one of: radiographic infiltrates, SpO2 <= 94% on room air, requiring supplemental oxygen, or requiring mechanical ventilation",
+              "Women of childbearing potential must agree to abstinence or use at least one primary form of contraception from screening through Day 29",
+              "Agrees to not participate in another clinical trial for the treatment of COVID-19 through Day 29"
+            ],
+            "predicted": [
+              "Admitted to a hospital with symptoms suggestive of COVID-19 infection.",
+              "Subject (or legally authorized representative) provides informed consent prior to initiation of any study procedures.",
+              "Subject (or legally authorized representative) understands and agrees to comply with planned study procedures.",
+              "Male or non-pregnant female adult > / = 18 years of age at time of enrollment.",
+              "Has laboratory-confirmed SARS-CoV-2 infection as determined by polymerase chain reaction (PCR) or other commercial or public health assay in any specimen, as documented by either or the following: 1. PCR positive in sample collected < 72 hours prior to randomization; OR 2. PCR positive in sample collected >/= 72 hours prior to randomization, documented inability to obtain a repeat sample (e.g. due to lack of testing supplies, limited testing capacity, results taking >24 hours, etc.) AND progressive disease suggestive of ongoing SARS-CoV-2 infection.",
+              "Illness of any duration, and at least one of the following: 1. Radiographic infiltrates by imaging (chest x-ray, CT scan, etc.), OR 2. SpO2 < / = 94% on room air, OR 3. Requiring supplemental oxygen, OR 4. Requiring mechanical ventilation.",
+              "Women of childbearing potential must agree to either abstinence or use at least one primary form of contraception not including hormonal contraception from the time of screening through Day 29.",
+              "Agrees to not participate in another clinical trial for the treatment of COVID-19 or SARS-CoV-2 through Day 29."
+            ]
+          },
+          "exclusion_criteria": {
+            "correct": false,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "field": "exclusion_criteria",
+            "category": "list",
+            "gold": [
+              "ALT or AST > 5 times the upper limit of normal",
+              "Estimated glomerular filtration rate (eGFR) < 30 ml/min (including patients receiving hemodialysis or hemofiltration)",
+              "Pregnancy or breast feeding",
+              "Anticipated discharge from the hospital or transfer to another hospital which is not a study site within 72 hours",
+              "Allergy to any study medication"
+            ],
+            "predicted": [
+              "Alanine Transaminase (ALT) or Aspartate Transaminase (AST) > 5 times the upper limit of normal.",
+              "Estimated glomerular filtration rate (eGFR) < 30 ml/min (including patients receiving hemodialysis or hemofiltration).",
+              "Pregnancy or breast feeding.",
+              "Anticipated discharge from the hospital or transfer to another hospital which is not a study site within 72 hours.",
+              "Allergy to any study medication."
+            ]
+          },
+          "primary_outcomes": {
+            "correct": false,
+            "precision": 0.25,
+            "recall": 1.0,
+            "f1": 0.4,
+            "field": "primary_outcomes",
+            "category": "list",
+            "gold": [
+              {
+                "measure": "Time to Recovery",
+                "time_frame": "Day 1 through Day 29"
+              }
+            ],
+            "predicted": [
+              {
+                "measure": "Time to Recovery",
+                "time_frame": "Day 1 through Day 29"
+              },
+              {
+                "measure": "Time to Recovery by Race",
+                "time_frame": "Day 1 through Day 29"
+              },
+              {
+                "measure": "Time to Recovery by Ethnicity",
+                "time_frame": "Day 1 through Day 29"
+              },
+              {
+                "measure": "Time to Recovery by Sex",
+                "time_frame": "Day 1 through Day 29"
+              }
+            ]
+          },
+          "secondary_outcomes": {
+            "correct": false,
+            "precision": 0.1282,
+            "recall": 1.0,
+            "f1": 0.2273,
+            "field": "secondary_outcomes",
+            "category": "list",
+            "gold": [
+              {
+                "measure": "Change From Baseline in Alanine Transaminase (ALT)",
+                "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+              },
+              {
+                "measure": "Change in National Early Warning Score (NEWS) From Baseline",
+                "time_frame": "Days 1, 3, 5, 8, 11, 15, 22, and 29"
+              },
+              {
+                "measure": "14-day Participant Mortality",
+                "time_frame": "Day 1 through Day 15"
+              },
+              {
+                "measure": "29-day Participant Mortality",
+                "time_frame": "Day 1 through Day 29"
+              },
+              {
+                "measure": "Duration of Hospitalization",
+                "time_frame": "Day 1 through Day 29"
+              }
+            ],
+            "predicted": [
+              {
+                "measure": "Change From Baseline in Alanine Transaminase (ALT)",
+                "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+              },
+              {
+                "measure": "Change From Baseline in Aspartate Transaminase (AST)",
+                "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+              },
+              {
+                "measure": "Change From Baseline in Creatinine",
+                "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+              },
+              {
+                "measure": "Change From Baseline in Glucose",
+                "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+              },
+              {
+                "measure": "Change From Baseline in Hemoglobin",
+                "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+              },
+              {
+                "measure": "Change From Baseline in Platelets",
+                "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+              },
+              {
+                "measure": "Change From Baseline in Prothrombin Time (PT)",
+                "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+              },
+              {
+                "measure": "Change From Baseline in Total Bilirubin",
+                "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+              },
+              {
+                "measure": "Change From Baseline in White Blood Cell Count (WBC)",
+                "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+              },
+              {
+                "measure": "Change From Baseline in Neutrophils",
+                "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+              },
+              {
+                "measure": "Change From Baseline in Lymphocytes",
+                "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+              },
+              {
+                "measure": "Change From Baseline in Monocytes",
+                "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+              },
+              {
+                "measure": "Change From Baseline in Basophils",
+                "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+              },
+              {
+                "measure": "Change From Baseline in Eosinophils",
+                "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+              },
+              {
+                "measure": "Change in National Early Warning Score (NEWS) From Baseline",
+                "time_frame": "Days 1, 3, 5, 8, 11, 15, 22, and 29"
+              },
+              {
+                "measure": "Percentage of Participants at Each Clinical Status Using Ordinal Scale at Day 1",
+                "time_frame": "Day 1"
+              },
+              {
+                "measure": "Percentage of Participants at Each Clinical Status Using Ordinal Scale at Day 3",
+                "time_frame": "Day 3"
+              },
+              {
+                "measure": "Percentage of Participants at Each Clinical Status Using Ordinal Scale at Day 5",
+                "time_frame": "Day 5"
+              },
+              {
+                "measure": "Percentage of Participants at Each Clinical Status Using Ordinal Scale at Day 8",
+                "time_frame": "Day 8"
+              },
+              {
+                "measure": "Percentage of Participants at Each Clinical Status Using Ordinal Scale at Day 11",
+                "time_frame": "Day 11"
+              },
+              {
+                "measure": "Percentage of Participants at Each Clinical Status Using Ordinal Scale at Day 15",
+                "time_frame": "Day 15"
+              },
+              {
+                "measure": "Percentage of Participants at Each Clinical Status Using Ordinal Scale at Day 22",
+                "time_frame": "Day 22"
+              },
+              {
+                "measure": "Percentage of Participants at Each Clinical Status Using Ordinal Scale at Day 29",
+                "time_frame": "Day 29"
+              },
+              {
+                "measure": "Percentage of Participants Reporting Grade 3 and 4 Clinical and/or Laboratory Adverse Events (AEs)",
+                "time_frame": "Day 1 through Day 29"
+              },
+              {
+                "measure": "Percentage of Participants Reporting Serious Adverse Events (SAEs)",
+                "time_frame": "Day 1 through Day 29"
+              },
+              {
+                "measure": "Percentage of Participants Discontinued or Temporarily Suspended From Investigational Therapeutics",
+                "time_frame": "Day 1 through Day 10"
+              },
+              {
+                "measure": "Duration of Hospitalization",
+                "time_frame": "Day 1 through Day 29"
+              },
+              {
+                "measure": "Duration of New Non-invasive Ventilation or High Flow Oxygen Use",
+                "time_frame": "Day 1 through Day 29"
+              },
+              {
+                "measure": "Duration of New Oxygen Use",
+                "time_frame": "Day 1 through Day 29"
+              },
+              {
+                "measure": "Duration of New Ventilator or Extracorporeal Membrane Oxygenation (ECMO) Use",
+                "time_frame": "Day 1 through Day 29"
+              },
+              {
+                "measure": "Percentage of Participants Requiring New Non-invasive Ventilation or High-flow Oxygen Use",
+                "time_frame": "Day 1 through Day 29"
+              },
+              {
+                "measure": "Percentage of Participants Requiring New Oxygen Use",
+                "time_frame": "Day 1 through Day 29"
+              },
+              {
+                "measure": "Percentage of Participants Requiring New Ventilator or Extracorporeal Membrane Oxygenation (ECMO) Use",
+                "time_frame": "Day 1 through Day 29"
+              },
+              {
+                "measure": "Mean Change in the Ordinal Scale",
+                "time_frame": "Day 1, 3, 5, 8, 11, 15, 22, and 29"
+              },
+              {
+                "measure": "14-day Participant Mortality",
+                "time_frame": "Day 1 through Day 15"
+              },
+              {
+                "measure": "29-day Participant Mortality",
+                "time_frame": "Day 1 through Day 29"
+              },
+              {
+                "measure": "Time to an Improvement by at Least One Category Using an Ordinal Scale",
+                "time_frame": "Day 1 through Day 29"
+              },
+              {
+                "measure": "Time to an Improvement of at Least Two Categories Using an Ordinal Scale",
+                "time_frame": "Day 1 through Day 29"
+              },
+              {
+                "measure": "Time to Discharge or to a NEWS of 2 or Less and Maintained for 24 Hours, Whichever Occurs First",
+                "time_frame": "Day 1 through Day 29"
+              }
+            ]
+          }
+        },
+        "aggregates": {
+          "precision": 0.7793,
+          "recall": 0.8333,
+          "f1": 0.7876,
+          "n_fields": 30
+        }
+      },
+      "area3": {
+        "doc_id": "area3",
+        "per_field": {
+          "doc_id": {
+            "correct": false,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "reason": "",
+            "field": "doc_id",
+            "category": "string",
+            "gold": "area3",
+            "predicted": null
+          },
+          "nct_id": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "nct_id",
+            "category": "string",
+            "gold": "NCT03036150",
+            "predicted": "NCT03036150"
+          },
+          "brief_title": {
+            "correct": false,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "reason": "",
+            "field": "brief_title",
+            "category": "string",
+            "gold": "A Study to Evaluate the Effect of Dapagliflozin on Renal Outcomes and Cardiovascular Mortality in Patients With Chronic Kidney Disease (DAPA-CKD)",
+            "predicted": "A Study to Evaluate the Effect of Dapagliflozin on Renal Outcomes and Cardiovascular Mortality in Patients With Chronic Kidney Disease"
+          },
+          "official_title": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "official_title",
+            "category": "string",
+            "gold": "A Study to Evaluate the Effect of Dapagliflozin on Renal Outcomes and Cardiovascular Mortality in Patients With Chronic Kidney Disease",
+            "predicted": "A Study to Evaluate the Effect of Dapagliflozin on Renal Outcomes and Cardiovascular Mortality in Patients With Chronic Kidney Disease"
+          },
+          "lead_sponsor": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "lead_sponsor",
+            "category": "string",
+            "gold": "AstraZeneca",
+            "predicted": "AstraZeneca"
+          },
+          "sponsor_class": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "sponsor_class",
+            "category": "categorical",
+            "gold": "INDUSTRY",
+            "predicted": "INDUSTRY"
+          },
+          "collaborators": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "collaborators",
+            "category": "list",
+            "gold": [],
+            "predicted": []
+          },
+          "conditions": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "conditions",
+            "category": "list",
+            "gold": [
+              "Chronic Kidney Disease"
+            ],
+            "predicted": [
+              "Chronic Kidney Disease"
+            ]
+          },
+          "phases": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "phases",
+            "category": "list",
+            "gold": [
+              "Phase 3"
+            ],
+            "predicted": [
+              "Phase 3"
+            ]
+          },
+          "study_type": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "study_type",
+            "category": "categorical",
+            "gold": "INTERVENTIONAL",
+            "predicted": "INTERVENTIONAL"
+          },
+          "allocation": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "allocation",
+            "category": "categorical",
+            "gold": "RANDOMIZED",
+            "predicted": "RANDOMIZED"
+          },
+          "primary_purpose": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "primary_purpose",
+            "category": "categorical",
+            "gold": "TREATMENT",
+            "predicted": "TREATMENT"
+          },
+          "masking": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "masking",
+            "category": "categorical",
+            "gold": "QUADRUPLE",
+            "predicted": "QUADRUPLE"
+          },
+          "who_masked": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "who_masked",
+            "category": "list",
+            "gold": [
+              "PARTICIPANT",
+              "CARE_PROVIDER",
+              "INVESTIGATOR",
+              "OUTCOMES_ASSESSOR"
+            ],
+            "predicted": [
+              "PARTICIPANT",
+              "CARE_PROVIDER",
+              "INVESTIGATOR",
+              "OUTCOMES_ASSESSOR"
+            ]
+          },
+          "enrollment_count": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "enrollment_count",
+            "category": "numeric",
+            "gold": 4304,
+            "predicted": 4304
+          },
+          "enrollment_type": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "enrollment_type",
+            "category": "categorical",
+            "gold": "ACTUAL",
+            "predicted": "ACTUAL"
+          },
+          "overall_status": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "overall_status",
+            "category": "categorical",
+            "gold": "COMPLETED",
+            "predicted": "COMPLETED"
+          },
+          "start_date": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "start_date",
+            "category": "date",
+            "gold": "2017-02-02",
+            "predicted": "2017-02-02"
+          },
+          "primary_completion_date": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "primary_completion_date",
+            "category": "date",
+            "gold": "2020-06-12",
+            "predicted": "2020-06-12"
+          },
+          "completion_date": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "completion_date",
+            "category": "date",
+            "gold": "2020-06-12",
+            "predicted": "2020-06-12"
+          },
+          "arms": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "arms",
+            "category": "list",
+            "gold": [
+              {
+                "label": "Dapagliflozin",
+                "type": "EXPERIMENTAL",
+                "description": "Patients randomized 1:1 to dapagliflozin or placebo. 10 mg or 5 mg tablets given once daily, per oral use."
+              },
+              {
+                "label": "Placebo",
+                "type": "PLACEBO_COMPARATOR",
+                "description": "Placebo matching dapagliflozin 10 mg or 5 mg"
+              }
+            ],
+            "predicted": [
+              {
+                "description": "Patients will be randomized 1:1 to either dapagliflozin or placebo.",
+                "label": "Dapagliflozin",
+                "type": "EXPERIMENTAL"
+              },
+              {
+                "description": "Placebo matching dapagliflozin.",
+                "label": "Placebo",
+                "type": "PLACEBO_COMPARATOR"
+              }
+            ]
+          },
+          "interventions": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "interventions",
+            "category": "list",
+            "gold": [
+              {
+                "type": "DRUG",
+                "name": "Dapagliflozin",
+                "description": "10 mg or 5 mg tablets given once daily, per oral use"
+              },
+              {
+                "type": "DRUG",
+                "name": "Placebo",
+                "description": "Placebo matching dapagliflozin 10 mg or 5 mg"
+              }
+            ],
+            "predicted": [
+              {
+                "description": "10 mg or 5 mg tablets given once daily, per oral use.",
+                "name": "Dapagliflozin",
+                "type": "DRUG"
+              },
+              {
+                "description": "Placebo matching dapagliflozin 10 mg or 5 mg",
+                "name": "Placebo",
+                "type": "DRUG"
+              }
+            ]
+          },
+          "eligibility_sex": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "eligibility_sex",
+            "category": "categorical",
+            "gold": "ALL",
+            "predicted": "ALL"
+          },
+          "eligibility_min_age": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "eligibility_min_age",
+            "category": "string",
+            "gold": "18 Years",
+            "predicted": "18 Years"
+          },
+          "eligibility_max_age": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "eligibility_max_age",
+            "category": "string",
+            "gold": "130 Years",
+            "predicted": "130 Years"
+          },
+          "healthy_volunteers": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "healthy_volunteers",
+            "category": "boolean",
+            "gold": false,
+            "predicted": false
+          },
+          "inclusion_criteria": {
+            "correct": false,
+            "precision": 0.2,
+            "recall": 0.2,
+            "f1": 0.2,
+            "field": "inclusion_criteria",
+            "category": "list",
+            "gold": [
+              "Provision of signed informed consent prior to any study specific procedures",
+              "Female or male aged >= 18 years at the time of consent",
+              "eGFR >= 25 and <= 75 mL/min/1.73m2 (CKD-EPI Formula) at visit 1",
+              "Evidence of increased albuminuria 3 months or more before visit 1 and UACR >= 200 and <= 5000 mg/g at visit 1",
+              "Stable, maximum tolerated labelled daily dose of ACE-I or ARB for at least 4 weeks before visit 1, if not medically contraindicated"
+            ],
+            "predicted": [
+              "Provision of signed informed consent prior to any study specific procedures",
+              "Female or male aged \u226518 years at the time of consent",
+              "eGFR \u226525 and \u226475 mL/min/1.73m2 (CKD-EPI Formula) at visit 1",
+              "Evidence of increased albuminuria 3 months or more before visit 1 and UACR \u2265200 and \u22645000 mg/g at visit 1",
+              "Stable, and for the patient maximum tolerated labelled daily dose, treatment with ACE-I or ARB for at least 4 weeks before visit 1, if not medically contraindicated,"
+            ]
+          },
+          "exclusion_criteria": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "exclusion_criteria",
+            "category": "list",
+            "gold": [
+              "Autosomal dominant or autosomal recessive polycystic kidney disease, lupus nephritis or ANCA-associated vasculitis",
+              "Receiving cytotoxic therapy, immunosuppressive therapy or other immunotherapy for primary or secondary renal disease within 6 months prior to enrolment",
+              "History of organ transplantation",
+              "Receiving therapy with an SGLT2 inhibitor within 8 weeks prior to enrolment or previous intolerance of an SGLT2 inhibitor",
+              "Type 1 diabetes mellitus",
+              "New York Heart Association (NYHA) class IV Congestive Heart Failure at the time of enrolment",
+              "MI, unstable angina, stroke or transient ischemic attack within 12 weeks prior to enrolment"
+            ],
+            "predicted": [
+              "Autosomal dominant or autosomal recessive polycystic kidney disease, lupus nephritis or ANCA-associated vasculitis",
+              "Receiving cytotoxic therapy, immunosuppressive therapy or other immunotherapy for primary or secondary renal disease within 6 months prior to enrolment",
+              "History of organ transplantation",
+              "Receiving therapy with an SGLT2 inhibitor within 8 weeks prior to enrolment or previous intolerance of an SGLT2 inhibitor",
+              "Type 1 diabetes mellitus",
+              "New York Heart Association (NYHA) class IV Congestive Heart Failure at the time of enrolment",
+              "MI, unstable angina, stroke or transient ischemic attack within 12 weeks prior to enrolment"
+            ]
+          },
+          "primary_outcomes": {
+            "correct": false,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "field": "primary_outcomes",
+            "category": "list",
+            "gold": [
+              {
+                "measure": "Time to the First Occurrence of Any of the Components of the Composite: >= 50% Sustained Decline in eGFR, End Stage Kidney Disease, Renal Death or Cardiovascular Death",
+                "time_frame": "Up to 38.2 months"
+              }
+            ],
+            "predicted": [
+              {
+                "measure": "Time to the First Occurrence of Any of the Components of the Composite: \u226550% Sustained Decline in eGFR or Reaching ESRD or CV Death or Renal Death.",
+                "time_frame": "Up to 38.2 months"
+              }
+            ]
+          },
+          "secondary_outcomes": {
+            "correct": false,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "field": "secondary_outcomes",
+            "category": "list",
+            "gold": [
+              {
+                "measure": "Time to the First Occurrence of Any of the Components of the Composite: >= 50% Sustained Decline in eGFR, End Stage Kidney Disease or Renal Death",
+                "time_frame": "Up to 38.2 months"
+              },
+              {
+                "measure": "Time to the First Occurrence of Either of the Components of the Composite: Cardiovascular Death or Hospitalization for Heart Failure",
+                "time_frame": "Up to 38.2 months"
+              },
+              {
+                "measure": "Time to Death From Any Cause",
+                "time_frame": "Up to 38.2 months"
+              }
+            ],
+            "predicted": [
+              {
+                "measure": "Time to the First Occurrence of Any of the Components of the Composite: \u226550% Sustained Decline in eGFR or Reaching ESRD or Renal Death.",
+                "time_frame": "Up to 38.2 months"
+              },
+              {
+                "measure": "Time to the First Occurrence of Either of the Components of the Composite: CV Death or Hospitalization for Heart Failure.",
+                "time_frame": "Up to 38.2 months"
+              },
+              {
+                "measure": "Time to Death From Any Cause.",
+                "time_frame": "Up to 38.2 months"
+              }
+            ]
+          }
+        },
+        "aggregates": {
+          "precision": 0.84,
+          "recall": 0.84,
+          "f1": 0.84,
+          "n_fields": 30
+        }
+      },
+      "onc1": {
+        "doc_id": "onc1",
+        "per_field": {
+          "doc_id": {
+            "correct": false,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "reason": "",
+            "field": "doc_id",
+            "category": "string",
+            "gold": "onc1",
+            "predicted": null
+          },
+          "nct_id": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "nct_id",
+            "category": "string",
+            "gold": "NCT01642004",
+            "predicted": "NCT01642004"
+          },
+          "brief_title": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "brief_title",
+            "category": "string",
+            "gold": "Study of BMS-936558 (Nivolumab) Compared to Docetaxel in Previously Treated Advanced or Metastatic Squamous Cell Non-small Cell Lung Cancer (NSCLC) (CheckMate 017)",
+            "predicted": "Study of BMS-936558 (Nivolumab) Compared to Docetaxel in Previously Treated Advanced or Metastatic Squamous Cell Non-small Cell Lung Cancer (NSCLC) (CheckMate 017)"
+          },
+          "official_title": {
+            "correct": false,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "reason": "",
+            "field": "official_title",
+            "category": "string",
+            "gold": "An Open-Label Randomized Phase III Trial of BMS-936558 (Nivolumab) Versus Docetaxel in Previously Treated Advanced or Metastatic Squamous Cell Non-small Cell Lung Cancer",
+            "predicted": "An Open-Label Randomized Phase III Trial of BMS-936558 (Nivolumab) Versus Docetaxel in Previously Treated Advanced or Metastatic Squamous Cell Non-small Cell Lung Cancer (NSCLC)"
+          },
+          "lead_sponsor": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "lead_sponsor",
+            "category": "string",
+            "gold": "Bristol-Myers Squibb",
+            "predicted": "Bristol-Myers Squibb"
+          },
+          "sponsor_class": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "sponsor_class",
+            "category": "categorical",
+            "gold": "INDUSTRY",
+            "predicted": "INDUSTRY"
+          },
+          "collaborators": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "collaborators",
+            "category": "list",
+            "gold": [],
+            "predicted": []
+          },
+          "conditions": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "conditions",
+            "category": "list",
+            "gold": [
+              "Squamous Cell Non-small Cell Lung Cancer"
+            ],
+            "predicted": [
+              "Squamous Cell Non-small Cell Lung Cancer"
+            ]
+          },
+          "phases": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "phases",
+            "category": "list",
+            "gold": [
+              "Phase 3"
+            ],
+            "predicted": [
+              "Phase 3"
+            ]
+          },
+          "study_type": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "study_type",
+            "category": "categorical",
+            "gold": "INTERVENTIONAL",
+            "predicted": "INTERVENTIONAL"
+          },
+          "allocation": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "allocation",
+            "category": "categorical",
+            "gold": "RANDOMIZED",
+            "predicted": "RANDOMIZED"
+          },
+          "primary_purpose": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "primary_purpose",
+            "category": "categorical",
+            "gold": "TREATMENT",
+            "predicted": "TREATMENT"
+          },
+          "masking": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "masking",
+            "category": "categorical",
+            "gold": "NONE",
+            "predicted": "NONE"
+          },
+          "who_masked": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "who_masked",
+            "category": "list",
+            "gold": [],
+            "predicted": []
+          },
+          "enrollment_count": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "enrollment_count",
+            "category": "numeric",
+            "gold": 272,
+            "predicted": 272
+          },
+          "enrollment_type": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "enrollment_type",
+            "category": "categorical",
+            "gold": "ACTUAL",
+            "predicted": "ACTUAL"
+          },
+          "overall_status": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "overall_status",
+            "category": "categorical",
+            "gold": "COMPLETED",
+            "predicted": "COMPLETED"
+          },
+          "start_date": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "start_date",
+            "category": "date",
+            "gold": "2012-10-16",
+            "predicted": "2012-10-16"
+          },
+          "primary_completion_date": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "primary_completion_date",
+            "category": "date",
+            "gold": "2014-11-17",
+            "predicted": "2014-11-17"
+          },
+          "completion_date": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "completion_date",
+            "category": "date",
+            "gold": "2021-08-16",
+            "predicted": "2021-08-16"
+          },
+          "arms": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "arms",
+            "category": "list",
+            "gold": [
+              {
+                "label": "Arm A: Nivolumab",
+                "type": "EXPERIMENTAL",
+                "description": "Nivolumab 3 mg/kg solution intravenously (IV) every 2 weeks until documented disease progression or unacceptable toxicity"
+              },
+              {
+                "label": "Arm B: Docetaxel",
+                "type": "EXPERIMENTAL",
+                "description": "Docetaxel 75 mg/m^2 concentrate for solution for intravenous infusion every 3 weeks until documented disease progression or unacceptable toxicity"
+              }
+            ],
+            "predicted": [
+              {
+                "description": "Nivolumab 3 mg/kg solution intravenously (IV) every 2 weeks until documented disease progression, discontinuation due to toxicity, withdrawal of consent or the study ends. Eligible patients may receive nivolumab at 480mg every 4 weeks until documented disease progression, discontinuation, withdrawal of consent or the study ends.",
+                "label": "Arm A: Nivolumab",
+                "type": "EXPERIMENTAL"
+              },
+              {
+                "description": "Docetaxel 75 mg/m^2 concentrate for solution for intravenous infusion every 3 weeks until documented disease progression, discontinuation due to toxicity, withdrawal of consent or the study ends. Eligible patients may receive nivolumab at 480mg every 4 weeks until documented disease progression, discontinuation, withdrawal of consent or the study ends.",
+                "label": "Arm B: Docetaxel",
+                "type": "EXPERIMENTAL"
+              }
+            ]
+          },
+          "interventions": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "interventions",
+            "category": "list",
+            "gold": [
+              {
+                "type": "BIOLOGICAL",
+                "name": "Nivolumab",
+                "description": "Anti-PD-1 monoclonal antibody"
+              },
+              {
+                "type": "DRUG",
+                "name": "Docetaxel",
+                "description": "Chemotherapy agent"
+              }
+            ],
+            "predicted": [
+              {
+                "description": null,
+                "name": "Nivolumab",
+                "type": "BIOLOGICAL"
+              },
+              {
+                "description": null,
+                "name": "Docetaxel",
+                "type": "DRUG"
+              }
+            ]
+          },
+          "eligibility_sex": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "eligibility_sex",
+            "category": "categorical",
+            "gold": "ALL",
+            "predicted": "ALL"
+          },
+          "eligibility_min_age": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "eligibility_min_age",
+            "category": "string",
+            "gold": "18 Years",
+            "predicted": "18 Years"
+          },
+          "eligibility_max_age": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "eligibility_max_age",
+            "category": "string",
+            "gold": null,
+            "predicted": null
+          },
+          "healthy_volunteers": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "healthy_volunteers",
+            "category": "boolean",
+            "gold": false,
+            "predicted": false
+          },
+          "inclusion_criteria": {
+            "correct": false,
+            "precision": 0.1667,
+            "recall": 0.1667,
+            "f1": 0.1667,
+            "field": "inclusion_criteria",
+            "category": "list",
+            "gold": [
+              "Men and women >= 18 years of age",
+              "Histologically or cytologically-documented squamous cell NSCLC with Stage IIIB/IV disease or recurrent/progressive disease following multimodal therapy",
+              "Disease recurrence or progression during/after one prior platinum doublet-based chemotherapy regimen for advanced or metastatic disease",
+              "Measurable disease by CT/MRI per RECIST 1.1 criteria",
+              "Eastern Cooperative Oncology Group (ECOG) performance status <= 1",
+              "FFPE tumor tissue block or unstained slides available for biomarker evaluation, received by central lab prior to randomization"
+            ],
+            "predicted": [
+              "Men and women \u226518 years of age",
+              "Subjects with histologically or cytologically-documented squamous cell NSCLC who present with Stage IIIB/IV disease or with recurrent or progressive disease following multimodal therapy (radiation therapy, surgical resection or definitive chemoradiation therapy for locally advanced disease)",
+              "Disease recurrence or progression during/after one prior platinum doublet-based chemotherapy regimen for advanced or metastatic disease",
+              "Measurable disease by computed tomography (CT)/Magnetic resonance imaging (MRI) per Response Evaluation Criteria in Solid Tumors (RECIST) 1.1 criteria",
+              "Eastern Cooperative Oncology Group (ECOG) performance status \u22641",
+              "A formalin fixed, paraffin-embedded (FFPE) tumor tissue block or unstained slides of tumor sample (archival or recent) must be available for biomarker evaluation. Specimens must be received by the central lab prior to randomization. Biopsy should be excisional, incisional or core needle. Fine needle aspiration is insufficient"
+            ]
+          },
+          "exclusion_criteria": {
+            "correct": false,
+            "precision": 0.2222,
+            "recall": 0.25,
+            "f1": 0.2353,
+            "field": "exclusion_criteria",
+            "category": "list",
+            "gold": [
+              "Untreated CNS metastases (eligible if treated and neurologically stable for >= 2 weeks, off corticosteroids or on stable/decreasing dose <= 10 mg daily prednisone)",
+              "Carcinomatous meningitis",
+              "Active, known or suspected autoimmune disease (exceptions: type I diabetes, hypothyroidism on replacement, skin disorders not requiring systemic treatment)",
+              "Condition requiring systemic treatment with corticosteroids or other immunosuppressive medications within 14 days of randomization",
+              "Prior therapy with anti-PD-1, anti-PD-L1, anti-PD-L2, anti-CD137, or anti-CTLA-4 antibody (including ipilimumab)",
+              "Prior treatment with Docetaxel",
+              "Symptomatic interstitial lung disease that may interfere with detection/management of drug-related pulmonary toxicity",
+              "Treatment with any investigational agent within 14 days of first administration of study treatment"
+            ],
+            "predicted": [
+              "Subjects with untreated central nervous system (CNS) metastases are excluded. Subjects are eligible if CNS metastases are treated and subjects are neurologically returned to baseline for at least 2 weeks prior to enrollment. In addition, subjects must be either off corticosteroids, or on a stable or decreasing dose of \u226410 mg daily prednisone (or equivalent)",
+              "Subjects with carcinomatous meningitis",
+              "Subjects with active, known or suspected autoimmune disease. Subjects with type I diabetes mellitus, hypothyroidism only requiring hormone replacement, skin disorders (such as vitiligo, psoriasis, or alopecia) not requiring systemic treatment, or conditions not expected to recur in the absence of an external trigger are permitted to enroll",
+              "Subjects with a condition requiring systemic treatment with either corticosteroids or other immunosuppressive medications within 14 days of randomization",
+              "Prior therapy with anti-Programmed death-1 (PD-1), anti-Programmed cell death ligand 1 (PD-L1), anti-Programmed cell death ligand 2 (PD-L2), anti-CD137, or anti-Cytotoxic T lymphocyte-associated antigen 4 (CTLA-4) antibody (including ipilimumab or any other antibody or drug specifically targeting T-cell co-stimulation or checkpoint pathways)",
+              "Prior treatment on the first line study CA184104 first line NSCLC study",
+              "Prior treatment with Docetaxel",
+              "Subjects with interstitial lung disease that is symptomatic or may interfere with the detection or management of suspected drug-related pulmonary toxicity",
+              "Treatment with any investigational agent within 14 days of first administration of study treatment"
+            ]
+          },
+          "primary_outcomes": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "primary_outcomes",
+            "category": "list",
+            "gold": [
+              {
+                "measure": "Overall Survival (OS) Time in Months for All Randomized Participants at Primary Endpoint",
+                "time_frame": "Randomization until 199 deaths, up to November 2014"
+              },
+              {
+                "measure": "Overall Survival (OS) Rate in All Randomized Participants",
+                "time_frame": "Randomization to 18 months post-randomization"
+              },
+              {
+                "measure": "Number of Deaths From Any Cause in All Randomized Participants at Primary Endpoint",
+                "time_frame": "Randomization until 199 deaths"
+              }
+            ],
+            "predicted": [
+              {
+                "measure": "Overall Survival (OS) Time in Months for All Randomized Participants at Primary Endpoint",
+                "time_frame": "Randomization until 199 deaths, up to November 2014, approximately 25 months"
+              },
+              {
+                "measure": "Overall Survival (OS) Rate in All Randomized Participants",
+                "time_frame": "Randomization to 18 months post-randomization, up to June 2015"
+              },
+              {
+                "measure": "Number of Deaths From Any Cause in All Randomized Participants at Primary Endpoint",
+                "time_frame": "Randomization until 199 deaths, up to November 2014, approximately 25 months"
+              }
+            ]
+          },
+          "secondary_outcomes": {
+            "correct": false,
+            "precision": 0.3333,
+            "recall": 1.0,
+            "f1": 0.5,
+            "field": "secondary_outcomes",
+            "category": "list",
+            "gold": [
+              {
+                "measure": "Objective Response Rate (ORR) in All Randomized Participants",
+                "time_frame": "From date of randomization up to date of objective disease progression"
+              },
+              {
+                "measure": "Progression-Free Survival (PFS) Time in Months for All Randomized Participants",
+                "time_frame": "From randomization up to first confirmed response"
+              },
+              {
+                "measure": "Duration of Objective Response (DOR) in Months for All Confirmed Responders",
+                "time_frame": "From date of first confirmed response to date of progression"
+              }
+            ],
+            "predicted": [
+              {
+                "measure": "Objective Response Rate (ORR) in All Randomized Participants",
+                "time_frame": "From the date of randomization up to the date of objectively documented progression, up to approximately 103 months"
+              },
+              {
+                "measure": "Time To Response (TTR) in Months for All Confirmed Responders",
+                "time_frame": "From the date of randomization to the date of the first confirmed response, up to approximately 12 months"
+              },
+              {
+                "measure": "Duration of Objective Response (DOR) in Months for All Confirmed Responders",
+                "time_frame": "From the date of first confirmed response to the date of the first documented tumor progression or death due to any cause, whichever occurred first, up to approximately 94 months"
+              },
+              {
+                "measure": "Progression Free Survival Rate (PFSR)",
+                "time_frame": "From randomization to specified timepoints, up to 84 months"
+              },
+              {
+                "measure": "Progression-Free Survival (PFS) Time in Months for All Randomized Participants",
+                "time_frame": "From randomization up to the first confirmed response to the date of the first documented tumor progression or death due to any cause, whichever occurred first, up to approximately 103 months"
+              },
+              {
+                "measure": "Percentage of Participants Experiencing Disease-related Symptom Improvement by Week 12",
+                "time_frame": "From randomization up to Week 12"
+              },
+              {
+                "measure": "Overall Survival (OS) Time in Months by Baseline PD-L1 Expression for All Randomized Participants",
+                "time_frame": "From the date of randomization to the date of death from any cause, up to approximately 103 months"
+              },
+              {
+                "measure": "Objective Response Rate (ORR) by Baseline PD-L1 Expression for All Randomized Participants",
+                "time_frame": "From the date of randomization up to the date of objectively documented progression, up to approximately 103 months"
+              },
+              {
+                "measure": "Progression Free Survival (PFS) Time in Months by Baseline PD-L1 Expression for All Randomized Participants",
+                "time_frame": "From the date of first confirmed response to the date of the first documented tumor progression or death due to any cause, whichever occurred first, up to approximately 103 months"
+              }
+            ]
+          }
+        },
+        "aggregates": {
+          "precision": 0.8574,
+          "recall": 0.8806,
+          "f1": 0.8634,
+          "n_fields": 30
+        }
+      }
+    },
+    "aggregates": {
+      "precision": 0.8256,
+      "recall": 0.8513,
+      "f1": 0.8303,
+      "n_documents": 3
+    }
+  },
+  "glm-5.2": {
+    "model": "glm-5.2",
+    "per_document": {
+      "actt1": {
+        "doc_id": "actt1",
+        "per_field": {
+          "doc_id": {
+            "correct": false,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "reason": "",
+            "field": "doc_id",
+            "category": "string",
+            "gold": "actt1",
+            "predicted": null
+          },
+          "nct_id": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "nct_id",
+            "category": "string",
+            "gold": "NCT04280705",
+            "predicted": "NCT04280705"
+          },
+          "brief_title": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "brief_title",
+            "category": "string",
+            "gold": "Adaptive COVID-19 Treatment Trial (ACTT)",
+            "predicted": "Adaptive COVID-19 Treatment Trial (ACTT)"
+          },
+          "official_title": {
+            "correct": false,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "reason": "",
+            "field": "official_title",
+            "category": "string",
+            "gold": "A Multicenter, Adaptive, Randomized Blinded Controlled Trial of the Safety and Efficacy of Investigational Therapeutics for the Treatment of COVID-19",
+            "predicted": "A Multicenter, Adaptive, Randomized Blinded Controlled Trial of the Safety and Efficacy of Investigational Therapeutics for the Treatment of COVID-19 in Hospitalized Adults"
+          },
+          "lead_sponsor": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "lead_sponsor",
+            "category": "string",
+            "gold": "National Institute of Allergy and Infectious Diseases (NIAID)",
+            "predicted": "National Institute of Allergy and Infectious Diseases (NIAID)"
+          },
+          "sponsor_class": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "sponsor_class",
+            "category": "categorical",
+            "gold": "NIH",
+            "predicted": "NIH"
+          },
+          "collaborators": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "collaborators",
+            "category": "list",
+            "gold": [],
+            "predicted": []
+          },
+          "conditions": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "conditions",
+            "category": "list",
+            "gold": [
+              "COVID-19"
+            ],
+            "predicted": [
+              "COVID-19"
+            ]
+          },
+          "phases": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "phases",
+            "category": "list",
+            "gold": [
+              "Phase 3"
+            ],
+            "predicted": [
+              "Phase 3"
+            ]
+          },
+          "study_type": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "study_type",
+            "category": "categorical",
+            "gold": "INTERVENTIONAL",
+            "predicted": "INTERVENTIONAL"
+          },
+          "allocation": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "allocation",
+            "category": "categorical",
+            "gold": "RANDOMIZED",
+            "predicted": "RANDOMIZED"
+          },
+          "primary_purpose": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "primary_purpose",
+            "category": "categorical",
+            "gold": "TREATMENT",
+            "predicted": "TREATMENT"
+          },
+          "masking": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "masking",
+            "category": "categorical",
+            "gold": "DOUBLE",
+            "predicted": "DOUBLE"
+          },
+          "who_masked": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "who_masked",
+            "category": "list",
+            "gold": [
+              "PARTICIPANT",
+              "INVESTIGATOR"
+            ],
+            "predicted": [
+              "PARTICIPANT",
+              "INVESTIGATOR"
+            ]
+          },
+          "enrollment_count": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "enrollment_count",
+            "category": "numeric",
+            "gold": 1062,
+            "predicted": 1062
+          },
+          "enrollment_type": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "enrollment_type",
+            "category": "categorical",
+            "gold": "ACTUAL",
+            "predicted": "ACTUAL"
+          },
+          "overall_status": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "overall_status",
+            "category": "categorical",
+            "gold": "COMPLETED",
+            "predicted": "COMPLETED"
+          },
+          "start_date": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "start_date",
+            "category": "date",
+            "gold": "2020-02-21",
+            "predicted": "2020-02-21"
+          },
+          "primary_completion_date": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "primary_completion_date",
+            "category": "date",
+            "gold": "2020-05-21",
+            "predicted": "2020-05-21"
+          },
+          "completion_date": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "completion_date",
+            "category": "date",
+            "gold": "2020-05-21",
+            "predicted": "2020-05-21"
+          },
+          "arms": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "arms",
+            "category": "list",
+            "gold": [
+              {
+                "label": "Placebo",
+                "type": "PLACEBO_COMPARATOR",
+                "description": "200 mg of Remdesivir placebo administered intravenously on Day 1, followed by a 100 mg dose daily for up to 10 days"
+              },
+              {
+                "label": "Remdesivir",
+                "type": "EXPERIMENTAL",
+                "description": "200 mg of Remdesivir administered intravenously on Day 1, followed by a 100 mg dose daily for up to 10 days"
+              }
+            ],
+            "predicted": [
+              {
+                "description": "200 mg of Remdesivir placebo administered intravenously on Day 1, followed by a 100 mg once-daily maintenance dose of Remdesivir placebo while hospitalized for up to a 10 days total course. n=286.",
+                "label": "Placebo",
+                "type": "PLACEBO_COMPARATOR"
+              },
+              {
+                "description": "200 mg of Remdesivir administered intravenously on Day 1, followed by a 100 mg once-daily maintenance dose of Remdesivir while hospitalized for up to a 10 days total course. n=286.",
+                "label": "Remdesivir",
+                "type": "EXPERIMENTAL"
+              }
+            ]
+          },
+          "interventions": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "interventions",
+            "category": "list",
+            "gold": [
+              {
+                "type": "OTHER",
+                "name": "Placebo",
+                "description": "The supplied placebo lyophilized formulation is identical in physical appearance to Remdesivir"
+              },
+              {
+                "type": "DRUG",
+                "name": "Remdesivir",
+                "description": "Drug Remdesivir is a single diastereomer monophosphoramidate prodrug"
+              }
+            ],
+            "predicted": [
+              {
+                "description": "The supplied placebo lyophilized formulation is identical in physical appearance to the active lyophilized formulation and contains the same inactive ingredients. Alternatively, a placebo of normal saline of equal volume may be given if there are limitations on matching placebo supplies.",
+                "name": "Placebo",
+                "type": "OTHER"
+              },
+              {
+                "description": "Drug Remdesivir is a single diastereomer monophosphoramidate prodrug designed for the intracellular delivery of a modified adenine nucleoside analog GS-441524. In addition to the active ingredient, the lyophilized formulation of Remdesivir contains the following inactive ingredients: water for injection, sulfobutylether beta-cyclodextrin sodium (SBECD), and hydrochloric acid and/or sodium hydroxide.",
+                "name": "Remdesivir",
+                "type": "DRUG"
+              }
+            ]
+          },
+          "eligibility_sex": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "eligibility_sex",
+            "category": "categorical",
+            "gold": "ALL",
+            "predicted": "ALL"
+          },
+          "eligibility_min_age": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "eligibility_min_age",
+            "category": "string",
+            "gold": "18 Years",
+            "predicted": "18 Years"
+          },
+          "eligibility_max_age": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "eligibility_max_age",
+            "category": "string",
+            "gold": "99 Years",
+            "predicted": "99 Years"
+          },
+          "healthy_volunteers": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "healthy_volunteers",
+            "category": "boolean",
+            "gold": false,
+            "predicted": false
+          },
+          "inclusion_criteria": {
+            "correct": false,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "field": "inclusion_criteria",
+            "category": "list",
+            "gold": [
+              "Admitted to a hospital with symptoms suggestive of COVID-19 infection",
+              "Subject or legally authorized representative provides informed consent prior to initiation of any study procedures",
+              "Male or non-pregnant female adult >= 18 years of age at time of enrollment",
+              "Has laboratory-confirmed SARS-CoV-2 infection as determined by PCR or other commercial or public health assay",
+              "Illness of any duration with at least one of: radiographic infiltrates, SpO2 <= 94% on room air, requiring supplemental oxygen, or requiring mechanical ventilation",
+              "Women of childbearing potential must agree to abstinence or use at least one primary form of contraception from screening through Day 29",
+              "Agrees to not participate in another clinical trial for the treatment of COVID-19 through Day 29"
+            ],
+            "predicted": [
+              "Admitted to a hospital with symptoms suggestive of COVID-19 infection.",
+              "Subject (or legally authorized representative) provides informed consent prior to initiation of any study procedures.",
+              "Subject (or legally authorized representative) understands and agrees to comply with planned study procedures.",
+              "Male or non-pregnant female adult > / = 18 years of age at time of enrollment.",
+              "Has laboratory-confirmed SARS-CoV-2 infection as determined by polymerase chain reaction (PCR) or other commercial or public health assay in any specimen, as documented by either or the following: 1. PCR positive in sample collected < 72 hours prior to randomization; OR 2. PCR positive in sample collected >/= 72 hours prior to randomization, documented inability to obtain a repeat sample (e.g. due to lack of testing supplies, limited testing capacity, results taking >24 hours, etc.) AND progressive disease suggestive of ongoing SARS-CoV-2 infection.",
+              "Illness of any duration, and at least one of the following: 1. Radiographic infiltrates by imaging (chest x-ray, CT scan, etc.), OR 2. SpO2 < / = 94% on room air, OR 3. Requiring supplemental oxygen, OR 4. Requiring mechanical ventilation.",
+              "Women of childbearing potential must agree to either abstinence or use at least one primary form of contraception not including hormonal contraception from the time of screening through Day 29.",
+              "Agrees to not participate in another clinical trial for the treatment of COVID-19 or SARS-CoV-2 through Day 29."
+            ]
+          },
+          "exclusion_criteria": {
+            "correct": false,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "field": "exclusion_criteria",
+            "category": "list",
+            "gold": [
+              "ALT or AST > 5 times the upper limit of normal",
+              "Estimated glomerular filtration rate (eGFR) < 30 ml/min (including patients receiving hemodialysis or hemofiltration)",
+              "Pregnancy or breast feeding",
+              "Anticipated discharge from the hospital or transfer to another hospital which is not a study site within 72 hours",
+              "Allergy to any study medication"
+            ],
+            "predicted": [
+              "Alanine Transaminase (ALT) or Aspartate Transaminase (AST) > 5 times the upper limit of normal.",
+              "Estimated glomerular filtration rate (eGFR) < 30 ml/min (including patients receiving hemodialysis or hemofiltration).",
+              "Pregnancy or breast feeding.",
+              "Anticipated discharge from the hospital or transfer to another hospital which is not a study site within 72 hours.",
+              "Allergy to any study medication."
+            ]
+          },
+          "primary_outcomes": {
+            "correct": false,
+            "precision": 0.25,
+            "recall": 1.0,
+            "f1": 0.4,
+            "field": "primary_outcomes",
+            "category": "list",
+            "gold": [
+              {
+                "measure": "Time to Recovery",
+                "time_frame": "Day 1 through Day 29"
+              }
+            ],
+            "predicted": [
+              {
+                "measure": "Time to Recovery",
+                "time_frame": "Day 1 through Day 29"
+              },
+              {
+                "measure": "Time to Recovery by Race",
+                "time_frame": "Day 1 through Day 29"
+              },
+              {
+                "measure": "Time to Recovery by Ethnicity",
+                "time_frame": "Day 1 through Day 29"
+              },
+              {
+                "measure": "Time to Recovery by Sex",
+                "time_frame": "Day 1 through Day 29"
+              }
+            ]
+          },
+          "secondary_outcomes": {
+            "correct": false,
+            "precision": 0.1282,
+            "recall": 1.0,
+            "f1": 0.2273,
+            "field": "secondary_outcomes",
+            "category": "list",
+            "gold": [
+              {
+                "measure": "Change From Baseline in Alanine Transaminase (ALT)",
+                "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+              },
+              {
+                "measure": "Change in National Early Warning Score (NEWS) From Baseline",
+                "time_frame": "Days 1, 3, 5, 8, 11, 15, 22, and 29"
+              },
+              {
+                "measure": "14-day Participant Mortality",
+                "time_frame": "Day 1 through Day 15"
+              },
+              {
+                "measure": "29-day Participant Mortality",
+                "time_frame": "Day 1 through Day 29"
+              },
+              {
+                "measure": "Duration of Hospitalization",
+                "time_frame": "Day 1 through Day 29"
+              }
+            ],
+            "predicted": [
+              {
+                "measure": "Change From Baseline in Alanine Transaminase (ALT)",
+                "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+              },
+              {
+                "measure": "Change From Baseline in Aspartate Transaminase (AST)",
+                "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+              },
+              {
+                "measure": "Change From Baseline in Creatinine",
+                "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+              },
+              {
+                "measure": "Change From Baseline in Glucose",
+                "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+              },
+              {
+                "measure": "Change From Baseline in Hemoglobin",
+                "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+              },
+              {
+                "measure": "Change From Baseline in Platelets",
+                "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+              },
+              {
+                "measure": "Change From Baseline in Prothrombin Time (PT)",
+                "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+              },
+              {
+                "measure": "Change From Baseline in Total Bilirubin",
+                "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+              },
+              {
+                "measure": "Change From Baseline in White Blood Cell Count (WBC)",
+                "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+              },
+              {
+                "measure": "Change From Baseline in Neutrophils",
+                "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+              },
+              {
+                "measure": "Change From Baseline in Lymphocytes",
+                "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+              },
+              {
+                "measure": "Change From Baseline in Monocytes",
+                "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+              },
+              {
+                "measure": "Change From Baseline in Basophils",
+                "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+              },
+              {
+                "measure": "Change From Baseline in Eosinophils",
+                "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+              },
+              {
+                "measure": "Change in National Early Warning Score (NEWS) From Baseline",
+                "time_frame": "Days 1, 3, 5, 8, 11, 15, 22, and 29"
+              },
+              {
+                "measure": "Percentage of Participants at Each Clinical Status Using Ordinal Scale at Day 1",
+                "time_frame": "Day 1"
+              },
+              {
+                "measure": "Percentage of Participants at Each Clinical Status Using Ordinal Scale at Day 3",
+                "time_frame": "Day 3"
+              },
+              {
+                "measure": "Percentage of Participants at Each Clinical Status Using Ordinal Scale at Day 5",
+                "time_frame": "Day 5"
+              },
+              {
+                "measure": "Percentage of Participants at Each Clinical Status Using Ordinal Scale at Day 8",
+                "time_frame": "Day 8"
+              },
+              {
+                "measure": "Percentage of Participants at Each Clinical Status Using Ordinal Scale at Day 11",
+                "time_frame": "Day 11"
+              },
+              {
+                "measure": "Percentage of Participants at Each Clinical Status Using Ordinal Scale at Day 15",
+                "time_frame": "Day 15"
+              },
+              {
+                "measure": "Percentage of Participants at Each Clinical Status Using Ordinal Scale at Day 22",
+                "time_frame": "Day 22"
+              },
+              {
+                "measure": "Percentage of Participants at Each Clinical Status Using Ordinal Scale at Day 29",
+                "time_frame": "Day 29"
+              },
+              {
+                "measure": "Percentage of Participants Reporting Grade 3 and 4 Clinical and/or Laboratory Adverse Events (AEs)",
+                "time_frame": "Day 1 through Day 29"
+              },
+              {
+                "measure": "Percentage of Participants Reporting Serious Adverse Events (SAEs)",
+                "time_frame": "Day 1 through Day 29"
+              },
+              {
+                "measure": "Percentage of Participants Discontinued or Temporarily Suspended From Investigational Therapeutics",
+                "time_frame": "Day 1 through Day 10"
+              },
+              {
+                "measure": "Duration of Hospitalization",
+                "time_frame": "Day 1 through Day 29"
+              },
+              {
+                "measure": "Duration of New Non-invasive Ventilation or High Flow Oxygen Use",
+                "time_frame": "Day 1 through Day 29"
+              },
+              {
+                "measure": "Duration of New Oxygen Use",
+                "time_frame": "Day 1 through Day 29"
+              },
+              {
+                "measure": "Duration of New Ventilator or Extracorporeal Membrane Oxygenation (ECMO) Use",
+                "time_frame": "Day 1 through Day 29"
+              },
+              {
+                "measure": "Percentage of Participants Requiring New Non-invasive Ventilation or High-flow Oxygen Use",
+                "time_frame": "Day 1 through Day 29"
+              },
+              {
+                "measure": "Percentage of Participants Requiring New Oxygen Use",
+                "time_frame": "Day 1 through Day 29"
+              },
+              {
+                "measure": "Percentage of Participants Requiring New Ventilator or Extracorporeal Membrane Oxygenation (ECMO) Use",
+                "time_frame": "Day 1 through Day 29"
+              },
+              {
+                "measure": "Mean Change in the Ordinal Scale",
+                "time_frame": "Day 1, 3, 5, 8, 11, 15, 22, and 29"
+              },
+              {
+                "measure": "14-day Participant Mortality",
+                "time_frame": "Day 1 through Day 15"
+              },
+              {
+                "measure": "29-day Participant Mortality",
+                "time_frame": "Day 1 through Day 29"
+              },
+              {
+                "measure": "Time to an Improvement by at Least One Category Using an Ordinal Scale",
+                "time_frame": "Day 1 through Day 29"
+              },
+              {
+                "measure": "Time to an Improvement of at Least Two Categories Using an Ordinal Scale",
+                "time_frame": "Day 1 through Day 29"
+              },
+              {
+                "measure": "Time to Discharge or to a NEWS of 2 or Less and Maintained for 24 Hours, Whichever Occurs First",
+                "time_frame": "Day 1 through Day 29"
+              }
+            ]
+          }
+        },
+        "aggregates": {
+          "precision": 0.8126,
+          "recall": 0.8667,
+          "f1": 0.8209,
+          "n_fields": 30
+        }
+      },
+      "area3": {
+        "doc_id": "area3",
+        "per_field": {
+          "doc_id": {
+            "correct": false,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "reason": "",
+            "field": "doc_id",
+            "category": "string",
+            "gold": "area3",
+            "predicted": null
+          },
+          "nct_id": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "nct_id",
+            "category": "string",
+            "gold": "NCT03036150",
+            "predicted": "NCT03036150"
+          },
+          "brief_title": {
+            "correct": false,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "reason": "",
+            "field": "brief_title",
+            "category": "string",
+            "gold": "A Study to Evaluate the Effect of Dapagliflozin on Renal Outcomes and Cardiovascular Mortality in Patients With Chronic Kidney Disease (DAPA-CKD)",
+            "predicted": "A Study to Evaluate the Effect of Dapagliflozin on Renal Outcomes and Cardiovascular Mortality in Patients With Chronic Kidney Disease"
+          },
+          "official_title": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "official_title",
+            "category": "string",
+            "gold": "A Study to Evaluate the Effect of Dapagliflozin on Renal Outcomes and Cardiovascular Mortality in Patients With Chronic Kidney Disease",
+            "predicted": "A Study to Evaluate the Effect of Dapagliflozin on Renal Outcomes and Cardiovascular Mortality in Patients With Chronic Kidney Disease"
+          },
+          "lead_sponsor": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "lead_sponsor",
+            "category": "string",
+            "gold": "AstraZeneca",
+            "predicted": "AstraZeneca"
+          },
+          "sponsor_class": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "sponsor_class",
+            "category": "categorical",
+            "gold": "INDUSTRY",
+            "predicted": "INDUSTRY"
+          },
+          "collaborators": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "collaborators",
+            "category": "list",
+            "gold": [],
+            "predicted": []
+          },
+          "conditions": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "conditions",
+            "category": "list",
+            "gold": [
+              "Chronic Kidney Disease"
+            ],
+            "predicted": [
+              "Chronic Kidney Disease"
+            ]
+          },
+          "phases": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "phases",
+            "category": "list",
+            "gold": [
+              "Phase 3"
+            ],
+            "predicted": [
+              "Phase 3"
+            ]
+          },
+          "study_type": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "study_type",
+            "category": "categorical",
+            "gold": "INTERVENTIONAL",
+            "predicted": "INTERVENTIONAL"
+          },
+          "allocation": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "allocation",
+            "category": "categorical",
+            "gold": "RANDOMIZED",
+            "predicted": "RANDOMIZED"
+          },
+          "primary_purpose": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "primary_purpose",
+            "category": "categorical",
+            "gold": "TREATMENT",
+            "predicted": "TREATMENT"
+          },
+          "masking": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "masking",
+            "category": "categorical",
+            "gold": "QUADRUPLE",
+            "predicted": "QUADRUPLE"
+          },
+          "who_masked": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "who_masked",
+            "category": "list",
+            "gold": [
+              "PARTICIPANT",
+              "CARE_PROVIDER",
+              "INVESTIGATOR",
+              "OUTCOMES_ASSESSOR"
+            ],
+            "predicted": [
+              "PARTICIPANT",
+              "CARE_PROVIDER",
+              "INVESTIGATOR",
+              "OUTCOMES_ASSESSOR"
+            ]
+          },
+          "enrollment_count": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "enrollment_count",
+            "category": "numeric",
+            "gold": 4304,
+            "predicted": 4304
+          },
+          "enrollment_type": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "enrollment_type",
+            "category": "categorical",
+            "gold": "ACTUAL",
+            "predicted": "ACTUAL"
+          },
+          "overall_status": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "overall_status",
+            "category": "categorical",
+            "gold": "COMPLETED",
+            "predicted": "COMPLETED"
+          },
+          "start_date": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "start_date",
+            "category": "date",
+            "gold": "2017-02-02",
+            "predicted": "2017-02-02"
+          },
+          "primary_completion_date": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "primary_completion_date",
+            "category": "date",
+            "gold": "2020-06-12",
+            "predicted": "2020-06-12"
+          },
+          "completion_date": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "completion_date",
+            "category": "date",
+            "gold": "2020-06-12",
+            "predicted": "2020-06-12"
+          },
+          "arms": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "arms",
+            "category": "list",
+            "gold": [
+              {
+                "label": "Dapagliflozin",
+                "type": "EXPERIMENTAL",
+                "description": "Patients randomized 1:1 to dapagliflozin or placebo. 10 mg or 5 mg tablets given once daily, per oral use."
+              },
+              {
+                "label": "Placebo",
+                "type": "PLACEBO_COMPARATOR",
+                "description": "Placebo matching dapagliflozin 10 mg or 5 mg"
+              }
+            ],
+            "predicted": [
+              {
+                "description": "Patients will be randomized 1:1 to either dapagliflozin or placebo.",
+                "label": "Dapagliflozin",
+                "type": "EXPERIMENTAL"
+              },
+              {
+                "description": "Placebo matching dapagliflozin.",
+                "label": "Placebo",
+                "type": "PLACEBO_COMPARATOR"
+              }
+            ]
+          },
+          "interventions": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "interventions",
+            "category": "list",
+            "gold": [
+              {
+                "type": "DRUG",
+                "name": "Dapagliflozin",
+                "description": "10 mg or 5 mg tablets given once daily, per oral use"
+              },
+              {
+                "type": "DRUG",
+                "name": "Placebo",
+                "description": "Placebo matching dapagliflozin 10 mg or 5 mg"
+              }
+            ],
+            "predicted": [
+              {
+                "description": "10 mg or 5 mg tablets given once daily, per oral use.",
+                "name": "Dapagliflozin",
+                "type": "DRUG"
+              },
+              {
+                "description": "Placebo matching dapagliflozin 10 mg or 5 mg",
+                "name": "Placebo",
+                "type": "DRUG"
+              }
+            ]
+          },
+          "eligibility_sex": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "eligibility_sex",
+            "category": "categorical",
+            "gold": "ALL",
+            "predicted": "ALL"
+          },
+          "eligibility_min_age": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "eligibility_min_age",
+            "category": "string",
+            "gold": "18 Years",
+            "predicted": "18 Years"
+          },
+          "eligibility_max_age": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "eligibility_max_age",
+            "category": "string",
+            "gold": "130 Years",
+            "predicted": "130 Years"
+          },
+          "healthy_volunteers": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "healthy_volunteers",
+            "category": "boolean",
+            "gold": false,
+            "predicted": false
+          },
+          "inclusion_criteria": {
+            "correct": false,
+            "precision": 0.2,
+            "recall": 0.2,
+            "f1": 0.2,
+            "field": "inclusion_criteria",
+            "category": "list",
+            "gold": [
+              "Provision of signed informed consent prior to any study specific procedures",
+              "Female or male aged >= 18 years at the time of consent",
+              "eGFR >= 25 and <= 75 mL/min/1.73m2 (CKD-EPI Formula) at visit 1",
+              "Evidence of increased albuminuria 3 months or more before visit 1 and UACR >= 200 and <= 5000 mg/g at visit 1",
+              "Stable, maximum tolerated labelled daily dose of ACE-I or ARB for at least 4 weeks before visit 1, if not medically contraindicated"
+            ],
+            "predicted": [
+              "Provision of signed informed consent prior to any study specific procedures",
+              "Female or male aged \u226518 years at the time of consent",
+              "eGFR \u226525 and \u226475 mL/min/1.73m2 (CKD-EPI Formula) at visit 1",
+              "Evidence of increased albuminuria 3 months or more before visit 1 and UACR \u2265200 and \u22645000 mg/g at visit 1",
+              "Stable, and for the patient maximum tolerated labelled daily dose, treatment with ACE-I or ARB for at least 4 weeks before visit 1, if not medically contraindicated"
+            ]
+          },
+          "exclusion_criteria": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "exclusion_criteria",
+            "category": "list",
+            "gold": [
+              "Autosomal dominant or autosomal recessive polycystic kidney disease, lupus nephritis or ANCA-associated vasculitis",
+              "Receiving cytotoxic therapy, immunosuppressive therapy or other immunotherapy for primary or secondary renal disease within 6 months prior to enrolment",
+              "History of organ transplantation",
+              "Receiving therapy with an SGLT2 inhibitor within 8 weeks prior to enrolment or previous intolerance of an SGLT2 inhibitor",
+              "Type 1 diabetes mellitus",
+              "New York Heart Association (NYHA) class IV Congestive Heart Failure at the time of enrolment",
+              "MI, unstable angina, stroke or transient ischemic attack within 12 weeks prior to enrolment"
+            ],
+            "predicted": [
+              "Autosomal dominant or autosomal recessive polycystic kidney disease, lupus nephritis or ANCA-associated vasculitis",
+              "Receiving cytotoxic therapy, immunosuppressive therapy or other immunotherapy for primary or secondary renal disease within 6 months prior to enrolment",
+              "History of organ transplantation",
+              "Receiving therapy with an SGLT2 inhibitor within 8 weeks prior to enrolment or previous intolerance of an SGLT2 inhibitor",
+              "Type 1 diabetes mellitus",
+              "New York Heart Association (NYHA) class IV Congestive Heart Failure at the time of enrolment",
+              "MI, unstable angina, stroke or transient ischemic attack within 12 weeks prior to enrolment"
+            ]
+          },
+          "primary_outcomes": {
+            "correct": false,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "field": "primary_outcomes",
+            "category": "list",
+            "gold": [
+              {
+                "measure": "Time to the First Occurrence of Any of the Components of the Composite: >= 50% Sustained Decline in eGFR, End Stage Kidney Disease, Renal Death or Cardiovascular Death",
+                "time_frame": "Up to 38.2 months"
+              }
+            ],
+            "predicted": [
+              {
+                "measure": "Time to the First Occurrence of Any of the Components of the Composite: \u226550% Sustained Decline in eGFR or Reaching ESRD or CV Death or Renal Death.",
+                "time_frame": "Up to 38.2 months"
+              }
+            ]
+          },
+          "secondary_outcomes": {
+            "correct": false,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "field": "secondary_outcomes",
+            "category": "list",
+            "gold": [
+              {
+                "measure": "Time to the First Occurrence of Any of the Components of the Composite: >= 50% Sustained Decline in eGFR, End Stage Kidney Disease or Renal Death",
+                "time_frame": "Up to 38.2 months"
+              },
+              {
+                "measure": "Time to the First Occurrence of Either of the Components of the Composite: Cardiovascular Death or Hospitalization for Heart Failure",
+                "time_frame": "Up to 38.2 months"
+              },
+              {
+                "measure": "Time to Death From Any Cause",
+                "time_frame": "Up to 38.2 months"
+              }
+            ],
+            "predicted": [
+              {
+                "measure": "Time to the First Occurrence of Any of the Components of the Composite: \u226550% Sustained Decline in eGFR or Reaching ESRD or Renal Death.",
+                "time_frame": "Up to 38.2 months"
+              },
+              {
+                "measure": "Time to the First Occurrence of Either of the Components of the Composite: CV Death or Hospitalization for Heart Failure.",
+                "time_frame": "Up to 38.2 months"
+              },
+              {
+                "measure": "Time to Death From Any Cause.",
+                "time_frame": "Up to 38.2 months"
+              }
+            ]
+          }
+        },
+        "aggregates": {
+          "precision": 0.84,
+          "recall": 0.84,
+          "f1": 0.84,
+          "n_fields": 30
+        }
+      },
+      "onc1": {
+        "doc_id": "onc1",
+        "per_field": {
+          "doc_id": {
+            "correct": false,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "reason": "",
+            "field": "doc_id",
+            "category": "string",
+            "gold": "onc1",
+            "predicted": null
+          },
+          "nct_id": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "nct_id",
+            "category": "string",
+            "gold": "NCT01642004",
+            "predicted": "NCT01642004"
+          },
+          "brief_title": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "brief_title",
+            "category": "string",
+            "gold": "Study of BMS-936558 (Nivolumab) Compared to Docetaxel in Previously Treated Advanced or Metastatic Squamous Cell Non-small Cell Lung Cancer (NSCLC) (CheckMate 017)",
+            "predicted": "Study of BMS-936558 (Nivolumab) Compared to Docetaxel in Previously Treated Advanced or Metastatic Squamous Cell Non-small Cell Lung Cancer (NSCLC) (CheckMate 017)"
+          },
+          "official_title": {
+            "correct": false,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "reason": "",
+            "field": "official_title",
+            "category": "string",
+            "gold": "An Open-Label Randomized Phase III Trial of BMS-936558 (Nivolumab) Versus Docetaxel in Previously Treated Advanced or Metastatic Squamous Cell Non-small Cell Lung Cancer",
+            "predicted": "An Open-Label Randomized Phase III Trial of BMS-936558 (Nivolumab) Versus Docetaxel in Previously Treated Advanced or Metastatic Squamous Cell Non-small Cell Lung Cancer (NSCLC)"
+          },
+          "lead_sponsor": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "lead_sponsor",
+            "category": "string",
+            "gold": "Bristol-Myers Squibb",
+            "predicted": "Bristol-Myers Squibb"
+          },
+          "sponsor_class": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "sponsor_class",
+            "category": "categorical",
+            "gold": "INDUSTRY",
+            "predicted": "INDUSTRY"
+          },
+          "collaborators": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "collaborators",
+            "category": "list",
+            "gold": [],
+            "predicted": []
+          },
+          "conditions": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "conditions",
+            "category": "list",
+            "gold": [
+              "Squamous Cell Non-small Cell Lung Cancer"
+            ],
+            "predicted": [
+              "Squamous Cell Non-small Cell Lung Cancer"
+            ]
+          },
+          "phases": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "phases",
+            "category": "list",
+            "gold": [
+              "Phase 3"
+            ],
+            "predicted": [
+              "Phase 3"
+            ]
+          },
+          "study_type": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "study_type",
+            "category": "categorical",
+            "gold": "INTERVENTIONAL",
+            "predicted": "INTERVENTIONAL"
+          },
+          "allocation": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "allocation",
+            "category": "categorical",
+            "gold": "RANDOMIZED",
+            "predicted": "RANDOMIZED"
+          },
+          "primary_purpose": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "primary_purpose",
+            "category": "categorical",
+            "gold": "TREATMENT",
+            "predicted": "TREATMENT"
+          },
+          "masking": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "masking",
+            "category": "categorical",
+            "gold": "NONE",
+            "predicted": "NONE"
+          },
+          "who_masked": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "who_masked",
+            "category": "list",
+            "gold": [],
+            "predicted": []
+          },
+          "enrollment_count": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "enrollment_count",
+            "category": "numeric",
+            "gold": 272,
+            "predicted": 272
+          },
+          "enrollment_type": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "enrollment_type",
+            "category": "categorical",
+            "gold": "ACTUAL",
+            "predicted": "ACTUAL"
+          },
+          "overall_status": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "overall_status",
+            "category": "categorical",
+            "gold": "COMPLETED",
+            "predicted": "COMPLETED"
+          },
+          "start_date": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "start_date",
+            "category": "date",
+            "gold": "2012-10-16",
+            "predicted": "2012-10-16"
+          },
+          "primary_completion_date": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "primary_completion_date",
+            "category": "date",
+            "gold": "2014-11-17",
+            "predicted": "2014-11-17"
+          },
+          "completion_date": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "completion_date",
+            "category": "date",
+            "gold": "2021-08-16",
+            "predicted": "2021-08-16"
+          },
+          "arms": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "arms",
+            "category": "list",
+            "gold": [
+              {
+                "label": "Arm A: Nivolumab",
+                "type": "EXPERIMENTAL",
+                "description": "Nivolumab 3 mg/kg solution intravenously (IV) every 2 weeks until documented disease progression or unacceptable toxicity"
+              },
+              {
+                "label": "Arm B: Docetaxel",
+                "type": "EXPERIMENTAL",
+                "description": "Docetaxel 75 mg/m^2 concentrate for solution for intravenous infusion every 3 weeks until documented disease progression or unacceptable toxicity"
+              }
+            ],
+            "predicted": [
+              {
+                "description": "Nivolumab 3 mg/kg solution intravenously (IV) every 2 weeks until documented disease progression, discontinuation due to toxicity, withdrawal of consent or the study ends. Eligible patients may receive nivolumab at 480mg every 4 weeks until documented disease progression, discontinuation, withdrawal of consent or the study ends.",
+                "label": "Arm A: Nivolumab",
+                "type": "EXPERIMENTAL"
+              },
+              {
+                "description": "Docetaxel 75 mg/m^2 concentrate for solution for intravenous infusion every 3 weeks until documented disease progression, discontinuation due to toxicity, withdrawal of consent or the study ends. Eligible patients may receive nivolumab at 480mg every 4 weeks until documented disease progression, discontinuation, withdrawal of consent or the study ends.",
+                "label": "Arm B: Docetaxel",
+                "type": "EXPERIMENTAL"
+              }
+            ]
+          },
+          "interventions": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "interventions",
+            "category": "list",
+            "gold": [
+              {
+                "type": "BIOLOGICAL",
+                "name": "Nivolumab",
+                "description": "Anti-PD-1 monoclonal antibody"
+              },
+              {
+                "type": "DRUG",
+                "name": "Docetaxel",
+                "description": "Chemotherapy agent"
+              }
+            ],
+            "predicted": [
+              {
+                "description": null,
+                "name": "Nivolumab",
+                "type": "BIOLOGICAL"
+              },
+              {
+                "description": null,
+                "name": "Docetaxel",
+                "type": "DRUG"
+              }
+            ]
+          },
+          "eligibility_sex": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "eligibility_sex",
+            "category": "categorical",
+            "gold": "ALL",
+            "predicted": "ALL"
+          },
+          "eligibility_min_age": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "eligibility_min_age",
+            "category": "string",
+            "gold": "18 Years",
+            "predicted": "18 Years"
+          },
+          "eligibility_max_age": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "eligibility_max_age",
+            "category": "string",
+            "gold": null,
+            "predicted": null
+          },
+          "healthy_volunteers": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "healthy_volunteers",
+            "category": "boolean",
+            "gold": false,
+            "predicted": false
+          },
+          "inclusion_criteria": {
+            "correct": false,
+            "precision": 0.1667,
+            "recall": 0.1667,
+            "f1": 0.1667,
+            "field": "inclusion_criteria",
+            "category": "list",
+            "gold": [
+              "Men and women >= 18 years of age",
+              "Histologically or cytologically-documented squamous cell NSCLC with Stage IIIB/IV disease or recurrent/progressive disease following multimodal therapy",
+              "Disease recurrence or progression during/after one prior platinum doublet-based chemotherapy regimen for advanced or metastatic disease",
+              "Measurable disease by CT/MRI per RECIST 1.1 criteria",
+              "Eastern Cooperative Oncology Group (ECOG) performance status <= 1",
+              "FFPE tumor tissue block or unstained slides available for biomarker evaluation, received by central lab prior to randomization"
+            ],
+            "predicted": [
+              "Men and women \u226518 years of age",
+              "Subjects with histologically or cytologically-documented squamous cell NSCLC who present with Stage IIIB/IV disease or with recurrent or progressive disease following multimodal therapy (radiation therapy, surgical resection or definitive chemoradiation therapy for locally advanced disease)",
+              "Disease recurrence or progression during/after one prior platinum doublet-based chemotherapy regimen for advanced or metastatic disease",
+              "Measurable disease by computed tomography (CT)/Magnetic resonance imaging (MRI) per Response Evaluation Criteria in Solid Tumors (RECIST) 1.1 criteria",
+              "Eastern Cooperative Oncology Group (ECOG) performance status \u22641",
+              "A formalin fixed, paraffin-embedded (FFPE) tumor tissue block or unstained slides of tumor sample (archival or recent) must be available for biomarker evaluation. Specimens must be received by the central lab prior to randomization. Biopsy should be excisional, incisional or core needle. Fine needle aspiration is insufficient"
+            ]
+          },
+          "exclusion_criteria": {
+            "correct": false,
+            "precision": 0.2222,
+            "recall": 0.25,
+            "f1": 0.2353,
+            "field": "exclusion_criteria",
+            "category": "list",
+            "gold": [
+              "Untreated CNS metastases (eligible if treated and neurologically stable for >= 2 weeks, off corticosteroids or on stable/decreasing dose <= 10 mg daily prednisone)",
+              "Carcinomatous meningitis",
+              "Active, known or suspected autoimmune disease (exceptions: type I diabetes, hypothyroidism on replacement, skin disorders not requiring systemic treatment)",
+              "Condition requiring systemic treatment with corticosteroids or other immunosuppressive medications within 14 days of randomization",
+              "Prior therapy with anti-PD-1, anti-PD-L1, anti-PD-L2, anti-CD137, or anti-CTLA-4 antibody (including ipilimumab)",
+              "Prior treatment with Docetaxel",
+              "Symptomatic interstitial lung disease that may interfere with detection/management of drug-related pulmonary toxicity",
+              "Treatment with any investigational agent within 14 days of first administration of study treatment"
+            ],
+            "predicted": [
+              "Subjects with untreated central nervous system (CNS) metastases are excluded. Subjects are eligible if CNS metastases are treated and subjects are neurologically returned to baseline for at least 2 weeks prior to enrollment. In addition, subjects must be either off corticosteroids, or on a stable or decreasing dose of \u226410 mg daily prednisone (or equivalent)",
+              "Subjects with carcinomatous meningitis",
+              "Subjects with active, known or suspected autoimmune disease. Subjects with type I diabetes mellitus, hypothyroidism only requiring hormone replacement, skin disorders (such as vitiligo, psoriasis, or alopecia) not requiring systemic treatment, or conditions not expected to recur in the absence of an external trigger are permitted to enroll",
+              "Subjects with a condition requiring systemic treatment with either corticosteroids or other immunosuppressive medications within 14 days of randomization",
+              "Prior therapy with anti-Programmed death-1 (PD-1), anti-Programmed cell death ligand 1 (PD-L1), anti-Programmed cell death ligand 2 (PD-L2), anti-CD137, or anti-Cytotoxic T lymphocyte-associated antigen 4 (CTLA-4) antibody (including ipilimumab or any other antibody or drug specifically targeting T-cell co-stimulation or checkpoint pathways)",
+              "Prior treatment on the first line study CA184104 first line NSCLC study",
+              "Prior treatment with Docetaxel",
+              "Subjects with interstitial lung disease that is symptomatic or may interfere with the detection or management of suspected drug-related pulmonary toxicity",
+              "Treatment with any investigational agent within 14 days of first administration of study treatment"
+            ]
+          },
+          "primary_outcomes": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "primary_outcomes",
+            "category": "list",
+            "gold": [
+              {
+                "measure": "Overall Survival (OS) Time in Months for All Randomized Participants at Primary Endpoint",
+                "time_frame": "Randomization until 199 deaths, up to November 2014"
+              },
+              {
+                "measure": "Overall Survival (OS) Rate in All Randomized Participants",
+                "time_frame": "Randomization to 18 months post-randomization"
+              },
+              {
+                "measure": "Number of Deaths From Any Cause in All Randomized Participants at Primary Endpoint",
+                "time_frame": "Randomization until 199 deaths"
+              }
+            ],
+            "predicted": [
+              {
+                "measure": "Overall Survival (OS) Time in Months for All Randomized Participants at Primary Endpoint",
+                "time_frame": "Randomization until 199 deaths, up to November 2014, approximately 25 months"
+              },
+              {
+                "measure": "Overall Survival (OS) Rate in All Randomized Participants",
+                "time_frame": "Randomization to 18 months post-randomization, up to June 2015"
+              },
+              {
+                "measure": "Number of Deaths From Any Cause in All Randomized Participants at Primary Endpoint",
+                "time_frame": "Randomization until 199 deaths, up to November 2014, approximately 25 months"
+              }
+            ]
+          },
+          "secondary_outcomes": {
+            "correct": false,
+            "precision": 0.3333,
+            "recall": 1.0,
+            "f1": 0.5,
+            "field": "secondary_outcomes",
+            "category": "list",
+            "gold": [
+              {
+                "measure": "Objective Response Rate (ORR) in All Randomized Participants",
+                "time_frame": "From date of randomization up to date of objective disease progression"
+              },
+              {
+                "measure": "Progression-Free Survival (PFS) Time in Months for All Randomized Participants",
+                "time_frame": "From randomization up to first confirmed response"
+              },
+              {
+                "measure": "Duration of Objective Response (DOR) in Months for All Confirmed Responders",
+                "time_frame": "From date of first confirmed response to date of progression"
+              }
+            ],
+            "predicted": [
+              {
+                "measure": "Objective Response Rate (ORR) in All Randomized Participants",
+                "time_frame": "From the date of randomization up to the date of objectively documented progression, up to approximately 103 months"
+              },
+              {
+                "measure": "Time To Response (TTR) in Months for All Confirmed Responders",
+                "time_frame": "From the date of randomization to the date of the first confirmed response, up to approximately 12 months"
+              },
+              {
+                "measure": "Duration of Objective Response (DOR) in Months for All Confirmed Responders",
+                "time_frame": "From the date of first confirmed response to the date of the first documented tumor progression or death due to any cause, whichever occurred first, up to approximately 94 months"
+              },
+              {
+                "measure": "Progression Free Survival Rate (PFSR)",
+                "time_frame": "From randomization to specified timepoints, up to 84 months"
+              },
+              {
+                "measure": "Progression-Free Survival (PFS) Time in Months for All Randomized Participants",
+                "time_frame": "From randomization up to the first confirmed response to the date of the first documented tumor progression or death due to any cause, whichever occurred first, up to approximately 103 months"
+              },
+              {
+                "measure": "Percentage of Participants Experiencing Disease-related Symptom Improvement by Week 12",
+                "time_frame": "From randomization up to Week 12"
+              },
+              {
+                "measure": "Overall Survival (OS) Time in Months by Baseline PD-L1 Expression for All Randomized Participants",
+                "time_frame": "From the date of randomization to the date of death from any cause, up to approximately 103 months"
+              },
+              {
+                "measure": "Objective Response Rate (ORR) by Baseline PD-L1 Expression for All Randomized Participants",
+                "time_frame": "From the date of randomization up to the date of objectively documented progression, up to approximately 103 months"
+              },
+              {
+                "measure": "Progression Free Survival (PFS) Time in Months by Baseline PD-L1 Expression for All Randomized Participants",
+                "time_frame": "From the date of first confirmed response to the date of the first documented tumor progression or death due to any cause, whichever occurred first, up to approximately 103 months"
+              }
+            ]
+          }
+        },
+        "aggregates": {
+          "precision": 0.8574,
+          "recall": 0.8806,
+          "f1": 0.8634,
+          "n_fields": 30
+        }
+      }
+    },
+    "aggregates": {
+      "precision": 0.8367,
+      "recall": 0.8624,
+      "f1": 0.8414,
+      "n_documents": 3
+    }
+  },
+  "qwen3.5:397b": {
+    "model": "qwen3.5:397b",
+    "per_document": {
+      "actt1": {
+        "doc_id": "actt1",
+        "per_field": {
+          "doc_id": {
+            "correct": false,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "reason": "",
+            "field": "doc_id",
+            "category": "string",
+            "gold": "actt1",
+            "predicted": null
+          },
+          "nct_id": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "nct_id",
+            "category": "string",
+            "gold": "NCT04280705",
+            "predicted": "NCT04280705"
+          },
+          "brief_title": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "brief_title",
+            "category": "string",
+            "gold": "Adaptive COVID-19 Treatment Trial (ACTT)",
+            "predicted": "Adaptive COVID-19 Treatment Trial (ACTT)"
+          },
+          "official_title": {
+            "correct": false,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "reason": "",
+            "field": "official_title",
+            "category": "string",
+            "gold": "A Multicenter, Adaptive, Randomized Blinded Controlled Trial of the Safety and Efficacy of Investigational Therapeutics for the Treatment of COVID-19",
+            "predicted": "A Multicenter, Adaptive, Randomized Blinded Controlled Trial of the Safety and Efficacy of Investigational Therapeutics for the Treatment of COVID-19 in Hospitalized Adults"
+          },
+          "lead_sponsor": {
+            "correct": false,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "reason": "",
+            "field": "lead_sponsor",
+            "category": "string",
+            "gold": "National Institute of Allergy and Infectious Diseases (NIAID)",
+            "predicted": "National Institute of Allergy and Infectious Diseases (NIAID) (NIH)"
+          },
+          "sponsor_class": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "sponsor_class",
+            "category": "categorical",
+            "gold": "NIH",
+            "predicted": "NIH"
+          },
+          "collaborators": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "collaborators",
+            "category": "list",
+            "gold": [],
+            "predicted": []
+          },
+          "conditions": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "conditions",
+            "category": "list",
+            "gold": [
+              "COVID-19"
+            ],
+            "predicted": [
+              "COVID-19"
+            ]
+          },
+          "phases": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "phases",
+            "category": "list",
+            "gold": [
+              "Phase 3"
+            ],
+            "predicted": [
+              "Phase 3"
+            ]
+          },
+          "study_type": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "study_type",
+            "category": "categorical",
+            "gold": "INTERVENTIONAL",
+            "predicted": "INTERVENTIONAL"
+          },
+          "allocation": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "allocation",
+            "category": "categorical",
+            "gold": "RANDOMIZED",
+            "predicted": "RANDOMIZED"
+          },
+          "primary_purpose": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "primary_purpose",
+            "category": "categorical",
+            "gold": "TREATMENT",
+            "predicted": "TREATMENT"
+          },
+          "masking": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "masking",
+            "category": "categorical",
+            "gold": "DOUBLE",
+            "predicted": "DOUBLE"
+          },
+          "who_masked": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "who_masked",
+            "category": "list",
+            "gold": [
+              "PARTICIPANT",
+              "INVESTIGATOR"
+            ],
+            "predicted": [
+              "PARTICIPANT",
+              "INVESTIGATOR"
+            ]
+          },
+          "enrollment_count": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "enrollment_count",
+            "category": "numeric",
+            "gold": 1062,
+            "predicted": 1062
+          },
+          "enrollment_type": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "enrollment_type",
+            "category": "categorical",
+            "gold": "ACTUAL",
+            "predicted": "ACTUAL"
+          },
+          "overall_status": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "overall_status",
+            "category": "categorical",
+            "gold": "COMPLETED",
+            "predicted": "COMPLETED"
+          },
+          "start_date": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "start_date",
+            "category": "date",
+            "gold": "2020-02-21",
+            "predicted": "2020-02-21"
+          },
+          "primary_completion_date": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "primary_completion_date",
+            "category": "date",
+            "gold": "2020-05-21",
+            "predicted": "2020-05-21"
+          },
+          "completion_date": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "completion_date",
+            "category": "date",
+            "gold": "2020-05-21",
+            "predicted": "2020-05-21"
+          },
+          "arms": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "arms",
+            "category": "list",
+            "gold": [
+              {
+                "label": "Placebo",
+                "type": "PLACEBO_COMPARATOR",
+                "description": "200 mg of Remdesivir placebo administered intravenously on Day 1, followed by a 100 mg dose daily for up to 10 days"
+              },
+              {
+                "label": "Remdesivir",
+                "type": "EXPERIMENTAL",
+                "description": "200 mg of Remdesivir administered intravenously on Day 1, followed by a 100 mg dose daily for up to 10 days"
+              }
+            ],
+            "predicted": [
+              {
+                "description": "200 mg of Remdesivir placebo administered intravenously on Day 1, followed by a 100 mg once-daily maintenance dose of Remdesivir placebo while hospitalized for up to a 10 days total course. n=286.",
+                "label": "Placebo",
+                "type": "PLACEBO_COMPARATOR"
+              },
+              {
+                "description": "200 mg of Remdesivir administered intravenously on Day 1, followed by a 100 mg once-daily maintenance dose of Remdesivir while hospitalized for up to a 10 days total course. n=286.",
+                "label": "Remdesivir",
+                "type": "EXPERIMENTAL"
+              }
+            ]
+          },
+          "interventions": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "interventions",
+            "category": "list",
+            "gold": [
+              {
+                "type": "OTHER",
+                "name": "Placebo",
+                "description": "The supplied placebo lyophilized formulation is identical in physical appearance to Remdesivir"
+              },
+              {
+                "type": "DRUG",
+                "name": "Remdesivir",
+                "description": "Drug Remdesivir is a single diastereomer monophosphoramidate prodrug"
+              }
+            ],
+            "predicted": [
+              {
+                "description": "The supplied placebo lyophilized formulation is identical in physical appearance to the active lyophilized formulation and contains the same inactive ingredients. Alternatively, a placebo of normal saline of equal volume may be given if there are limitations on matching placebo supplies.",
+                "name": "Placebo",
+                "type": "OTHER"
+              },
+              {
+                "description": "Drug Remdesivir is a single diastereomer monophosphoramidate prodrug designed for the intracellular delivery of a modified adenine nucleoside analog GS-441524. In addition to the active ingredient, the lyophilized formulation of Remdesivir contains the following inactive ingredients: water for injection, sulfobutylether beta-cyclodextrin sodium (SBECD), and hydrochloric acid and/or sodium hydroxide.",
+                "name": "Remdesivir",
+                "type": "DRUG"
+              }
+            ]
+          },
+          "eligibility_sex": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "eligibility_sex",
+            "category": "categorical",
+            "gold": "ALL",
+            "predicted": "ALL"
+          },
+          "eligibility_min_age": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "eligibility_min_age",
+            "category": "string",
+            "gold": "18 Years",
+            "predicted": "18 Years"
+          },
+          "eligibility_max_age": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "eligibility_max_age",
+            "category": "string",
+            "gold": "99 Years",
+            "predicted": "99 Years"
+          },
+          "healthy_volunteers": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "healthy_volunteers",
+            "category": "boolean",
+            "gold": false,
+            "predicted": false
+          },
+          "inclusion_criteria": {
+            "correct": false,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "field": "inclusion_criteria",
+            "category": "list",
+            "gold": [
+              "Admitted to a hospital with symptoms suggestive of COVID-19 infection",
+              "Subject or legally authorized representative provides informed consent prior to initiation of any study procedures",
+              "Male or non-pregnant female adult >= 18 years of age at time of enrollment",
+              "Has laboratory-confirmed SARS-CoV-2 infection as determined by PCR or other commercial or public health assay",
+              "Illness of any duration with at least one of: radiographic infiltrates, SpO2 <= 94% on room air, requiring supplemental oxygen, or requiring mechanical ventilation",
+              "Women of childbearing potential must agree to abstinence or use at least one primary form of contraception from screening through Day 29",
+              "Agrees to not participate in another clinical trial for the treatment of COVID-19 through Day 29"
+            ],
+            "predicted": [
+              "Admitted to a hospital with symptoms suggestive of COVID-19 infection.",
+              "Subject (or legally authorized representative) provides informed consent prior to initiation of any study procedures.",
+              "Subject (or legally authorized representative) understands and agrees to comply with planned study procedures.",
+              "Male or non-pregnant female adult > / = 18 years of age at time of enrollment.",
+              "Has laboratory-confirmed SARS-CoV-2 infection as determined by polymerase chain reaction (PCR) or other commercial or public health assay in any specimen, as documented by either or the following: 1. PCR positive in sample collected < 72 hours prior to randomization; OR 2. PCR positive in sample collected >/= 72 hours prior to randomization, documented inability to obtain a repeat sample (e.g. due to lack of testing supplies, limited testing capacity, results taking >24 hours, etc.) AND progressive disease suggestive of ongoing SARS-CoV-2 infection.",
+              "Illness of any duration, and at least one of the following: 1. Radiographic infiltrates by imaging (chest x-ray, CT scan, etc.), OR 2. SpO2 < / = 94% on room air, OR 3. Requiring supplemental oxygen, OR 4. Requiring mechanical ventilation.",
+              "Women of childbearing potential must agree to either abstinence or use at least one primary form of contraception not including hormonal contraception from the time of screening through Day 29.",
+              "Agrees to not participate in another clinical trial for the treatment of COVID-19 or SARS-CoV-2 through Day 29."
+            ]
+          },
+          "exclusion_criteria": {
+            "correct": false,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "field": "exclusion_criteria",
+            "category": "list",
+            "gold": [
+              "ALT or AST > 5 times the upper limit of normal",
+              "Estimated glomerular filtration rate (eGFR) < 30 ml/min (including patients receiving hemodialysis or hemofiltration)",
+              "Pregnancy or breast feeding",
+              "Anticipated discharge from the hospital or transfer to another hospital which is not a study site within 72 hours",
+              "Allergy to any study medication"
+            ],
+            "predicted": [
+              "Alanine Transaminase (ALT) or Aspartate Transaminase (AST) > 5 times the upper limit of normal.",
+              "Estimated glomerular filtration rate (eGFR) < 30 ml/min (including patients receiving hemodialysis or hemofiltration).",
+              "Pregnancy or breast feeding.",
+              "Anticipated discharge from the hospital or transfer to another hospital which is not a study site within 72 hours.",
+              "Allergy to any study medication."
+            ]
+          },
+          "primary_outcomes": {
+            "correct": false,
+            "precision": 0.25,
+            "recall": 1.0,
+            "f1": 0.4,
+            "field": "primary_outcomes",
+            "category": "list",
+            "gold": [
+              {
+                "measure": "Time to Recovery",
+                "time_frame": "Day 1 through Day 29"
+              }
+            ],
+            "predicted": [
+              {
+                "measure": "Time to Recovery",
+                "time_frame": "Day 1 through Day 29"
+              },
+              {
+                "measure": "Time to Recovery by Race",
+                "time_frame": "Day 1 through Day 29"
+              },
+              {
+                "measure": "Time to Recovery by Ethnicity",
+                "time_frame": "Day 1 through Day 29"
+              },
+              {
+                "measure": "Time to Recovery by Sex",
+                "time_frame": "Day 1 through Day 29"
+              }
+            ]
+          },
+          "secondary_outcomes": {
+            "correct": false,
+            "precision": 0.1282,
+            "recall": 1.0,
+            "f1": 0.2273,
+            "field": "secondary_outcomes",
+            "category": "list",
+            "gold": [
+              {
+                "measure": "Change From Baseline in Alanine Transaminase (ALT)",
+                "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+              },
+              {
+                "measure": "Change in National Early Warning Score (NEWS) From Baseline",
+                "time_frame": "Days 1, 3, 5, 8, 11, 15, 22, and 29"
+              },
+              {
+                "measure": "14-day Participant Mortality",
+                "time_frame": "Day 1 through Day 15"
+              },
+              {
+                "measure": "29-day Participant Mortality",
+                "time_frame": "Day 1 through Day 29"
+              },
+              {
+                "measure": "Duration of Hospitalization",
+                "time_frame": "Day 1 through Day 29"
+              }
+            ],
+            "predicted": [
+              {
+                "measure": "Change From Baseline in Alanine Transaminase (ALT)",
+                "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+              },
+              {
+                "measure": "Change From Baseline in Aspartate Transaminase (AST)",
+                "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+              },
+              {
+                "measure": "Change From Baseline in Creatinine",
+                "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+              },
+              {
+                "measure": "Change From Baseline in Glucose",
+                "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+              },
+              {
+                "measure": "Change From Baseline in Hemoglobin",
+                "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+              },
+              {
+                "measure": "Change From Baseline in Platelets",
+                "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+              },
+              {
+                "measure": "Change From Baseline in Prothrombin Time (PT)",
+                "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+              },
+              {
+                "measure": "Change From Baseline in Total Bilirubin",
+                "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+              },
+              {
+                "measure": "Change From Baseline in White Blood Cell Count (WBC)",
+                "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+              },
+              {
+                "measure": "Change From Baseline in Neutrophils",
+                "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+              },
+              {
+                "measure": "Change From Baseline in Lymphocytes",
+                "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+              },
+              {
+                "measure": "Change From Baseline in Monocytes",
+                "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+              },
+              {
+                "measure": "Change From Baseline in Basophils",
+                "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+              },
+              {
+                "measure": "Change From Baseline in Eosinophils",
+                "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+              },
+              {
+                "measure": "Change in National Early Warning Score (NEWS) From Baseline",
+                "time_frame": "Days 1, 3, 5, 8, 11, 15, 22, and 29"
+              },
+              {
+                "measure": "Percentage of Participants at Each Clinical Status Using Ordinal Scale at Day 1",
+                "time_frame": "Day 1"
+              },
+              {
+                "measure": "Percentage of Participants at Each Clinical Status Using Ordinal Scale at Day 3",
+                "time_frame": "Day 3"
+              },
+              {
+                "measure": "Percentage of Participants at Each Clinical Status Using Ordinal Scale at Day 5",
+                "time_frame": "Day 5"
+              },
+              {
+                "measure": "Percentage of Participants at Each Clinical Status Using Ordinal Scale at Day 8",
+                "time_frame": "Day 8"
+              },
+              {
+                "measure": "Percentage of Participants at Each Clinical Status Using Ordinal Scale at Day 11",
+                "time_frame": "Day 11"
+              },
+              {
+                "measure": "Percentage of Participants at Each Clinical Status Using Ordinal Scale at Day 15",
+                "time_frame": "Day 15"
+              },
+              {
+                "measure": "Percentage of Participants at Each Clinical Status Using Ordinal Scale at Day 22",
+                "time_frame": "Day 22"
+              },
+              {
+                "measure": "Percentage of Participants at Each Clinical Status Using Ordinal Scale at Day 29",
+                "time_frame": "Day 29"
+              },
+              {
+                "measure": "Percentage of Participants Reporting Grade 3 and 4 Clinical and/or Laboratory Adverse Events (AEs)",
+                "time_frame": "Day 1 through Day 29"
+              },
+              {
+                "measure": "Percentage of Participants Reporting Serious Adverse Events (SAEs)",
+                "time_frame": "Day 1 through Day 29"
+              },
+              {
+                "measure": "Percentage of Participants Discontinued or Temporarily Suspended From Investigational Therapeutics",
+                "time_frame": "Day 1 through Day 10"
+              },
+              {
+                "measure": "Duration of Hospitalization",
+                "time_frame": "Day 1 through Day 29"
+              },
+              {
+                "measure": "Duration of New Non-invasive Ventilation or High Flow Oxygen Use",
+                "time_frame": "Day 1 through Day 29"
+              },
+              {
+                "measure": "Duration of New Oxygen Use",
+                "time_frame": "Day 1 through Day 29"
+              },
+              {
+                "measure": "Duration of New Ventilator or Extracorporeal Membrane Oxygenation (ECMO) Use",
+                "time_frame": "Day 1 through Day 29"
+              },
+              {
+                "measure": "Percentage of Participants Requiring New Non-invasive Ventilation or High-flow Oxygen Use",
+                "time_frame": "Day 1 through Day 29"
+              },
+              {
+                "measure": "Percentage of Participants Requiring New Oxygen Use",
+                "time_frame": "Day 1 through Day 29"
+              },
+              {
+                "measure": "Percentage of Participants Requiring New Ventilator or Extracorporeal Membrane Oxygenation (ECMO) Use",
+                "time_frame": "Day 1 through Day 29"
+              },
+              {
+                "measure": "Mean Change in the Ordinal Scale",
+                "time_frame": "Day 1, 3, 5, 8, 11, 15, 22, and 29"
+              },
+              {
+                "measure": "14-day Participant Mortality",
+                "time_frame": "Day 1 through Day 15"
+              },
+              {
+                "measure": "29-day Participant Mortality",
+                "time_frame": "Day 1 through Day 29"
+              },
+              {
+                "measure": "Time to an Improvement by at Least One Category Using an Ordinal Scale",
+                "time_frame": "Day 1 through Day 29"
+              },
+              {
+                "measure": "Time to an Improvement of at Least Two Categories Using an Ordinal Scale",
+                "time_frame": "Day 1 through Day 29"
+              },
+              {
+                "measure": "Time to Discharge or to a NEWS of 2 or Less and Maintained for 24 Hours, Whichever Occurs First",
+                "time_frame": "Day 1 through Day 29"
+              }
+            ]
+          }
+        },
+        "aggregates": {
+          "precision": 0.7793,
+          "recall": 0.8333,
+          "f1": 0.7876,
+          "n_fields": 30
+        }
+      },
+      "area3": {
+        "doc_id": "area3",
+        "per_field": {
+          "doc_id": {
+            "correct": false,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "reason": "",
+            "field": "doc_id",
+            "category": "string",
+            "gold": "area3",
+            "predicted": null
+          },
+          "nct_id": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "nct_id",
+            "category": "string",
+            "gold": "NCT03036150",
+            "predicted": "NCT03036150"
+          },
+          "brief_title": {
+            "correct": false,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "reason": "",
+            "field": "brief_title",
+            "category": "string",
+            "gold": "A Study to Evaluate the Effect of Dapagliflozin on Renal Outcomes and Cardiovascular Mortality in Patients With Chronic Kidney Disease (DAPA-CKD)",
+            "predicted": "A Study to Evaluate the Effect of Dapagliflozin on Renal Outcomes and Cardiovascular Mortality in Patients With Chronic Kidney Disease"
+          },
+          "official_title": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "official_title",
+            "category": "string",
+            "gold": "A Study to Evaluate the Effect of Dapagliflozin on Renal Outcomes and Cardiovascular Mortality in Patients With Chronic Kidney Disease",
+            "predicted": "A Study to Evaluate the Effect of Dapagliflozin on Renal Outcomes and Cardiovascular Mortality in Patients With Chronic Kidney Disease"
+          },
+          "lead_sponsor": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "lead_sponsor",
+            "category": "string",
+            "gold": "AstraZeneca",
+            "predicted": "AstraZeneca"
+          },
+          "sponsor_class": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "sponsor_class",
+            "category": "categorical",
+            "gold": "INDUSTRY",
+            "predicted": "INDUSTRY"
+          },
+          "collaborators": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "collaborators",
+            "category": "list",
+            "gold": [],
+            "predicted": []
+          },
+          "conditions": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "conditions",
+            "category": "list",
+            "gold": [
+              "Chronic Kidney Disease"
+            ],
+            "predicted": [
+              "Chronic Kidney Disease"
+            ]
+          },
+          "phases": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "phases",
+            "category": "list",
+            "gold": [
+              "Phase 3"
+            ],
+            "predicted": [
+              "Phase 3"
+            ]
+          },
+          "study_type": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "study_type",
+            "category": "categorical",
+            "gold": "INTERVENTIONAL",
+            "predicted": "INTERVENTIONAL"
+          },
+          "allocation": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "allocation",
+            "category": "categorical",
+            "gold": "RANDOMIZED",
+            "predicted": "RANDOMIZED"
+          },
+          "primary_purpose": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "primary_purpose",
+            "category": "categorical",
+            "gold": "TREATMENT",
+            "predicted": "TREATMENT"
+          },
+          "masking": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "masking",
+            "category": "categorical",
+            "gold": "QUADRUPLE",
+            "predicted": "QUADRUPLE"
+          },
+          "who_masked": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "who_masked",
+            "category": "list",
+            "gold": [
+              "PARTICIPANT",
+              "CARE_PROVIDER",
+              "INVESTIGATOR",
+              "OUTCOMES_ASSESSOR"
+            ],
+            "predicted": [
+              "PARTICIPANT",
+              "CARE_PROVIDER",
+              "INVESTIGATOR",
+              "OUTCOMES_ASSESSOR"
+            ]
+          },
+          "enrollment_count": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "enrollment_count",
+            "category": "numeric",
+            "gold": 4304,
+            "predicted": 4304
+          },
+          "enrollment_type": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "enrollment_type",
+            "category": "categorical",
+            "gold": "ACTUAL",
+            "predicted": "ACTUAL"
+          },
+          "overall_status": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "overall_status",
+            "category": "categorical",
+            "gold": "COMPLETED",
+            "predicted": "COMPLETED"
+          },
+          "start_date": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "start_date",
+            "category": "date",
+            "gold": "2017-02-02",
+            "predicted": "2017-02-02"
+          },
+          "primary_completion_date": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "primary_completion_date",
+            "category": "date",
+            "gold": "2020-06-12",
+            "predicted": "2020-06-12"
+          },
+          "completion_date": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "completion_date",
+            "category": "date",
+            "gold": "2020-06-12",
+            "predicted": "2020-06-12"
+          },
+          "arms": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "arms",
+            "category": "list",
+            "gold": [
+              {
+                "label": "Dapagliflozin",
+                "type": "EXPERIMENTAL",
+                "description": "Patients randomized 1:1 to dapagliflozin or placebo. 10 mg or 5 mg tablets given once daily, per oral use."
+              },
+              {
+                "label": "Placebo",
+                "type": "PLACEBO_COMPARATOR",
+                "description": "Placebo matching dapagliflozin 10 mg or 5 mg"
+              }
+            ],
+            "predicted": [
+              {
+                "description": "Patients will be randomized 1:1 to either dapagliflozin or placebo.",
+                "label": "Dapagliflozin",
+                "type": "EXPERIMENTAL"
+              },
+              {
+                "description": "Placebo matching dapagliflozin.",
+                "label": "Placebo",
+                "type": "PLACEBO_COMPARATOR"
+              }
+            ]
+          },
+          "interventions": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "interventions",
+            "category": "list",
+            "gold": [
+              {
+                "type": "DRUG",
+                "name": "Dapagliflozin",
+                "description": "10 mg or 5 mg tablets given once daily, per oral use"
+              },
+              {
+                "type": "DRUG",
+                "name": "Placebo",
+                "description": "Placebo matching dapagliflozin 10 mg or 5 mg"
+              }
+            ],
+            "predicted": [
+              {
+                "description": "10 mg or 5 mg tablets given once daily, per oral use.",
+                "name": "Dapagliflozin",
+                "type": "DRUG"
+              },
+              {
+                "description": "Placebo matching dapagliflozin 10 mg or 5 mg",
+                "name": "Placebo",
+                "type": "DRUG"
+              }
+            ]
+          },
+          "eligibility_sex": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "eligibility_sex",
+            "category": "categorical",
+            "gold": "ALL",
+            "predicted": "ALL"
+          },
+          "eligibility_min_age": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "eligibility_min_age",
+            "category": "string",
+            "gold": "18 Years",
+            "predicted": "18 Years"
+          },
+          "eligibility_max_age": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "eligibility_max_age",
+            "category": "string",
+            "gold": "130 Years",
+            "predicted": "130 Years"
+          },
+          "healthy_volunteers": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "healthy_volunteers",
+            "category": "boolean",
+            "gold": false,
+            "predicted": false
+          },
+          "inclusion_criteria": {
+            "correct": false,
+            "precision": 0.2,
+            "recall": 0.2,
+            "f1": 0.2,
+            "field": "inclusion_criteria",
+            "category": "list",
+            "gold": [
+              "Provision of signed informed consent prior to any study specific procedures",
+              "Female or male aged >= 18 years at the time of consent",
+              "eGFR >= 25 and <= 75 mL/min/1.73m2 (CKD-EPI Formula) at visit 1",
+              "Evidence of increased albuminuria 3 months or more before visit 1 and UACR >= 200 and <= 5000 mg/g at visit 1",
+              "Stable, maximum tolerated labelled daily dose of ACE-I or ARB for at least 4 weeks before visit 1, if not medically contraindicated"
+            ],
+            "predicted": [
+              "Provision of signed informed consent prior to any study specific procedures",
+              "Female or male aged \u226518 years at the time of consent",
+              "eGFR \u226525 and \u226475 mL/min/1.73m2 (CKD-EPI Formula) at visit 1",
+              "Evidence of increased albuminuria 3 months or more before visit 1 and UACR \u2265200 and \u22645000 mg/g at visit 1",
+              "Stable, and for the patient maximum tolerated labelled daily dose, treatment with ACE-I or ARB for at least 4 weeks before visit 1, if not medically contraindicated,"
+            ]
+          },
+          "exclusion_criteria": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "exclusion_criteria",
+            "category": "list",
+            "gold": [
+              "Autosomal dominant or autosomal recessive polycystic kidney disease, lupus nephritis or ANCA-associated vasculitis",
+              "Receiving cytotoxic therapy, immunosuppressive therapy or other immunotherapy for primary or secondary renal disease within 6 months prior to enrolment",
+              "History of organ transplantation",
+              "Receiving therapy with an SGLT2 inhibitor within 8 weeks prior to enrolment or previous intolerance of an SGLT2 inhibitor",
+              "Type 1 diabetes mellitus",
+              "New York Heart Association (NYHA) class IV Congestive Heart Failure at the time of enrolment",
+              "MI, unstable angina, stroke or transient ischemic attack within 12 weeks prior to enrolment"
+            ],
+            "predicted": [
+              "Autosomal dominant or autosomal recessive polycystic kidney disease, lupus nephritis or ANCA-associated vasculitis",
+              "Receiving cytotoxic therapy, immunosuppressive therapy or other immunotherapy for primary or secondary renal disease within 6 months prior to enrolment",
+              "History of organ transplantation",
+              "Receiving therapy with an SGLT2 inhibitor within 8 weeks prior to enrolment or previous intolerance of an SGLT2 inhibitor",
+              "Type 1 diabetes mellitus",
+              "New York Heart Association (NYHA) class IV Congestive Heart Failure at the time of enrolment",
+              "MI, unstable angina, stroke or transient ischemic attack within 12 weeks prior to enrolment"
+            ]
+          },
+          "primary_outcomes": {
+            "correct": false,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "field": "primary_outcomes",
+            "category": "list",
+            "gold": [
+              {
+                "measure": "Time to the First Occurrence of Any of the Components of the Composite: >= 50% Sustained Decline in eGFR, End Stage Kidney Disease, Renal Death or Cardiovascular Death",
+                "time_frame": "Up to 38.2 months"
+              }
+            ],
+            "predicted": [
+              {
+                "measure": "Time to the First Occurrence of Any of the Components of the Composite: \u226550% Sustained Decline in eGFR or Reaching ESRD or CV Death or Renal Death.",
+                "time_frame": "Up to 38.2 months"
+              }
+            ]
+          },
+          "secondary_outcomes": {
+            "correct": false,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "field": "secondary_outcomes",
+            "category": "list",
+            "gold": [
+              {
+                "measure": "Time to the First Occurrence of Any of the Components of the Composite: >= 50% Sustained Decline in eGFR, End Stage Kidney Disease or Renal Death",
+                "time_frame": "Up to 38.2 months"
+              },
+              {
+                "measure": "Time to the First Occurrence of Either of the Components of the Composite: Cardiovascular Death or Hospitalization for Heart Failure",
+                "time_frame": "Up to 38.2 months"
+              },
+              {
+                "measure": "Time to Death From Any Cause",
+                "time_frame": "Up to 38.2 months"
+              }
+            ],
+            "predicted": [
+              {
+                "measure": "Time to the First Occurrence of Any of the Components of the Composite: \u226550% Sustained Decline in eGFR or Reaching ESRD or Renal Death.",
+                "time_frame": "Up to 38.2 months"
+              },
+              {
+                "measure": "Time to the First Occurrence of Either of the Components of the Composite: CV Death or Hospitalization for Heart Failure.",
+                "time_frame": "Up to 38.2 months"
+              },
+              {
+                "measure": "Time to Death From Any Cause.",
+                "time_frame": "Up to 38.2 months"
+              }
+            ]
+          }
+        },
+        "aggregates": {
+          "precision": 0.84,
+          "recall": 0.84,
+          "f1": 0.84,
+          "n_fields": 30
+        }
+      },
+      "onc1": {
+        "doc_id": "onc1",
+        "per_field": {
+          "doc_id": {
+            "correct": false,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "reason": "",
+            "field": "doc_id",
+            "category": "string",
+            "gold": "onc1",
+            "predicted": null
+          },
+          "nct_id": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "nct_id",
+            "category": "string",
+            "gold": "NCT01642004",
+            "predicted": "NCT01642004"
+          },
+          "brief_title": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "brief_title",
+            "category": "string",
+            "gold": "Study of BMS-936558 (Nivolumab) Compared to Docetaxel in Previously Treated Advanced or Metastatic Squamous Cell Non-small Cell Lung Cancer (NSCLC) (CheckMate 017)",
+            "predicted": "Study of BMS-936558 (Nivolumab) Compared to Docetaxel in Previously Treated Advanced or Metastatic Squamous Cell Non-small Cell Lung Cancer (NSCLC) (CheckMate 017)"
+          },
+          "official_title": {
+            "correct": false,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "reason": "",
+            "field": "official_title",
+            "category": "string",
+            "gold": "An Open-Label Randomized Phase III Trial of BMS-936558 (Nivolumab) Versus Docetaxel in Previously Treated Advanced or Metastatic Squamous Cell Non-small Cell Lung Cancer",
+            "predicted": "An Open-Label Randomized Phase III Trial of BMS-936558 (Nivolumab) Versus Docetaxel in Previously Treated Advanced or Metastatic Squamous Cell Non-small Cell Lung Cancer (NSCLC)"
+          },
+          "lead_sponsor": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "lead_sponsor",
+            "category": "string",
+            "gold": "Bristol-Myers Squibb",
+            "predicted": "Bristol-Myers Squibb"
+          },
+          "sponsor_class": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "sponsor_class",
+            "category": "categorical",
+            "gold": "INDUSTRY",
+            "predicted": "INDUSTRY"
+          },
+          "collaborators": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "collaborators",
+            "category": "list",
+            "gold": [],
+            "predicted": []
+          },
+          "conditions": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "conditions",
+            "category": "list",
+            "gold": [
+              "Squamous Cell Non-small Cell Lung Cancer"
+            ],
+            "predicted": [
+              "Squamous Cell Non-small Cell Lung Cancer"
+            ]
+          },
+          "phases": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "phases",
+            "category": "list",
+            "gold": [
+              "Phase 3"
+            ],
+            "predicted": [
+              "Phase 3"
+            ]
+          },
+          "study_type": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "study_type",
+            "category": "categorical",
+            "gold": "INTERVENTIONAL",
+            "predicted": "INTERVENTIONAL"
+          },
+          "allocation": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "allocation",
+            "category": "categorical",
+            "gold": "RANDOMIZED",
+            "predicted": "RANDOMIZED"
+          },
+          "primary_purpose": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "primary_purpose",
+            "category": "categorical",
+            "gold": "TREATMENT",
+            "predicted": "TREATMENT"
+          },
+          "masking": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "masking",
+            "category": "categorical",
+            "gold": "NONE",
+            "predicted": "NONE"
+          },
+          "who_masked": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "who_masked",
+            "category": "list",
+            "gold": [],
+            "predicted": []
+          },
+          "enrollment_count": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "enrollment_count",
+            "category": "numeric",
+            "gold": 272,
+            "predicted": 272
+          },
+          "enrollment_type": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "enrollment_type",
+            "category": "categorical",
+            "gold": "ACTUAL",
+            "predicted": "ACTUAL"
+          },
+          "overall_status": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "overall_status",
+            "category": "categorical",
+            "gold": "COMPLETED",
+            "predicted": "COMPLETED"
+          },
+          "start_date": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "start_date",
+            "category": "date",
+            "gold": "2012-10-16",
+            "predicted": "2012-10-16"
+          },
+          "primary_completion_date": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "primary_completion_date",
+            "category": "date",
+            "gold": "2014-11-17",
+            "predicted": "2014-11-17"
+          },
+          "completion_date": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "completion_date",
+            "category": "date",
+            "gold": "2021-08-16",
+            "predicted": "2021-08-16"
+          },
+          "arms": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "arms",
+            "category": "list",
+            "gold": [
+              {
+                "label": "Arm A: Nivolumab",
+                "type": "EXPERIMENTAL",
+                "description": "Nivolumab 3 mg/kg solution intravenously (IV) every 2 weeks until documented disease progression or unacceptable toxicity"
+              },
+              {
+                "label": "Arm B: Docetaxel",
+                "type": "EXPERIMENTAL",
+                "description": "Docetaxel 75 mg/m^2 concentrate for solution for intravenous infusion every 3 weeks until documented disease progression or unacceptable toxicity"
+              }
+            ],
+            "predicted": [
+              {
+                "description": "Nivolumab 3 mg/kg solution intravenously (IV) every 2 weeks until documented disease progression, discontinuation due to toxicity, withdrawal of consent or the study ends. Eligible patients may receive nivolumab at 480mg every 4 weeks until documented disease progression, discontinuation, withdrawal of consent or the study ends.",
+                "label": "Arm A: Nivolumab",
+                "type": "EXPERIMENTAL"
+              },
+              {
+                "description": "Docetaxel 75 mg/m^2 concentrate for solution for intravenous infusion every 3 weeks until documented disease progression, discontinuation due to toxicity, withdrawal of consent or the study ends. Eligible patients may receive nivolumab at 480mg every 4 weeks until documented disease progression, discontinuation, withdrawal of consent or the study ends.",
+                "label": "Arm B: Docetaxel",
+                "type": "EXPERIMENTAL"
+              }
+            ]
+          },
+          "interventions": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "interventions",
+            "category": "list",
+            "gold": [
+              {
+                "type": "BIOLOGICAL",
+                "name": "Nivolumab",
+                "description": "Anti-PD-1 monoclonal antibody"
+              },
+              {
+                "type": "DRUG",
+                "name": "Docetaxel",
+                "description": "Chemotherapy agent"
+              }
+            ],
+            "predicted": [
+              {
+                "description": null,
+                "name": "Nivolumab",
+                "type": "BIOLOGICAL"
+              },
+              {
+                "description": null,
+                "name": "Docetaxel",
+                "type": "DRUG"
+              }
+            ]
+          },
+          "eligibility_sex": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "eligibility_sex",
+            "category": "categorical",
+            "gold": "ALL",
+            "predicted": "ALL"
+          },
+          "eligibility_min_age": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "eligibility_min_age",
+            "category": "string",
+            "gold": "18 Years",
+            "predicted": "18 Years"
+          },
+          "eligibility_max_age": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "eligibility_max_age",
+            "category": "string",
+            "gold": null,
+            "predicted": null
+          },
+          "healthy_volunteers": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "reason": "",
+            "field": "healthy_volunteers",
+            "category": "boolean",
+            "gold": false,
+            "predicted": false
+          },
+          "inclusion_criteria": {
+            "correct": false,
+            "precision": 0.1667,
+            "recall": 0.1667,
+            "f1": 0.1667,
+            "field": "inclusion_criteria",
+            "category": "list",
+            "gold": [
+              "Men and women >= 18 years of age",
+              "Histologically or cytologically-documented squamous cell NSCLC with Stage IIIB/IV disease or recurrent/progressive disease following multimodal therapy",
+              "Disease recurrence or progression during/after one prior platinum doublet-based chemotherapy regimen for advanced or metastatic disease",
+              "Measurable disease by CT/MRI per RECIST 1.1 criteria",
+              "Eastern Cooperative Oncology Group (ECOG) performance status <= 1",
+              "FFPE tumor tissue block or unstained slides available for biomarker evaluation, received by central lab prior to randomization"
+            ],
+            "predicted": [
+              "Men and women \u226518 years of age",
+              "Subjects with histologically or cytologically-documented squamous cell NSCLC who present with Stage IIIB/IV disease or with recurrent or progressive disease following multimodal therapy (radiation therapy, surgical resection or definitive chemoradiation therapy for locally advanced disease)",
+              "Disease recurrence or progression during/after one prior platinum doublet-based chemotherapy regimen for advanced or metastatic disease",
+              "Measurable disease by computed tomography (CT)/Magnetic resonance imaging (MRI) per Response Evaluation Criteria in Solid Tumors (RECIST) 1.1 criteria",
+              "Eastern Cooperative Oncology Group (ECOG) performance status \u22641",
+              "A formalin fixed, paraffin-embedded (FFPE) tumor tissue block or unstained slides of tumor sample (archival or recent) must be available for biomarker evaluation. Specimens must be received by the central lab prior to randomization. Biopsy should be excisional, incisional or core needle. Fine needle aspiration is insufficient"
+            ]
+          },
+          "exclusion_criteria": {
+            "correct": false,
+            "precision": 0.2222,
+            "recall": 0.25,
+            "f1": 0.2353,
+            "field": "exclusion_criteria",
+            "category": "list",
+            "gold": [
+              "Untreated CNS metastases (eligible if treated and neurologically stable for >= 2 weeks, off corticosteroids or on stable/decreasing dose <= 10 mg daily prednisone)",
+              "Carcinomatous meningitis",
+              "Active, known or suspected autoimmune disease (exceptions: type I diabetes, hypothyroidism on replacement, skin disorders not requiring systemic treatment)",
+              "Condition requiring systemic treatment with corticosteroids or other immunosuppressive medications within 14 days of randomization",
+              "Prior therapy with anti-PD-1, anti-PD-L1, anti-PD-L2, anti-CD137, or anti-CTLA-4 antibody (including ipilimumab)",
+              "Prior treatment with Docetaxel",
+              "Symptomatic interstitial lung disease that may interfere with detection/management of drug-related pulmonary toxicity",
+              "Treatment with any investigational agent within 14 days of first administration of study treatment"
+            ],
+            "predicted": [
+              "Subjects with untreated central nervous system (CNS) metastases are excluded. Subjects are eligible if CNS metastases are treated and subjects are neurologically returned to baseline for at least 2 weeks prior to enrollment. In addition, subjects must be either off corticosteroids, or on a stable or decreasing dose of \u226410 mg daily prednisone (or equivalent)",
+              "Subjects with carcinomatous meningitis",
+              "Subjects with active, known or suspected autoimmune disease. Subjects with type I diabetes mellitus, hypothyroidism only requiring hormone replacement, skin disorders (such as vitiligo, psoriasis, or alopecia) not requiring systemic treatment, or conditions not expected to recur in the absence of an external trigger are permitted to enroll",
+              "Subjects with a condition requiring systemic treatment with either corticosteroids or other immunosuppressive medications within 14 days of randomization",
+              "Prior therapy with anti-Programmed death-1 (PD-1), anti-Programmed cell death ligand 1 (PD-L1), anti-Programmed cell death ligand 2 (PD-L2), anti-CD137, or anti-Cytotoxic T lymphocyte-associated antigen 4 (CTLA-4) antibody (including ipilimumab or any other antibody or drug specifically targeting T-cell co-stimulation or checkpoint pathways)",
+              "Prior treatment on the first line study CA184104 first line NSCLC study",
+              "Prior treatment with Docetaxel",
+              "Subjects with interstitial lung disease that is symptomatic or may interfere with the detection or management of suspected drug-related pulmonary toxicity",
+              "Treatment with any investigational agent within 14 days of first administration of study treatment"
+            ]
+          },
+          "primary_outcomes": {
+            "correct": true,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "field": "primary_outcomes",
+            "category": "list",
+            "gold": [
+              {
+                "measure": "Overall Survival (OS) Time in Months for All Randomized Participants at Primary Endpoint",
+                "time_frame": "Randomization until 199 deaths, up to November 2014"
+              },
+              {
+                "measure": "Overall Survival (OS) Rate in All Randomized Participants",
+                "time_frame": "Randomization to 18 months post-randomization"
+              },
+              {
+                "measure": "Number of Deaths From Any Cause in All Randomized Participants at Primary Endpoint",
+                "time_frame": "Randomization until 199 deaths"
+              }
+            ],
+            "predicted": [
+              {
+                "measure": "Overall Survival (OS) Time in Months for All Randomized Participants at Primary Endpoint",
+                "time_frame": "Randomization until 199 deaths, up to November 2014, approximately 25 months"
+              },
+              {
+                "measure": "Overall Survival (OS) Rate in All Randomized Participants",
+                "time_frame": "Randomization to 18 months post-randomization, up to June 2015"
+              },
+              {
+                "measure": "Number of Deaths From Any Cause in All Randomized Participants at Primary Endpoint",
+                "time_frame": "Randomization until 199 deaths, up to November 2014, approximately 25 months"
+              }
+            ]
+          },
+          "secondary_outcomes": {
+            "correct": false,
+            "precision": 0.3333,
+            "recall": 1.0,
+            "f1": 0.5,
+            "field": "secondary_outcomes",
+            "category": "list",
+            "gold": [
+              {
+                "measure": "Objective Response Rate (ORR) in All Randomized Participants",
+                "time_frame": "From date of randomization up to date of objective disease progression"
+              },
+              {
+                "measure": "Progression-Free Survival (PFS) Time in Months for All Randomized Participants",
+                "time_frame": "From randomization up to first confirmed response"
+              },
+              {
+                "measure": "Duration of Objective Response (DOR) in Months for All Confirmed Responders",
+                "time_frame": "From date of first confirmed response to date of progression"
+              }
+            ],
+            "predicted": [
+              {
+                "measure": "Objective Response Rate (ORR) in All Randomized Participants",
+                "time_frame": "From the date of randomization up to the date of objectively documented progression, up to approximately 103 months"
+              },
+              {
+                "measure": "Time To Response (TTR) in Months for All Confirmed Responders",
+                "time_frame": "From the date of randomization to the date of the first confirmed response, up to approximately 12 months"
+              },
+              {
+                "measure": "Duration of Objective Response (DOR) in Months for All Confirmed Responders",
+                "time_frame": "From the date of first confirmed response to the date of the first documented tumor progression or death due to any cause, whichever occurred first, up to approximately 94 months"
+              },
+              {
+                "measure": "Progression Free Survival Rate (PFSR)",
+                "time_frame": "From randomization to specified timepoints, up to 84 months"
+              },
+              {
+                "measure": "Progression-Free Survival (PFS) Time in Months for All Randomized Participants",
+                "time_frame": "From randomization up to the first confirmed response to the date of the first documented tumor progression or death due to any cause, whichever occurred first, up to approximately 103 months"
+              },
+              {
+                "measure": "Percentage of Participants Experiencing Disease-related Symptom Improvement by Week 12",
+                "time_frame": "From randomization up to Week 12"
+              },
+              {
+                "measure": "Overall Survival (OS) Time in Months by Baseline PD-L1 Expression for All Randomized Participants",
+                "time_frame": "From the date of randomization to the date of death from any cause, up to approximately 103 months"
+              },
+              {
+                "measure": "Objective Response Rate (ORR) by Baseline PD-L1 Expression for All Randomized Participants",
+                "time_frame": "From the date of randomization up to the date of objectively documented progression, up to approximately 103 months"
+              },
+              {
+                "measure": "Progression Free Survival (PFS) Time in Months by Baseline PD-L1 Expression for All Randomized Participants",
+                "time_frame": "From the date of first confirmed response to the date of the first documented tumor progression or death due to any cause, whichever occurred first, up to approximately 103 months"
+              }
+            ]
+          }
+        },
+        "aggregates": {
+          "precision": 0.8574,
+          "recall": 0.8806,
+          "f1": 0.8634,
+          "n_fields": 30
+        }
+      }
+    },
+    "aggregates": {
+      "precision": 0.8256,
+      "recall": 0.8513,
+      "f1": 0.8303,
+      "n_documents": 3
+    }
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "doc_id": "onc1",
+  "nct_id": "NCT01642004",
+  "brief_title": "Study of BMS-936558 (Nivolumab) Compared to Docetaxel in Previously Treated Advanced or Metastatic Squamous Cell Non-small Cell Lung Cancer (NSCLC) (CheckMate 017)",
+  "official_title": "An Open-Label Randomized Phase III Trial of BMS-936558 (Nivolumab) Versus Docetaxel in Previously Treated Advanced or Metastatic Squamous Cell Non-small Cell Lung Cancer",
+  "lead_sponsor": "Bristol-Myers Squibb",
+  "sponsor_class": "INDUSTRY",
+  "collaborators": [],
+  "conditions": ["Squamous Cell Non-small Cell Lung Cancer"],
+  "phases": ["Phase 3"],
+  "study_type": "INTERVENTIONAL",
+  "allocation": "RANDOMIZED",
+  "intervention_model": "Not specified",
+  "primary_purpose": "TREATMENT",
+  "masking": "NONE",
+  "who_masked": [],
+  "enrollment_count": 272,
+  "enrollment_type": "ACTUAL",
+  "overall_status": "COMPLETED",
+  "start_date": "2012-10-16",
+  "primary_completion_date": "2014-11-17",
+  "completion_date": "2021-08-16",
+  "arms": [
+    {
+      "label": "Arm A: Nivolumab",
+      "type": "EXPERIMENTAL",
+      "description": "Nivolumab 3 mg/kg solution intravenously (IV) every 2 weeks until documented disease progression or unacceptable toxicity"
+    },
+    {
+      "label": "Arm B: Docetaxel",
+      "type": "EXPERIMENTAL",
+      "description": "Docetaxel 75 mg/m^2 concentrate for solution for intravenous infusion every 3 weeks until documented disease progression or unacceptable toxicity"
+    }
+  ],
+  "interventions": [
+    {
+      "type": "BIOLOGICAL",
+      "name": "Nivolumab",
+      "description": "Anti-PD-1 monoclonal antibody"
+    },
+    {
+      "type": "DRUG",
+      "name": "Docetaxel",
+      "description": "Chemotherapy agent"
+    }
+  ],
+  "eligibility_sex": "ALL",
+  "eligibility_min_age": "18 Years",
+  "eligibility_max_age": null,
+  "healthy_volunteers": false,
+  "inclusion_criteria": [
+    "Men and women >= 18 years of age",
+    "Histologically or cytologically-documented squamous cell NSCLC with Stage IIIB/IV disease or recurrent/progressive disease following multimodal therapy",
+    "Disease recurrence or progression during/after one prior platinum doublet-based chemotherapy regimen for advanced or metastatic disease",
+    "Measurable disease by CT/MRI per RECIST 1.1 criteria",
+    "Eastern Cooperative Oncology Group (ECOG) performance status <= 1",
+    "FFPE tumor tissue block or unstained slides available for biomarker evaluation, received by central lab prior to randomization"
+  ],
+  "exclusion_criteria": [
+    "Untreated CNS metastases (eligible if treated and neurologically stable for >= 2 weeks, off corticosteroids or on stable/decreasing dose <= 10 mg daily prednisone)",
+    "Carcinomatous meningitis",
+    "Active, known or suspected autoimmune disease (exceptions: type I diabetes, hypothyroidism on replacement, skin disorders not requiring systemic treatment)",
+    "Condition requiring systemic treatment with corticosteroids or other immunosuppressive medications within 14 days of randomization",
+    "Prior therapy with anti-PD-1, anti-PD-L1, anti-PD-L2, anti-CD137, or anti-CTLA-4 antibody (including ipilimumab)",
+    "Prior treatment with Docetaxel",
+    "Symptomatic interstitial lung disease that may interfere with detection/management of drug-related pulmonary toxicity",
+    "Treatment with any investigational agent within 14 days of first administration of study treatment"
+  ],
+  "primary_outcomes": [
+    {
+      "measure": "Overall Survival (OS) Time in Months for All Randomized Participants at Primary Endpoint",
+      "time_frame": "Randomization until 199 deaths, up to November 2014"
+    },
+    {
+      "measure": "Overall Survival (OS) Rate in All Randomized Participants",
+      "time_frame": "Randomization to 18 months post-randomization"
+    },
+    {
+      "measure": "Number of Deaths From Any Cause in All Randomized Participants at Primary Endpoint",
+      "time_frame": "Randomization until 199 deaths"
+    }
+  ],
+  "secondary_outcomes": [
+    {
+      "measure": "Objective Response Rate (ORR) in All Randomized Participants",
+      "time_frame": "From date of randomization up to date of objective disease progression"
+    },
+    {
+      "measure": "Progression-Free Survival (PFS) Time in Months for All Randomized Participants",
+      "time_frame": "From randomization up to first confirmed response"
+    },
+    {
+      "measure": "Duration of Objective Response (DOR) in Months for All Confirmed Responders",
+      "time_frame": "From date of first confirmed response to date of progression"
+    }
+  ]
+}

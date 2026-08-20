@@ -141,7 +141,9 @@ data/golden/<doc>/   source.md, golden.json, retrieval.json, raw_api.json
 shared/              schema.json (single contract) + prompts
 harness/             chunking, retrieval, retrieval_eval, extract, eval, cli
 evals/               committed run artifacts + baseline
-web/                 Next.js scorecard-first viewer + live /api/run
+web/                 Next.js scorecard-first viewer + live /api/run (reads a committed
+                     snapshot of evals/data/shared under web/; refresh with
+                     `node web/scripts/sync-snapshot.mjs` after re-running evals)
 tests/               pytest (no network, 160 tests, 89% coverage)
 docs/                HLD, LLD, architecture, Decisions, standards
 scripts/             check_standards.py (coding-standards gate)

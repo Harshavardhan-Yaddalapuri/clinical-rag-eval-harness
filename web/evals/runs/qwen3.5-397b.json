@@ -1,0 +1,476 @@
+{
+  "model": "qwen3.5:397b",
+  "created_at": "2026-08-20T06:41:51.270944+00:00",
+  "extractions": {
+    "actt1": {
+      "doc_id": null,
+      "nct_id": "NCT04280705",
+      "brief_title": "Adaptive COVID-19 Treatment Trial (ACTT)",
+      "official_title": "A Multicenter, Adaptive, Randomized Blinded Controlled Trial of the Safety and Efficacy of Investigational Therapeutics for the Treatment of COVID-19 in Hospitalized Adults",
+      "lead_sponsor": "National Institute of Allergy and Infectious Diseases (NIAID) (NIH)",
+      "sponsor_class": "NIH",
+      "collaborators": [],
+      "conditions": [
+        "COVID-19"
+      ],
+      "phases": [
+        "Phase 3"
+      ],
+      "study_type": "INTERVENTIONAL",
+      "allocation": "RANDOMIZED",
+      "primary_purpose": "TREATMENT",
+      "masking": "DOUBLE",
+      "who_masked": [
+        "PARTICIPANT",
+        "INVESTIGATOR"
+      ],
+      "enrollment_count": 1062,
+      "enrollment_type": "ACTUAL",
+      "overall_status": "COMPLETED",
+      "start_date": "2020-02-21",
+      "primary_completion_date": "2020-05-21",
+      "completion_date": "2020-05-21",
+      "arms": [
+        {
+          "description": "200 mg of Remdesivir placebo administered intravenously on Day 1, followed by a 100 mg once-daily maintenance dose of Remdesivir placebo while hospitalized for up to a 10 days total course. n=286.",
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR"
+        },
+        {
+          "description": "200 mg of Remdesivir administered intravenously on Day 1, followed by a 100 mg once-daily maintenance dose of Remdesivir while hospitalized for up to a 10 days total course. n=286.",
+          "label": "Remdesivir",
+          "type": "EXPERIMENTAL"
+        }
+      ],
+      "interventions": [
+        {
+          "description": "The supplied placebo lyophilized formulation is identical in physical appearance to the active lyophilized formulation and contains the same inactive ingredients. Alternatively, a placebo of normal saline of equal volume may be given if there are limitations on matching placebo supplies.",
+          "name": "Placebo",
+          "type": "OTHER"
+        },
+        {
+          "description": "Drug Remdesivir is a single diastereomer monophosphoramidate prodrug designed for the intracellular delivery of a modified adenine nucleoside analog GS-441524. In addition to the active ingredient, the lyophilized formulation of Remdesivir contains the following inactive ingredients: water for injection, sulfobutylether beta-cyclodextrin sodium (SBECD), and hydrochloric acid and/or sodium hydroxide.",
+          "name": "Remdesivir",
+          "type": "DRUG"
+        }
+      ],
+      "eligibility_sex": "ALL",
+      "eligibility_min_age": "18 Years",
+      "eligibility_max_age": "99 Years",
+      "healthy_volunteers": false,
+      "inclusion_criteria": [
+        "Admitted to a hospital with symptoms suggestive of COVID-19 infection.",
+        "Subject (or legally authorized representative) provides informed consent prior to initiation of any study procedures.",
+        "Subject (or legally authorized representative) understands and agrees to comply with planned study procedures.",
+        "Male or non-pregnant female adult > / = 18 years of age at time of enrollment.",
+        "Has laboratory-confirmed SARS-CoV-2 infection as determined by polymerase chain reaction (PCR) or other commercial or public health assay in any specimen, as documented by either or the following: 1. PCR positive in sample collected < 72 hours prior to randomization; OR 2. PCR positive in sample collected >/= 72 hours prior to randomization, documented inability to obtain a repeat sample (e.g. due to lack of testing supplies, limited testing capacity, results taking >24 hours, etc.) AND progressive disease suggestive of ongoing SARS-CoV-2 infection.",
+        "Illness of any duration, and at least one of the following: 1. Radiographic infiltrates by imaging (chest x-ray, CT scan, etc.), OR 2. SpO2 < / = 94% on room air, OR 3. Requiring supplemental oxygen, OR 4. Requiring mechanical ventilation.",
+        "Women of childbearing potential must agree to either abstinence or use at least one primary form of contraception not including hormonal contraception from the time of screening through Day 29.",
+        "Agrees to not participate in another clinical trial for the treatment of COVID-19 or SARS-CoV-2 through Day 29."
+      ],
+      "exclusion_criteria": [
+        "Alanine Transaminase (ALT) or Aspartate Transaminase (AST) > 5 times the upper limit of normal.",
+        "Estimated glomerular filtration rate (eGFR) < 30 ml/min (including patients receiving hemodialysis or hemofiltration).",
+        "Pregnancy or breast feeding.",
+        "Anticipated discharge from the hospital or transfer to another hospital which is not a study site within 72 hours.",
+        "Allergy to any study medication."
+      ],
+      "primary_outcomes": [
+        {
+          "measure": "Time to Recovery",
+          "time_frame": "Day 1 through Day 29"
+        },
+        {
+          "measure": "Time to Recovery by Race",
+          "time_frame": "Day 1 through Day 29"
+        },
+        {
+          "measure": "Time to Recovery by Ethnicity",
+          "time_frame": "Day 1 through Day 29"
+        },
+        {
+          "measure": "Time to Recovery by Sex",
+          "time_frame": "Day 1 through Day 29"
+        }
+      ],
+      "secondary_outcomes": [
+        {
+          "measure": "Change From Baseline in Alanine Transaminase (ALT)",
+          "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+        },
+        {
+          "measure": "Change From Baseline in Aspartate Transaminase (AST)",
+          "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+        },
+        {
+          "measure": "Change From Baseline in Creatinine",
+          "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+        },
+        {
+          "measure": "Change From Baseline in Glucose",
+          "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+        },
+        {
+          "measure": "Change From Baseline in Hemoglobin",
+          "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+        },
+        {
+          "measure": "Change From Baseline in Platelets",
+          "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+        },
+        {
+          "measure": "Change From Baseline in Prothrombin Time (PT)",
+          "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+        },
+        {
+          "measure": "Change From Baseline in Total Bilirubin",
+          "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+        },
+        {
+          "measure": "Change From Baseline in White Blood Cell Count (WBC)",
+          "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+        },
+        {
+          "measure": "Change From Baseline in Neutrophils",
+          "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+        },
+        {
+          "measure": "Change From Baseline in Lymphocytes",
+          "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+        },
+        {
+          "measure": "Change From Baseline in Monocytes",
+          "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+        },
+        {
+          "measure": "Change From Baseline in Basophils",
+          "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+        },
+        {
+          "measure": "Change From Baseline in Eosinophils",
+          "time_frame": "Days 1, 3, 5, 8, 11, 15 and 29"
+        },
+        {
+          "measure": "Change in National Early Warning Score (NEWS) From Baseline",
+          "time_frame": "Days 1, 3, 5, 8, 11, 15, 22, and 29"
+        },
+        {
+          "measure": "Percentage of Participants at Each Clinical Status Using Ordinal Scale at Day 1",
+          "time_frame": "Day 1"
+        },
+        {
+          "measure": "Percentage of Participants at Each Clinical Status Using Ordinal Scale at Day 3",
+          "time_frame": "Day 3"
+        },
+        {
+          "measure": "Percentage of Participants at Each Clinical Status Using Ordinal Scale at Day 5",
+          "time_frame": "Day 5"
+        },
+        {
+          "measure": "Percentage of Participants at Each Clinical Status Using Ordinal Scale at Day 8",
+          "time_frame": "Day 8"
+        },
+        {
+          "measure": "Percentage of Participants at Each Clinical Status Using Ordinal Scale at Day 11",
+          "time_frame": "Day 11"
+        },
+        {
+          "measure": "Percentage of Participants at Each Clinical Status Using Ordinal Scale at Day 15",
+          "time_frame": "Day 15"
+        },
+        {
+          "measure": "Percentage of Participants at Each Clinical Status Using Ordinal Scale at Day 22",
+          "time_frame": "Day 22"
+        },
+        {
+          "measure": "Percentage of Participants at Each Clinical Status Using Ordinal Scale at Day 29",
+          "time_frame": "Day 29"
+        },
+        {
+          "measure": "Percentage of Participants Reporting Grade 3 and 4 Clinical and/or Laboratory Adverse Events (AEs)",
+          "time_frame": "Day 1 through Day 29"
+        },
+        {
+          "measure": "Percentage of Participants Reporting Serious Adverse Events (SAEs)",
+          "time_frame": "Day 1 through Day 29"
+        },
+        {
+          "measure": "Percentage of Participants Discontinued or Temporarily Suspended From Investigational Therapeutics",
+          "time_frame": "Day 1 through Day 10"
+        },
+        {
+          "measure": "Duration of Hospitalization",
+          "time_frame": "Day 1 through Day 29"
+        },
+        {
+          "measure": "Duration of New Non-invasive Ventilation or High Flow Oxygen Use",
+          "time_frame": "Day 1 through Day 29"
+        },
+        {
+          "measure": "Duration of New Oxygen Use",
+          "time_frame": "Day 1 through Day 29"
+        },
+        {
+          "measure": "Duration of New Ventilator or Extracorporeal Membrane Oxygenation (ECMO) Use",
+          "time_frame": "Day 1 through Day 29"
+        },
+        {
+          "measure": "Percentage of Participants Requiring New Non-invasive Ventilation or High-flow Oxygen Use",
+          "time_frame": "Day 1 through Day 29"
+        },
+        {
+          "measure": "Percentage of Participants Requiring New Oxygen Use",
+          "time_frame": "Day 1 through Day 29"
+        },
+        {
+          "measure": "Percentage of Participants Requiring New Ventilator or Extracorporeal Membrane Oxygenation (ECMO) Use",
+          "time_frame": "Day 1 through Day 29"
+        },
+        {
+          "measure": "Mean Change in the Ordinal Scale",
+          "time_frame": "Day 1, 3, 5, 8, 11, 15, 22, and 29"
+        },
+        {
+          "measure": "14-day Participant Mortality",
+          "time_frame": "Day 1 through Day 15"
+        },
+        {
+          "measure": "29-day Participant Mortality",
+          "time_frame": "Day 1 through Day 29"
+        },
+        {
+          "measure": "Time to an Improvement by at Least One Category Using an Ordinal Scale",
+          "time_frame": "Day 1 through Day 29"
+        },
+        {
+          "measure": "Time to an Improvement of at Least Two Categories Using an Ordinal Scale",
+          "time_frame": "Day 1 through Day 29"
+        },
+        {
+          "measure": "Time to Discharge or to a NEWS of 2 or Less and Maintained for 24 Hours, Whichever Occurs First",
+          "time_frame": "Day 1 through Day 29"
+        }
+      ]
+    },
+    "area3": {
+      "doc_id": null,
+      "nct_id": "NCT03036150",
+      "brief_title": "A Study to Evaluate the Effect of Dapagliflozin on Renal Outcomes and Cardiovascular Mortality in Patients With Chronic Kidney Disease",
+      "official_title": "A Study to Evaluate the Effect of Dapagliflozin on Renal Outcomes and Cardiovascular Mortality in Patients With Chronic Kidney Disease",
+      "lead_sponsor": "AstraZeneca",
+      "sponsor_class": "INDUSTRY",
+      "collaborators": [],
+      "conditions": [
+        "Chronic Kidney Disease"
+      ],
+      "phases": [
+        "Phase 3"
+      ],
+      "study_type": "INTERVENTIONAL",
+      "allocation": "RANDOMIZED",
+      "primary_purpose": "TREATMENT",
+      "masking": "QUADRUPLE",
+      "who_masked": [
+        "PARTICIPANT",
+        "CARE_PROVIDER",
+        "INVESTIGATOR",
+        "OUTCOMES_ASSESSOR"
+      ],
+      "enrollment_count": 4304,
+      "enrollment_type": "ACTUAL",
+      "overall_status": "COMPLETED",
+      "start_date": "2017-02-02",
+      "primary_completion_date": "2020-06-12",
+      "completion_date": "2020-06-12",
+      "arms": [
+        {
+          "description": "Patients will be randomized 1:1 to either dapagliflozin or placebo.",
+          "label": "Dapagliflozin",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "description": "Placebo matching dapagliflozin.",
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR"
+        }
+      ],
+      "interventions": [
+        {
+          "description": "10 mg or 5 mg tablets given once daily, per oral use.",
+          "name": "Dapagliflozin",
+          "type": "DRUG"
+        },
+        {
+          "description": "Placebo matching dapagliflozin 10 mg or 5 mg",
+          "name": "Placebo",
+          "type": "DRUG"
+        }
+      ],
+      "eligibility_sex": "ALL",
+      "eligibility_min_age": "18 Years",
+      "eligibility_max_age": "130 Years",
+      "healthy_volunteers": false,
+      "inclusion_criteria": [
+        "Provision of signed informed consent prior to any study specific procedures",
+        "Female or male aged \u226518 years at the time of consent",
+        "eGFR \u226525 and \u226475 mL/min/1.73m2 (CKD-EPI Formula) at visit 1",
+        "Evidence of increased albuminuria 3 months or more before visit 1 and UACR \u2265200 and \u22645000 mg/g at visit 1",
+        "Stable, and for the patient maximum tolerated labelled daily dose, treatment with ACE-I or ARB for at least 4 weeks before visit 1, if not medically contraindicated,"
+      ],
+      "exclusion_criteria": [
+        "Autosomal dominant or autosomal recessive polycystic kidney disease, lupus nephritis or ANCA-associated vasculitis",
+        "Receiving cytotoxic therapy, immunosuppressive therapy or other immunotherapy for primary or secondary renal disease within 6 months prior to enrolment",
+        "History of organ transplantation",
+        "Receiving therapy with an SGLT2 inhibitor within 8 weeks prior to enrolment or previous intolerance of an SGLT2 inhibitor",
+        "Type 1 diabetes mellitus",
+        "New York Heart Association (NYHA) class IV Congestive Heart Failure at the time of enrolment",
+        "MI, unstable angina, stroke or transient ischemic attack within 12 weeks prior to enrolment"
+      ],
+      "primary_outcomes": [
+        {
+          "measure": "Time to the First Occurrence of Any of the Components of the Composite: \u226550% Sustained Decline in eGFR or Reaching ESRD or CV Death or Renal Death.",
+          "time_frame": "Up to 38.2 months"
+        }
+      ],
+      "secondary_outcomes": [
+        {
+          "measure": "Time to the First Occurrence of Any of the Components of the Composite: \u226550% Sustained Decline in eGFR or Reaching ESRD or Renal Death.",
+          "time_frame": "Up to 38.2 months"
+        },
+        {
+          "measure": "Time to the First Occurrence of Either of the Components of the Composite: CV Death or Hospitalization for Heart Failure.",
+          "time_frame": "Up to 38.2 months"
+        },
+        {
+          "measure": "Time to Death From Any Cause.",
+          "time_frame": "Up to 38.2 months"
+        }
+      ]
+    },
+    "onc1": {
+      "doc_id": null,
+      "nct_id": "NCT01642004",
+      "brief_title": "Study of BMS-936558 (Nivolumab) Compared to Docetaxel in Previously Treated Advanced or Metastatic Squamous Cell Non-small Cell Lung Cancer (NSCLC) (CheckMate 017)",
+      "official_title": "An Open-Label Randomized Phase III Trial of BMS-936558 (Nivolumab) Versus Docetaxel in Previously Treated Advanced or Metastatic Squamous Cell Non-small Cell Lung Cancer (NSCLC)",
+      "lead_sponsor": "Bristol-Myers Squibb",
+      "sponsor_class": "INDUSTRY",
+      "collaborators": [],
+      "conditions": [
+        "Squamous Cell Non-small Cell Lung Cancer"
+      ],
+      "phases": [
+        "Phase 3"
+      ],
+      "study_type": "INTERVENTIONAL",
+      "allocation": "RANDOMIZED",
+      "primary_purpose": "TREATMENT",
+      "masking": "NONE",
+      "who_masked": [],
+      "enrollment_count": 272,
+      "enrollment_type": "ACTUAL",
+      "overall_status": "COMPLETED",
+      "start_date": "2012-10-16",
+      "primary_completion_date": "2014-11-17",
+      "completion_date": "2021-08-16",
+      "arms": [
+        {
+          "description": "Nivolumab 3 mg/kg solution intravenously (IV) every 2 weeks until documented disease progression, discontinuation due to toxicity, withdrawal of consent or the study ends. Eligible patients may receive nivolumab at 480mg every 4 weeks until documented disease progression, discontinuation, withdrawal of consent or the study ends.",
+          "label": "Arm A: Nivolumab",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "description": "Docetaxel 75 mg/m^2 concentrate for solution for intravenous infusion every 3 weeks until documented disease progression, discontinuation due to toxicity, withdrawal of consent or the study ends. Eligible patients may receive nivolumab at 480mg every 4 weeks until documented disease progression, discontinuation, withdrawal of consent or the study ends.",
+          "label": "Arm B: Docetaxel",
+          "type": "EXPERIMENTAL"
+        }
+      ],
+      "interventions": [
+        {
+          "description": null,
+          "name": "Nivolumab",
+          "type": "BIOLOGICAL"
+        },
+        {
+          "description": null,
+          "name": "Docetaxel",
+          "type": "DRUG"
+        }
+      ],
+      "eligibility_sex": "ALL",
+      "eligibility_min_age": "18 Years",
+      "eligibility_max_age": null,
+      "healthy_volunteers": false,
+      "inclusion_criteria": [
+        "Men and women \u226518 years of age",
+        "Subjects with histologically or cytologically-documented squamous cell NSCLC who present with Stage IIIB/IV disease or with recurrent or progressive disease following multimodal therapy (radiation therapy, surgical resection or definitive chemoradiation therapy for locally advanced disease)",
+        "Disease recurrence or progression during/after one prior platinum doublet-based chemotherapy regimen for advanced or metastatic disease",
+        "Measurable disease by computed tomography (CT)/Magnetic resonance imaging (MRI) per Response Evaluation Criteria in Solid Tumors (RECIST) 1.1 criteria",
+        "Eastern Cooperative Oncology Group (ECOG) performance status \u22641",
+        "A formalin fixed, paraffin-embedded (FFPE) tumor tissue block or unstained slides of tumor sample (archival or recent) must be available for biomarker evaluation. Specimens must be received by the central lab prior to randomization. Biopsy should be excisional, incisional or core needle. Fine needle aspiration is insufficient"
+      ],
+      "exclusion_criteria": [
+        "Subjects with untreated central nervous system (CNS) metastases are excluded. Subjects are eligible if CNS metastases are treated and subjects are neurologically returned to baseline for at least 2 weeks prior to enrollment. In addition, subjects must be either off corticosteroids, or on a stable or decreasing dose of \u226410 mg daily prednisone (or equivalent)",
+        "Subjects with carcinomatous meningitis",
+        "Subjects with active, known or suspected autoimmune disease. Subjects with type I diabetes mellitus, hypothyroidism only requiring hormone replacement, skin disorders (such as vitiligo, psoriasis, or alopecia) not requiring systemic treatment, or conditions not expected to recur in the absence of an external trigger are permitted to enroll",
+        "Subjects with a condition requiring systemic treatment with either corticosteroids or other immunosuppressive medications within 14 days of randomization",
+        "Prior therapy with anti-Programmed death-1 (PD-1), anti-Programmed cell death ligand 1 (PD-L1), anti-Programmed cell death ligand 2 (PD-L2), anti-CD137, or anti-Cytotoxic T lymphocyte-associated antigen 4 (CTLA-4) antibody (including ipilimumab or any other antibody or drug specifically targeting T-cell co-stimulation or checkpoint pathways)",
+        "Prior treatment on the first line study CA184104 first line NSCLC study",
+        "Prior treatment with Docetaxel",
+        "Subjects with interstitial lung disease that is symptomatic or may interfere with the detection or management of suspected drug-related pulmonary toxicity",
+        "Treatment with any investigational agent within 14 days of first administration of study treatment"
+      ],
+      "primary_outcomes": [
+        {
+          "measure": "Overall Survival (OS) Time in Months for All Randomized Participants at Primary Endpoint",
+          "time_frame": "Randomization until 199 deaths, up to November 2014, approximately 25 months"
+        },
+        {
+          "measure": "Overall Survival (OS) Rate in All Randomized Participants",
+          "time_frame": "Randomization to 18 months post-randomization, up to June 2015"
+        },
+        {
+          "measure": "Number of Deaths From Any Cause in All Randomized Participants at Primary Endpoint",
+          "time_frame": "Randomization until 199 deaths, up to November 2014, approximately 25 months"
+        }
+      ],
+      "secondary_outcomes": [
+        {
+          "measure": "Objective Response Rate (ORR) in All Randomized Participants",
+          "time_frame": "From the date of randomization up to the date of objectively documented progression, up to approximately 103 months"
+        },
+        {
+          "measure": "Time To Response (TTR) in Months for All Confirmed Responders",
+          "time_frame": "From the date of randomization to the date of the first confirmed response, up to approximately 12 months"
+        },
+        {
+          "measure": "Duration of Objective Response (DOR) in Months for All Confirmed Responders",
+          "time_frame": "From the date of first confirmed response to the date of the first documented tumor progression or death due to any cause, whichever occurred first, up to approximately 94 months"
+        },
+        {
+          "measure": "Progression Free Survival Rate (PFSR)",
+          "time_frame": "From randomization to specified timepoints, up to 84 months"
+        },
+        {
+          "measure": "Progression-Free Survival (PFS) Time in Months for All Randomized Participants",
+          "time_frame": "From randomization up to the first confirmed response to the date of the first documented tumor progression or death due to any cause, whichever occurred first, up to approximately 103 months"
+        },
+        {
+          "measure": "Percentage of Participants Experiencing Disease-related Symptom Improvement by Week 12",
+          "time_frame": "From randomization up to Week 12"
+        },
+        {
+          "measure": "Overall Survival (OS) Time in Months by Baseline PD-L1 Expression for All Randomized Participants",
+          "time_frame": "From the date of randomization to the date of death from any cause, up to approximately 103 months"
+        },
+        {
+          "measure": "Objective Response Rate (ORR) by Baseline PD-L1 Expression for All Randomized Participants",
+          "time_frame": "From the date of randomization up to the date of objectively documented progression, up to approximately 103 months"
+        },
+        {
+          "measure": "Progression Free Survival (PFS) Time in Months by Baseline PD-L1 Expression for All Randomized Participants",
+          "time_frame": "From the date of first confirmed response to the date of the first documented tumor progression or death due to any cause, whichever occurred first, up to approximately 103 months"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "id": "area3-r1",
+    "question": "Can a patient with eGFR of 20 mL/min/1.73m2 and UACR of 150 mg/g enroll in this dapagliflozin trial, and what daily dose would they receive if eligible?",
+    "expected_spans": [
+      {"section": "Eligibility Criteria > Inclusion", "quote": "eGFR >= 25 and <= 75 mL/min/1.73m2 (CKD-EPI Formula) at visit 1"},
+      {"section": "Eligibility Criteria > Inclusion", "quote": "UACR >= 200 and <= 5000 mg/g at visit 1"},
+      {"section": "Arms and Interventions > Dapagliflozin", "quote": "10 mg or 5 mg tablets given once daily, per oral use"}
+    ],
+    "rationale": "Patient eGFR 20 is BELOW the minimum of 25, so excluded. UACR 150 is also below the minimum of 200. Both inclusion thresholds must be met. Cross-references two separate inclusion criteria with the dosing information."
+  },
+  {
+    "id": "area3-r2",
+    "question": "Would a patient with type 1 diabetes who had a kidney transplant 2 years ago be eligible for this trial, and what is the primary composite endpoint?",
+    "expected_spans": [
+      {"section": "Eligibility Criteria > Exclusion", "quote": "Type 1 diabetes mellitus"},
+      {"section": "Eligibility Criteria > Exclusion", "quote": "History of organ transplantation"},
+      {"section": "Outcomes > Primary Outcomes", "quote": "Time to the First Occurrence of Any of the Components of the Composite: >= 50% Sustained Decline in eGFR, End Stage Kidney Disease, Renal Death or Cardiovascular Death"}
+    ],
+    "rationale": "Two independent exclusion criteria apply (type 1 diabetes AND organ transplantation history), both blocking enrollment. Then connects to the primary composite endpoint. Three sections synthesized."
+  },
+  {
+    "id": "area3-r3",
+    "question": "What prior medication must a patient be stabilized on before enrollment, and what happens if they were previously intolerant to the study drug class?",
+    "expected_spans": [
+      {"section": "Eligibility Criteria > Inclusion", "quote": "Stable, and for the patient maximum tolerated labelled daily dose, treatment with ACE-I or ARB for at least 4 weeks before visit 1, if not medically contraindicated"},
+      {"section": "Eligibility Criteria > Exclusion", "quote": "Receiving therapy with an SGLT2 inhibitor within 8 weeks prior to enrolment or previous intolerance of an SGLT2 inhibitor"},
+      {"section": "Interventions", "quote": "Dapagliflozin ... 10 mg or 5 mg tablets given once daily"}
+    ],
+    "rationale": "Requires connecting the ACE-I/ARB stabilization requirement (inclusion) with the SGLT2 inhibitor washout/intolerance exclusion. Dapagliflozin IS an SGLT2 inhibitor, so prior intolerance excludes. Three sections: inclusion criteria, exclusion criteria, and interventions."
+  },
+  {
+    "id": "area3-r4",
+    "question": "If a patient had a myocardial infarction 10 weeks before screening, can they enroll? What cardiovascular endpoint is tracked as a secondary outcome, and who is blinded to treatment assignment?",
+    "expected_spans": [
+      {"section": "Eligibility Criteria > Exclusion", "quote": "MI, unstable angina, stroke or transient ischemic attack within 12 weeks prior to enrolment"},
+      {"section": "Outcomes > Secondary Outcomes", "quote": "Time to the First Occurrence of Either of the Components of the Composite: Cardiovascular Death or Hospitalization for Heart Failure"},
+      {"section": "Study Design", "quote": "Masking: QUADRUPLE ... Who Masked: PARTICIPANT, CARE_PROVIDER, INVESTIGATOR, OUTCOMES_ASSESSOR"}
+    ],
+    "rationale": "MI 10 weeks ago is within the 12-week exclusion window, so the patient is excluded. Then connects to the CV secondary endpoint and the quadruple masking design. Three sections: exclusion criteria, secondary outcomes, and study design."
+  },
+  {
+    "id": "area3-r5",
+    "question": "What renal function decline and kidney disease progression endpoints does the trial measure, and what baseline eGFR range must patients have to be included?",
+    "expected_spans": [
+      {"section": "Eligibility Criteria > Inclusion", "quote": "eGFR >= 25 and <= 75 mL/min/1.73m2 (CKD-EPI Formula) at visit 1"},
+      {"section": "Outcomes > Primary Outcomes", "quote": ">= 50% Sustained Decline in eGFR, End Stage Kidney Disease, Renal Death or Cardiovascular Death"},
+      {"section": "Outcomes > Secondary Outcomes", "quote": ">= 50% Sustained Decline in eGFR, End Stage Kidney Disease or Renal Death"}
+    ],
+    "rationale": "Connects the baseline eGFR enrollment criterion (25-75) with both the primary composite endpoint (which includes renal outcomes) and the renal-specific secondary composite. The question requires understanding how the baseline kidney function requirement relates to the measured renal decline outcomes."
+  }
+]

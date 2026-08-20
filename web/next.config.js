@@ -1,13 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // The web viewer lives in web/ but reads eval JSON from the repo root.
-  // In dev, getRepoRoot() walks up to the repo root. In production, a prebuild
-  // step copies evals/, data/, shared/ into web/ so the serverless bundle can
-  // read them from process.cwd(). externalDir lets dev read the parent dir.
-  experimental: {
-    externalDir: true,
-  },
-  // Force-include the copied data artifacts in the serverless function bundle.
+  // The web viewer reads eval/data/schema JSON from web/evals, web/data,
+  // web/shared (a committed snapshot of the repo-root artifacts). Vercel's
+  // Root Directory is set to web/, so these are bundled with the app.
   // fs.readFileSync with a dynamic path is not statically traceable by nft,
   // so we declare the globs explicitly per route.
   outputFileTracingIncludes: {

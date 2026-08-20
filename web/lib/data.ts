@@ -2,18 +2,17 @@ import fs from "fs";
 import path from "path";
 
 /**
- * Resolve the repo root. In dev (running from web/), the eval/data/schema
- * artifacts live two levels up at the repo root. In production, a prebuild
- * step copies evals/, data/, shared/ INTO web/, so they live at process.cwd().
- * We prefer the in-cwd copy when present, and fall back to the parent dir.
+ * Resolve the directory that holds the eval/data/schema artifacts.
+ * These are committed as a snapshot under web/evals, web/data, web/shared,
+ * so they live at process.cwd() in both dev and production (Vercel Root
+ * Directory is web/). We keep a parent-dir fallback for the case where the
+ * snapshot is absent and the artifacts live at the repo root instead.
  */
 export function getRepoRoot(): string {
   const cwd = process.cwd();
-  // If the copied artifacts are present in cwd (production), use cwd.
   if (fs.existsSync(path.join(cwd, "evals")) || fs.existsSync(path.join(cwd, "shared"))) {
     return cwd;
   }
-  // Otherwise (dev), walk up to the repo root.
   if (path.basename(cwd) === "web") {
     return path.resolve(cwd, "..");
   }

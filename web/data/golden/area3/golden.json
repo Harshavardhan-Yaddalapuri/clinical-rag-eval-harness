@@ -1,0 +1,87 @@
+{
+  "doc_id": "area3",
+  "nct_id": "NCT03036150",
+  "brief_title": "A Study to Evaluate the Effect of Dapagliflozin on Renal Outcomes and Cardiovascular Mortality in Patients With Chronic Kidney Disease (DAPA-CKD)",
+  "official_title": "A Study to Evaluate the Effect of Dapagliflozin on Renal Outcomes and Cardiovascular Mortality in Patients With Chronic Kidney Disease",
+  "lead_sponsor": "AstraZeneca",
+  "sponsor_class": "INDUSTRY",
+  "collaborators": [],
+  "conditions": ["Chronic Kidney Disease"],
+  "phases": ["Phase 3"],
+  "study_type": "INTERVENTIONAL",
+  "allocation": "RANDOMIZED",
+  "intervention_model": "Not specified",
+  "primary_purpose": "TREATMENT",
+  "masking": "QUADRUPLE",
+  "who_masked": ["PARTICIPANT", "CARE_PROVIDER", "INVESTIGATOR", "OUTCOMES_ASSESSOR"],
+  "enrollment_count": 4304,
+  "enrollment_type": "ACTUAL",
+  "overall_status": "COMPLETED",
+  "start_date": "2017-02-02",
+  "primary_completion_date": "2020-06-12",
+  "completion_date": "2020-06-12",
+  "arms": [
+    {
+      "label": "Dapagliflozin",
+      "type": "EXPERIMENTAL",
+      "description": "Patients randomized 1:1 to dapagliflozin or placebo. 10 mg or 5 mg tablets given once daily, per oral use."
+    },
+    {
+      "label": "Placebo",
+      "type": "PLACEBO_COMPARATOR",
+      "description": "Placebo matching dapagliflozin 10 mg or 5 mg"
+    }
+  ],
+  "interventions": [
+    {
+      "type": "DRUG",
+      "name": "Dapagliflozin",
+      "description": "10 mg or 5 mg tablets given once daily, per oral use"
+    },
+    {
+      "type": "DRUG",
+      "name": "Placebo",
+      "description": "Placebo matching dapagliflozin 10 mg or 5 mg"
+    }
+  ],
+  "eligibility_sex": "ALL",
+  "eligibility_min_age": "18 Years",
+  "eligibility_max_age": "130 Years",
+  "healthy_volunteers": false,
+  "inclusion_criteria": [
+    "Provision of signed informed consent prior to any study specific procedures",
+    "Female or male aged >= 18 years at the time of consent",
+    "eGFR >= 25 and <= 75 mL/min/1.73m2 (CKD-EPI Formula) at visit 1",
+    "Evidence of increased albuminuria 3 months or more before visit 1 and UACR >= 200 and <= 5000 mg/g at visit 1",
+    "Stable, maximum tolerated labelled daily dose of ACE-I or ARB for at least 4 weeks before visit 1, if not medically contraindicated"
+  ],
+  "exclusion_criteria": [
+    "Autosomal dominant or autosomal recessive polycystic kidney disease, lupus nephritis or ANCA-associated vasculitis",
+    "Receiving cytotoxic therapy, immunosuppressive therapy or other immunotherapy for primary or secondary renal disease within 6 months prior to enrolment",
+    "History of organ transplantation",
+    "Receiving therapy with an SGLT2 inhibitor within 8 weeks prior to enrolment or previous intolerance of an SGLT2 inhibitor",
+    "Type 1 diabetes mellitus",
+    "New York Heart Association (NYHA) class IV Congestive Heart Failure at the time of enrolment",
+    "MI, unstable angina, stroke or transient ischemic attack within 12 weeks prior to enrolment"
+  ],
+  "primary_outcomes": [
+    {
+      "measure": "Time to the First Occurrence of Any of the Components of the Composite: >= 50% Sustained Decline in eGFR, End Stage Kidney Disease, Renal Death or Cardiovascular Death",
+      "time_frame": "Up to 38.2 months"
+    }
+  ],
+  "secondary_outcomes": [
+    {
+      "measure": "Time to the First Occurrence of Any of the Components of the Composite: >= 50% Sustained Decline in eGFR, End Stage Kidney Disease or Renal Death",
+      "time_frame": "Up to 38.2 months"
+    },
+    {
+      "measure": "Time to the First Occurrence of Either of the Components of the Composite: Cardiovascular Death or Hospitalization for Heart Failure",
+      "time_frame": "Up to 38.2 months"
+    },
+    {
+      "measure": "Time to Death From Any Cause",
+      "time_frame": "Up to 38.2 months"
+    }
+  ]
+}
