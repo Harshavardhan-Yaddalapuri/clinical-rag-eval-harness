@@ -1,13 +1,13 @@
 {
-  "model": "glm-5.2",
-  "created_at": "2026-08-20T06:37:00.881334+00:00",
+  "model": "qwen3.5:397b",
+  "created_at": "2026-08-20T06:41:51.270944+00:00",
   "extractions": {
     "actt1": {
       "doc_id": null,
       "nct_id": "NCT04280705",
       "brief_title": "Adaptive COVID-19 Treatment Trial (ACTT)",
       "official_title": "A Multicenter, Adaptive, Randomized Blinded Controlled Trial of the Safety and Efficacy of Investigational Therapeutics for the Treatment of COVID-19 in Hospitalized Adults",
-      "lead_sponsor": "National Institute of Allergy and Infectious Diseases (NIAID)",
+      "lead_sponsor": "National Institute of Allergy and Infectious Diseases (NIAID) (NIH)",
       "sponsor_class": "NIH",
       "collaborators": [],
       "conditions": [
@@ -315,7 +315,7 @@
         "Female or male aged \u226518 years at the time of consent",
         "eGFR \u226525 and \u226475 mL/min/1.73m2 (CKD-EPI Formula) at visit 1",
         "Evidence of increased albuminuria 3 months or more before visit 1 and UACR \u2265200 and \u22645000 mg/g at visit 1",
-        "Stable, and for the patient maximum tolerated labelled daily dose, treatment with ACE-I or ARB for at least 4 weeks before visit 1, if not medically contraindicated"
+        "Stable, and for the patient maximum tolerated labelled daily dose, treatment with ACE-I or ARB for at least 4 weeks before visit 1, if not medically contraindicated,"
       ],
       "exclusion_criteria": [
         "Autosomal dominant or autosomal recessive polycystic kidney disease, lupus nephritis or ANCA-associated vasculitis",
