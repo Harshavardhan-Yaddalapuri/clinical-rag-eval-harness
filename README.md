@@ -21,14 +21,15 @@ by `gpt-oss:120b` for free-text fields.
 
 ## Real scores (from committed evals/)
 
-> Table populated after the T5 model run. Scores are real output of the harness against
-> the golden set. Nothing here is simulated.
+Scores are real output of the harness against the golden set. The deepseek/qwen
+identical scores were verified as genuine convergence: a fresh independent API call
+reproduced the committed output byte-for-byte (temperature 0, verbatim fields).
 
 | Model | Precision | Recall | F1 |
 |---|---|---|---|
-| glm-5.2 | _pending_ | _pending_ | _pending_ |
-| deepseek-v4-pro:0813 | _pending_ | _pending_ | _pending_ |
-| qwen3.5:397b | _pending_ | _pending_ | _pending_ |
+| glm-5.2 | 0.837 | 0.862 | 0.841 |
+| deepseek-v4-pro:0813 | 0.826 | 0.851 | 0.830 |
+| qwen3.5:397b | 0.826 | 0.851 | 0.830 |
 
 ### Retrieval (BM25 vs dense vs hybrid)
 
