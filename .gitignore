@@ -12,3 +12,4 @@ venv/
 *.log
 .vercel/
 evals/embeddings.jsonl
+.coverage

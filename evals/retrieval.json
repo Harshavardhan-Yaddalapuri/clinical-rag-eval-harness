@@ -1,0 +1,631 @@
+{
+  "strategies": [
+    {
+      "name": "bm25",
+      "metrics": {
+        "hit_at_k": 0.2,
+        "recall_at_k": 0.1222,
+        "mrr": 0.1,
+        "n_queries": 15
+      },
+      "per_doc": {
+        "actt1": {
+          "hit_at_k": 0.6,
+          "recall_at_k": 0.3667,
+          "mrr": 0.3,
+          "n_queries": 5
+        },
+        "area3": {
+          "hit_at_k": 0.0,
+          "recall_at_k": 0.0,
+          "mrr": 0.0,
+          "n_queries": 5
+        },
+        "onc1": {
+          "hit_at_k": 0.0,
+          "recall_at_k": 0.0,
+          "mrr": 0.0,
+          "n_queries": 5
+        }
+      },
+      "per_query": [
+        {
+          "hit": true,
+          "recall": 1.0,
+          "mrr": 1.0,
+          "matched_ranks": [
+            1,
+            4
+          ],
+          "n_expected": 2,
+          "n_retrieved": 5,
+          "query_id": "actt1-r1",
+          "question": "Can a patient with an estimated glomerular filtration rate (eGFR) of 25 ml/min enroll in this trial, and what dosing of remdesivir would they receive if randomized to the experimental arm?",
+          "strategy": "bm25"
+        },
+        {
+          "hit": false,
+          "recall": 0.0,
+          "mrr": 0.0,
+          "matched_ranks": [],
+          "n_expected": 3,
+          "n_retrieved": 5,
+          "query_id": "actt1-r2",
+          "question": "What laboratory safety monitoring is required for a patient with elevated liver enzymes, and at what threshold would they be excluded from the trial?",
+          "strategy": "bm25"
+        },
+        {
+          "hit": false,
+          "recall": 0.0,
+          "mrr": 0.0,
+          "matched_ranks": [],
+          "n_expected": 3,
+          "n_retrieved": 5,
+          "query_id": "actt1-r3",
+          "question": "If a pregnant woman is admitted to the hospital with COVID-19 symptoms, SpO2 of 90% on room air, and a positive SARS-CoV-2 PCR test, can she be enrolled in this trial?",
+          "strategy": "bm25"
+        },
+        {
+          "hit": true,
+          "recall": 0.3333,
+          "mrr": 0.25,
+          "matched_ranks": [
+            4
+          ],
+          "n_expected": 3,
+          "n_retrieved": 5,
+          "query_id": "actt1-r4",
+          "question": "What is the maximum duration of remdesivir treatment for a hospitalized patient, and what mortality endpoints are measured during that period?",
+          "strategy": "bm25"
+        },
+        {
+          "hit": true,
+          "recall": 0.5,
+          "mrr": 0.25,
+          "matched_ranks": [
+            4
+          ],
+          "n_expected": 2,
+          "n_retrieved": 5,
+          "query_id": "actt1-r5",
+          "question": "How does the trial design ensure that investigators cannot influence treatment assignment, and what interim oversight mechanism can stop the trial early?",
+          "strategy": "bm25"
+        },
+        {
+          "hit": false,
+          "recall": 0.0,
+          "mrr": 0.0,
+          "matched_ranks": [],
+          "n_expected": 3,
+          "n_retrieved": 5,
+          "query_id": "area3-r1",
+          "question": "Can a patient with eGFR of 20 mL/min/1.73m2 and UACR of 150 mg/g enroll in this dapagliflozin trial, and what daily dose would they receive if eligible?",
+          "strategy": "bm25"
+        },
+        {
+          "hit": false,
+          "recall": 0.0,
+          "mrr": 0.0,
+          "matched_ranks": [],
+          "n_expected": 3,
+          "n_retrieved": 5,
+          "query_id": "area3-r2",
+          "question": "Would a patient with type 1 diabetes who had a kidney transplant 2 years ago be eligible for this trial, and what is the primary composite endpoint?",
+          "strategy": "bm25"
+        },
+        {
+          "hit": false,
+          "recall": 0.0,
+          "mrr": 0.0,
+          "matched_ranks": [],
+          "n_expected": 3,
+          "n_retrieved": 5,
+          "query_id": "area3-r3",
+          "question": "What prior medication must a patient be stabilized on before enrollment, and what happens if they were previously intolerant to the study drug class?",
+          "strategy": "bm25"
+        },
+        {
+          "hit": false,
+          "recall": 0.0,
+          "mrr": 0.0,
+          "matched_ranks": [],
+          "n_expected": 3,
+          "n_retrieved": 5,
+          "query_id": "area3-r4",
+          "question": "If a patient had a myocardial infarction 10 weeks before screening, can they enroll? What cardiovascular endpoint is tracked as a secondary outcome, and who is blinded to treatment assignment?",
+          "strategy": "bm25"
+        },
+        {
+          "hit": false,
+          "recall": 0.0,
+          "mrr": 0.0,
+          "matched_ranks": [],
+          "n_expected": 3,
+          "n_retrieved": 5,
+          "query_id": "area3-r5",
+          "question": "What renal function decline and kidney disease progression endpoints does the trial measure, and what baseline eGFR range must patients have to be included?",
+          "strategy": "bm25"
+        },
+        {
+          "hit": false,
+          "recall": 0.0,
+          "mrr": 0.0,
+          "matched_ranks": [],
+          "n_expected": 2,
+          "n_retrieved": 5,
+          "query_id": "onc1-r1",
+          "question": "Can a patient with treated brain metastases who is on a stable dose of 8 mg prednisone daily enroll in this nivolumab trial, and what dose of nivolumab would they receive?",
+          "strategy": "bm25"
+        },
+        {
+          "hit": false,
+          "recall": 0.0,
+          "mrr": 0.0,
+          "matched_ranks": [],
+          "n_expected": 3,
+          "n_retrieved": 5,
+          "query_id": "onc1-r2",
+          "question": "Would a patient with type 1 diabetes and a history of ipilimumab treatment be eligible for this trial, and what is the primary endpoint used to measure efficacy?",
+          "strategy": "bm25"
+        },
+        {
+          "hit": false,
+          "recall": 0.0,
+          "mrr": 0.0,
+          "matched_ranks": [],
+          "n_expected": 3,
+          "n_retrieved": 5,
+          "query_id": "onc1-r3",
+          "question": "What performance status and disease measurement requirements must a patient meet to enroll, and what radiologic criteria are used to assess their tumor response during the trial?",
+          "strategy": "bm25"
+        },
+        {
+          "hit": false,
+          "recall": 0.0,
+          "mrr": 0.0,
+          "matched_ranks": [],
+          "n_expected": 3,
+          "n_retrieved": 5,
+          "query_id": "onc1-r4",
+          "question": "If a patient on this trial experiences disease progression after 4 weeks of nivolumab, what is the alternative treatment arm they could have been randomized to, and how does the masking design affect blinding?",
+          "strategy": "bm25"
+        },
+        {
+          "hit": false,
+          "recall": 0.0,
+          "mrr": 0.0,
+          "matched_ranks": [],
+          "n_expected": 3,
+          "n_retrieved": 5,
+          "query_id": "onc1-r5",
+          "question": "A patient with squamous NSCLC who previously received platinum-based chemotherapy wants to enroll. What tissue requirements must be met before randomization, and how long after randomization is the primary survival endpoint assessed?",
+          "strategy": "bm25"
+        }
+      ]
+    },
+    {
+      "name": "dense",
+      "metrics": {
+        "hit_at_k": 0.4,
+        "recall_at_k": 0.1889,
+        "mrr": 0.2578,
+        "n_queries": 15
+      },
+      "per_doc": {
+        "actt1": {
+          "hit_at_k": 0.8,
+          "recall_at_k": 0.4333,
+          "mrr": 0.6667,
+          "n_queries": 5
+        },
+        "area3": {
+          "hit_at_k": 0.2,
+          "recall_at_k": 0.0667,
+          "mrr": 0.04,
+          "n_queries": 5
+        },
+        "onc1": {
+          "hit_at_k": 0.2,
+          "recall_at_k": 0.0667,
+          "mrr": 0.0667,
+          "n_queries": 5
+        }
+      },
+      "per_query": [
+        {
+          "hit": true,
+          "recall": 1.0,
+          "mrr": 1.0,
+          "matched_ranks": [
+            1,
+            3
+          ],
+          "n_expected": 2,
+          "n_retrieved": 5,
+          "query_id": "actt1-r1",
+          "question": "Can a patient with an estimated glomerular filtration rate (eGFR) of 25 ml/min enroll in this trial, and what dosing of remdesivir would they receive if randomized to the experimental arm?",
+          "strategy": "dense"
+        },
+        {
+          "hit": true,
+          "recall": 0.3333,
+          "mrr": 1.0,
+          "matched_ranks": [
+            1
+          ],
+          "n_expected": 3,
+          "n_retrieved": 5,
+          "query_id": "actt1-r2",
+          "question": "What laboratory safety monitoring is required for a patient with elevated liver enzymes, and at what threshold would they be excluded from the trial?",
+          "strategy": "dense"
+        },
+        {
+          "hit": false,
+          "recall": 0.0,
+          "mrr": 0.0,
+          "matched_ranks": [],
+          "n_expected": 3,
+          "n_retrieved": 5,
+          "query_id": "actt1-r3",
+          "question": "If a pregnant woman is admitted to the hospital with COVID-19 symptoms, SpO2 of 90% on room air, and a positive SARS-CoV-2 PCR test, can she be enrolled in this trial?",
+          "strategy": "dense"
+        },
+        {
+          "hit": true,
+          "recall": 0.3333,
+          "mrr": 1.0,
+          "matched_ranks": [
+            1
+          ],
+          "n_expected": 3,
+          "n_retrieved": 5,
+          "query_id": "actt1-r4",
+          "question": "What is the maximum duration of remdesivir treatment for a hospitalized patient, and what mortality endpoints are measured during that period?",
+          "strategy": "dense"
+        },
+        {
+          "hit": true,
+          "recall": 0.5,
+          "mrr": 0.3333,
+          "matched_ranks": [
+            3
+          ],
+          "n_expected": 2,
+          "n_retrieved": 5,
+          "query_id": "actt1-r5",
+          "question": "How does the trial design ensure that investigators cannot influence treatment assignment, and what interim oversight mechanism can stop the trial early?",
+          "strategy": "dense"
+        },
+        {
+          "hit": false,
+          "recall": 0.0,
+          "mrr": 0.0,
+          "matched_ranks": [],
+          "n_expected": 3,
+          "n_retrieved": 5,
+          "query_id": "area3-r1",
+          "question": "Can a patient with eGFR of 20 mL/min/1.73m2 and UACR of 150 mg/g enroll in this dapagliflozin trial, and what daily dose would they receive if eligible?",
+          "strategy": "dense"
+        },
+        {
+          "hit": true,
+          "recall": 0.3333,
+          "mrr": 0.2,
+          "matched_ranks": [
+            5
+          ],
+          "n_expected": 3,
+          "n_retrieved": 5,
+          "query_id": "area3-r2",
+          "question": "Would a patient with type 1 diabetes who had a kidney transplant 2 years ago be eligible for this trial, and what is the primary composite endpoint?",
+          "strategy": "dense"
+        },
+        {
+          "hit": false,
+          "recall": 0.0,
+          "mrr": 0.0,
+          "matched_ranks": [],
+          "n_expected": 3,
+          "n_retrieved": 5,
+          "query_id": "area3-r3",
+          "question": "What prior medication must a patient be stabilized on before enrollment, and what happens if they were previously intolerant to the study drug class?",
+          "strategy": "dense"
+        },
+        {
+          "hit": false,
+          "recall": 0.0,
+          "mrr": 0.0,
+          "matched_ranks": [],
+          "n_expected": 3,
+          "n_retrieved": 5,
+          "query_id": "area3-r4",
+          "question": "If a patient had a myocardial infarction 10 weeks before screening, can they enroll? What cardiovascular endpoint is tracked as a secondary outcome, and who is blinded to treatment assignment?",
+          "strategy": "dense"
+        },
+        {
+          "hit": false,
+          "recall": 0.0,
+          "mrr": 0.0,
+          "matched_ranks": [],
+          "n_expected": 3,
+          "n_retrieved": 5,
+          "query_id": "area3-r5",
+          "question": "What renal function decline and kidney disease progression endpoints does the trial measure, and what baseline eGFR range must patients have to be included?",
+          "strategy": "dense"
+        },
+        {
+          "hit": false,
+          "recall": 0.0,
+          "mrr": 0.0,
+          "matched_ranks": [],
+          "n_expected": 2,
+          "n_retrieved": 5,
+          "query_id": "onc1-r1",
+          "question": "Can a patient with treated brain metastases who is on a stable dose of 8 mg prednisone daily enroll in this nivolumab trial, and what dose of nivolumab would they receive?",
+          "strategy": "dense"
+        },
+        {
+          "hit": false,
+          "recall": 0.0,
+          "mrr": 0.0,
+          "matched_ranks": [],
+          "n_expected": 3,
+          "n_retrieved": 5,
+          "query_id": "onc1-r2",
+          "question": "Would a patient with type 1 diabetes and a history of ipilimumab treatment be eligible for this trial, and what is the primary endpoint used to measure efficacy?",
+          "strategy": "dense"
+        },
+        {
+          "hit": true,
+          "recall": 0.3333,
+          "mrr": 0.3333,
+          "matched_ranks": [
+            3
+          ],
+          "n_expected": 3,
+          "n_retrieved": 5,
+          "query_id": "onc1-r3",
+          "question": "What performance status and disease measurement requirements must a patient meet to enroll, and what radiologic criteria are used to assess their tumor response during the trial?",
+          "strategy": "dense"
+        },
+        {
+          "hit": false,
+          "recall": 0.0,
+          "mrr": 0.0,
+          "matched_ranks": [],
+          "n_expected": 3,
+          "n_retrieved": 5,
+          "query_id": "onc1-r4",
+          "question": "If a patient on this trial experiences disease progression after 4 weeks of nivolumab, what is the alternative treatment arm they could have been randomized to, and how does the masking design affect blinding?",
+          "strategy": "dense"
+        },
+        {
+          "hit": false,
+          "recall": 0.0,
+          "mrr": 0.0,
+          "matched_ranks": [],
+          "n_expected": 3,
+          "n_retrieved": 5,
+          "query_id": "onc1-r5",
+          "question": "A patient with squamous NSCLC who previously received platinum-based chemotherapy wants to enroll. What tissue requirements must be met before randomization, and how long after randomization is the primary survival endpoint assessed?",
+          "strategy": "dense"
+        }
+      ]
+    },
+    {
+      "name": "hybrid",
+      "metrics": {
+        "hit_at_k": 0.3333,
+        "recall_at_k": 0.1667,
+        "mrr": 0.1944,
+        "n_queries": 15
+      },
+      "per_doc": {
+        "actt1": {
+          "hit_at_k": 0.8,
+          "recall_at_k": 0.4333,
+          "mrr": 0.5333,
+          "n_queries": 5
+        },
+        "area3": {
+          "hit_at_k": 0.0,
+          "recall_at_k": 0.0,
+          "mrr": 0.0,
+          "n_queries": 5
+        },
+        "onc1": {
+          "hit_at_k": 0.2,
+          "recall_at_k": 0.0667,
+          "mrr": 0.05,
+          "n_queries": 5
+        }
+      },
+      "per_query": [
+        {
+          "hit": true,
+          "recall": 1.0,
+          "mrr": 1.0,
+          "matched_ranks": [
+            1,
+            2
+          ],
+          "n_expected": 2,
+          "n_retrieved": 5,
+          "query_id": "actt1-r1",
+          "question": "Can a patient with an estimated glomerular filtration rate (eGFR) of 25 ml/min enroll in this trial, and what dosing of remdesivir would they receive if randomized to the experimental arm?",
+          "strategy": "hybrid"
+        },
+        {
+          "hit": true,
+          "recall": 0.3333,
+          "mrr": 0.3333,
+          "matched_ranks": [
+            3
+          ],
+          "n_expected": 3,
+          "n_retrieved": 5,
+          "query_id": "actt1-r2",
+          "question": "What laboratory safety monitoring is required for a patient with elevated liver enzymes, and at what threshold would they be excluded from the trial?",
+          "strategy": "hybrid"
+        },
+        {
+          "hit": false,
+          "recall": 0.0,
+          "mrr": 0.0,
+          "matched_ranks": [],
+          "n_expected": 3,
+          "n_retrieved": 5,
+          "query_id": "actt1-r3",
+          "question": "If a pregnant woman is admitted to the hospital with COVID-19 symptoms, SpO2 of 90% on room air, and a positive SARS-CoV-2 PCR test, can she be enrolled in this trial?",
+          "strategy": "hybrid"
+        },
+        {
+          "hit": true,
+          "recall": 0.3333,
+          "mrr": 1.0,
+          "matched_ranks": [
+            1
+          ],
+          "n_expected": 3,
+          "n_retrieved": 5,
+          "query_id": "actt1-r4",
+          "question": "What is the maximum duration of remdesivir treatment for a hospitalized patient, and what mortality endpoints are measured during that period?",
+          "strategy": "hybrid"
+        },
+        {
+          "hit": true,
+          "recall": 0.5,
+          "mrr": 0.3333,
+          "matched_ranks": [
+            3
+          ],
+          "n_expected": 2,
+          "n_retrieved": 5,
+          "query_id": "actt1-r5",
+          "question": "How does the trial design ensure that investigators cannot influence treatment assignment, and what interim oversight mechanism can stop the trial early?",
+          "strategy": "hybrid"
+        },
+        {
+          "hit": false,
+          "recall": 0.0,
+          "mrr": 0.0,
+          "matched_ranks": [],
+          "n_expected": 3,
+          "n_retrieved": 5,
+          "query_id": "area3-r1",
+          "question": "Can a patient with eGFR of 20 mL/min/1.73m2 and UACR of 150 mg/g enroll in this dapagliflozin trial, and what daily dose would they receive if eligible?",
+          "strategy": "hybrid"
+        },
+        {
+          "hit": false,
+          "recall": 0.0,
+          "mrr": 0.0,
+          "matched_ranks": [],
+          "n_expected": 3,
+          "n_retrieved": 5,
+          "query_id": "area3-r2",
+          "question": "Would a patient with type 1 diabetes who had a kidney transplant 2 years ago be eligible for this trial, and what is the primary composite endpoint?",
+          "strategy": "hybrid"
+        },
+        {
+          "hit": false,
+          "recall": 0.0,
+          "mrr": 0.0,
+          "matched_ranks": [],
+          "n_expected": 3,
+          "n_retrieved": 5,
+          "query_id": "area3-r3",
+          "question": "What prior medication must a patient be stabilized on before enrollment, and what happens if they were previously intolerant to the study drug class?",
+          "strategy": "hybrid"
+        },
+        {
+          "hit": false,
+          "recall": 0.0,
+          "mrr": 0.0,
+          "matched_ranks": [],
+          "n_expected": 3,
+          "n_retrieved": 5,
+          "query_id": "area3-r4",
+          "question": "If a patient had a myocardial infarction 10 weeks before screening, can they enroll? What cardiovascular endpoint is tracked as a secondary outcome, and who is blinded to treatment assignment?",
+          "strategy": "hybrid"
+        },
+        {
+          "hit": false,
+          "recall": 0.0,
+          "mrr": 0.0,
+          "matched_ranks": [],
+          "n_expected": 3,
+          "n_retrieved": 5,
+          "query_id": "area3-r5",
+          "question": "What renal function decline and kidney disease progression endpoints does the trial measure, and what baseline eGFR range must patients have to be included?",
+          "strategy": "hybrid"
+        },
+        {
+          "hit": false,
+          "recall": 0.0,
+          "mrr": 0.0,
+          "matched_ranks": [],
+          "n_expected": 2,
+          "n_retrieved": 5,
+          "query_id": "onc1-r1",
+          "question": "Can a patient with treated brain metastases who is on a stable dose of 8 mg prednisone daily enroll in this nivolumab trial, and what dose of nivolumab would they receive?",
+          "strategy": "hybrid"
+        },
+        {
+          "hit": false,
+          "recall": 0.0,
+          "mrr": 0.0,
+          "matched_ranks": [],
+          "n_expected": 3,
+          "n_retrieved": 5,
+          "query_id": "onc1-r2",
+          "question": "Would a patient with type 1 diabetes and a history of ipilimumab treatment be eligible for this trial, and what is the primary endpoint used to measure efficacy?",
+          "strategy": "hybrid"
+        },
+        {
+          "hit": true,
+          "recall": 0.3333,
+          "mrr": 0.25,
+          "matched_ranks": [
+            4
+          ],
+          "n_expected": 3,
+          "n_retrieved": 5,
+          "query_id": "onc1-r3",
+          "question": "What performance status and disease measurement requirements must a patient meet to enroll, and what radiologic criteria are used to assess their tumor response during the trial?",
+          "strategy": "hybrid"
+        },
+        {
+          "hit": false,
+          "recall": 0.0,
+          "mrr": 0.0,
+          "matched_ranks": [],
+          "n_expected": 3,
+          "n_retrieved": 5,
+          "query_id": "onc1-r4",
+          "question": "If a patient on this trial experiences disease progression after 4 weeks of nivolumab, what is the alternative treatment arm they could have been randomized to, and how does the masking design affect blinding?",
+          "strategy": "hybrid"
+        },
+        {
+          "hit": false,
+          "recall": 0.0,
+          "mrr": 0.0,
+          "matched_ranks": [],
+          "n_expected": 3,
+          "n_retrieved": 5,
+          "query_id": "onc1-r5",
+          "question": "A patient with squamous NSCLC who previously received platinum-based chemotherapy wants to enroll. What tissue requirements must be met before randomization, and how long after randomization is the primary survival endpoint assessed?",
+          "strategy": "hybrid"
+        }
+      ]
+    }
+  ],
+  "config": {
+    "k": 5,
+    "docs": [
+      "actt1",
+      "area3",
+      "onc1"
+    ]
+  }
+}
