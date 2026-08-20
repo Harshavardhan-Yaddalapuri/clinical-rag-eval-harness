@@ -33,8 +33,14 @@ strategies; the README claims are grounded in the best-practices survey
 ## ADR-003: Hybrid RRF over BM25 + dense as reference strategy
 
 **Decision:** Retrieval strategies: BM25 (sparse), dense (local embeddings), hybrid
-(RRF fusion, k=60). Expected honest result: hybrid >= dense on synthesis queries;
-BM25 wins lexical. This matches the best-practices survey and is measurable here.
+(RRF fusion, k=60). The expected honest result was hybrid >= dense on synthesis queries
+(best-practices survey, arXiv:2407.01219).
+**Actual (committed, evals/retrieval.json, 15 queries):** dense beats hybrid beats BM25
+(hit@k 0.40 / 0.33 / 0.20; MRR 0.26 / 0.19 / 0.10). On this small corpus the naive
+assumption did not hold.
+**Consequences:** Strategy choice is measured, not assumed. The README documents the real
+numbers. A larger corpus / tuned RRF weight may change the ordering; the harness exists
+to tell us when it does. This ADR is updated from evidence, not from vibes.
 
 ## ADR-004: LLM-as-judge only for free-text; deterministic rules otherwise
 

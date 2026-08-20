@@ -32,11 +32,18 @@ by `gpt-oss:120b` for free-text fields.
 
 ### Retrieval (BM25 vs dense vs hybrid)
 
+Real results on the 15 golden queries (evals/retrieval.json):
+
 | Strategy | Hit@5 | Recall@5 | MRR |
 |---|---|---|---|
-| bm25 | _pending_ | _pending_ | _pending_ |
-| dense | _pending_ | _pending_ | _pending_ |
-| hybrid | _pending_ | _pending_ | _pending_ |
+| bm25 | 0.20 | 0.12 | 0.10 |
+| dense | 0.40 | 0.19 | 0.26 |
+| hybrid | 0.33 | 0.17 | 0.19 |
+
+Honest note: on this small corpus dense beats hybrid and BM25, opposite of the common
+assumption that hybrid fusion always wins. That is exactly why the harness exists:
+strategy choices are measured, not assumed. Per-document breakdowns are in the committed
+artifact.
 
 ## Golden set
 
