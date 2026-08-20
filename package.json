@@ -1,0 +1,12 @@
+{
+  "name": "clinical-rag-eval-harness",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Monorepo root shim. The Next.js web viewer lives in web/; the Python harness and golden data live at the repo root.",
+  "scripts": {
+    "build": "cd web && npm install && npm run build"
+  },
+  "dependencies": {
+    "next": "^15.5.0"
+  }
+}
