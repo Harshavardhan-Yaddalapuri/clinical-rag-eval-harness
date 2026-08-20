@@ -1,4 +1,4 @@
-# LLD — Modules & API Guide
+# LLD -- Modules & API Guide
 
 **Version:** 1.0.0 · **Date:** 2026-08-20 · **Status:** Aligned with implementation (T2–T7)
 
@@ -118,7 +118,7 @@ def evaluate_extraction(run: dict, gold: dict, config: dict, judge: LLMClient) -
     # {precision, recall, f1} per field + aggregates
 ```
 
-## 8. harness/cli.py — command reference
+## 8. harness/cli.py -- command reference
 
 ```
 python -m harness.cli extract --model glm-5.2 [--doc actt1]      # → evals/runs/<model>.json

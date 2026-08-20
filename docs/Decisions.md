@@ -14,7 +14,7 @@ ACTT-1 (NCT04280705, COVID-19), CheckMate-017 (NCT01642004, oncology/NSCLC),
 DAPA-CKD (NCT03036150, nephrology/CKD). 31 extraction fields + 5 synthesis retrieval
 queries per doc, hand-verified against the API metadata. No PHI.
 **Consequences:** Reproducible by any reviewer; no PHI/NDA risk; values are traceable
-to source. Volume is small (3 docs) — the scale claim lives in docs/architecture.md.
+to source. Volume is small (3 docs) -- the scale claim lives in docs/architecture.md.
 
 ## ADR-002: Eval harness for BOTH retrieval and extraction
 
@@ -60,7 +60,7 @@ nightly job in production).
 
 ## ADR-006: Vercel, not LocalStack, for deployment
 
-**Decision:** Demo deploys to Vercel (live URL a founder can click). No LocalStack —
+**Decision:** Demo deploys to Vercel (live URL a founder can click). No LocalStack --
 a fake AWS costs time and adds zero reviewer-visible value.
 **Consequences:** Fast, free, zero-login mobile page. The scale architecture is
 documented, not emulated.
@@ -86,3 +86,34 @@ pluggability but are not in the committed scorecard.
 `qwen3-embedding:0.6b`) with a `sentence-transformers/all-MiniLM-L6-v2` fallback;
 cache at `evals/embeddings.jsonl`.
 **Consequences:** Zero API cost; reproducible; the fallback keeps CI/tests network-free.
+
+## ADR-010: 80% coverage floor enforced in CI
+
+**Status:** Accepted
+**Context:** A job demo that ships with no tests or low coverage signals "prototype, not
+product." Clinical AI pipelines have regulatory consequences; a regression harness that
+cannot verify its own scoring logic is self-defeating. The initial coverage was 56%
+(post-T4), which left scoring edge cases and CLI paths untested.
+**Decision:** CI enforces `--cov-fail-under=80` on `harness/`. Coverage is measured on
+every push, not just PRs. The floor is 80%, not 100%, because some code paths require
+live API calls (extraction, judge) that CI cannot exercise without keys.
+**Consequences:** Coverage rose from 56% to 89% (T7 added test_cli, test_retrieval,
+test_llm_client, test_chunking). The 11% gap is the live-API surface (extract.py LLM
+calls, judge paths), which is covered by the regression gate's mock-run replay instead.
+The floor prevents silent coverage decay: a worker who adds untested code breaks CI.
+
+## ADR-011: Scorecard-first web viewer
+
+**Status:** Accepted
+**Context:** A reviewer (founder, hiring manager) opens the link and decides in 10
+seconds whether to keep reading. Leading with architecture prose or a login wall loses
+that window. The artifact's value is the numbers, not the chrome.
+**Decision:** The Next.js viewer (`web/`) renders the scorecard table as the first
+screen (`GET /`). The table shows all models x precision/recall/F1 and all retrieval
+strategies x hit@k/recall@k/MRR, pulled from committed `evals/summary.json` and
+`evals/results.json`. No login, no auth wall, no "click here to see results." Document
+detail (`GET /documents/:id`) and live extraction (`POST /api/run`) are one click below
+the fold.
+**Consequences:** Reviewer sees real numbers immediately. The viewer is a read-only
+artifact by default (committed JSON), with an optional live extraction path for
+reviewers who bring their own API key. Mobile-optimized for LinkedIn in-app browser.

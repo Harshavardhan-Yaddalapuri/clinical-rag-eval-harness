@@ -1,4 +1,4 @@
-# Coding Standards — Clinical RAG Eval Harness
+# Coding Standards -- Clinical RAG Eval Harness
 
 **Version:** 2.0.0 · **Enforced by:** `scripts/check_standards.py`, CI `standards` job,
 orchestrator verification, and the `standards-watchdog` cron loop.
@@ -18,7 +18,7 @@ pytest + coverage (pandas, pytest itself), pre-commit (nearly every serious repo
 - **Files:** `snake_case.py`; `kebab-case.tsx` / `PascalCase.tsx` per Next.js conventions;
   no spaces in any filename; config files lowercase (`schema.json`, `ci.yml`, `vercel.json`).
 - **No scratch dirs, no temp files committed.** No `tmp/`, `scratch/`, `_old/`, `backup/`.
-- **Exactly one repo root** — no sibling copy directories (checked by the standards script).
+- **Exactly one repo root** -- no sibling copy directories (checked by the standards script).
 
 ## 3. Python (harness/, tests/, scripts/)
 - **Lint:** `ruff check` clean (E/F/W/I rules), `ruff format` applied.
@@ -38,7 +38,7 @@ pytest + coverage (pandas, pytest itself), pre-commit (nearly every serious repo
 - **Typing:** strict TS; no `any` (exceptions documented); no unused vars.
 - **Components:** Server Components by default; `"use client"` only for interaction.
   Props typed; no inline `style=` beyond spacing utilities.
-- **Data access:** server-side `fs.readFile` of committed artifacts at request time —
+- **Data access:** server-side `fs.readFile` of committed artifacts at request time --
   no build-time hardcoding of eval numbers, no client-side eval JSON imports.
 - **No secrets client-side.** `OLLAMA_API_KEY` server-side only.
 - **Responsive:** mobile-first; tables scroll on narrow screens.
@@ -46,7 +46,7 @@ pytest + coverage (pandas, pytest itself), pre-commit (nearly every serious repo
 ## 5. YAML / JSON
 - YAML: 2-space indent, no tabs, valid, no trailing whitespace.
 - JSON: 2-space indent, valid, contract-checked (`shared/schema.json`, golden files,
-  evals artifacts) — drift is a test failure, not a review comment.
+  evals artifacts) -- drift is a test failure, not a review comment.
 - All artifacts under `data/` and `evals/` validated by tests.
 
 ## 6. Git & Repo Hygiene
@@ -81,8 +81,8 @@ pytest + coverage (pandas, pytest itself), pre-commit (nearly every serious repo
 3. **Orchestrator:** Arceus re-runs the checker + spot-audits before accepting "done"
    (workers' self-reports are never trusted).
 4. **Watchdog:** cron `standards-watchdog` (every 6h, monitor script) alerts Telegram
-   when the checker fails or CI is red — the loop that prompts Arceus to act.
-5. **Reference OSS bar:** compare against FastAPI/pandas/ruff conventions when in doubt —
+   when the checker fails or CI is red -- the loop that prompts Arceus to act.
+5. **Reference OSS bar:** compare against FastAPI/pandas/ruff conventions when in doubt --
    if it would not merge in those repos, it does not merge here.
 
 ## 10. Definition of Done (a card is done ONLY when)

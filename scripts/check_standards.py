@@ -229,12 +229,12 @@ def _print_calls_outside_main(tree, main_ranges, rel=None):
             if node.func.id == "print":
                 if any(start <= node.lineno <= end for start, end in main_ranges):
                     continue
-                # Allow print() inside any function named main() — CLI entry points
+                # Allow print() inside any function named main() -- CLI entry points
                 if any(isinstance(n, (ast.FunctionDef, ast.AsyncFunctionDef)) and n.name == "main"
                        and n.lineno <= node.lineno <= (n.end_lineno or n.lineno)
                        for n in ast.walk(tree)):
                     continue
-                # Allow print() in CLI entry-point modules (cli.py) — they own stdout
+                # Allow print() in CLI entry-point modules (cli.py) -- they own stdout
                 if str(rel).endswith("cli.py") or str(rel).startswith("scripts/"):
                     continue
                 yield node.lineno
@@ -382,7 +382,7 @@ def check_naming(root, tracked):
                 rogue.append(candidate.name)
     if rogue:
         violations.append(
-            f"rogue sibling dir present: {', '.join(rogue)} — exactly one repo root expected ({root})"
+            f"rogue sibling dir present: {', '.join(rogue)} -- exactly one repo root expected ({root})"
         )
     return violations
 
@@ -422,7 +422,7 @@ def main(argv=None):
         return 2
 
     print("=" * 78)
-    print(f"CODING STANDARDS — {root}")
+    print(f"CODING STANDARDS -- {root}")
     print("=" * 78)
 
     rows = []      # (check, status, detail, violations, warns)
@@ -440,14 +440,14 @@ def main(argv=None):
     n_yaml, v, no_module = check_yaml(root)
     if no_module:
         rows.append(("YAML validity", "PASS", "no workflows present / yaml module unavailable", v))
-        all_warns.append("PyYAML not installed — workflow YAML deep validation skipped")
+        all_warns.append("PyYAML not installed -- workflow YAML deep validation skipped")
     else:
         rows.append(("YAML validity", "PASS" if not v else "FAIL", f"{n_yaml} file(s)", v))
 
     tracked = _tracked_files(root)
     if tracked is None:
         tracked = [str(p.relative_to(root)) for p in _walk_files(root)]
-        rows.append(("Git hygiene", "PASS", "git unavailable — fell back to working-tree scan", []))
+        rows.append(("Git hygiene", "PASS", "git unavailable -- fell back to working-tree scan", []))
     v = check_git_hygiene(tracked)
     rows.append(("Git hygiene", "PASS" if not v else "FAIL", f"{len(tracked)} committed path(s)", v))
 
@@ -483,11 +483,11 @@ def main(argv=None):
         print(f"\nFAILURES ({len(all_violations)})")
         for item in all_violations:
             print(f"  FAIL {item}")
-        print("\nRESULT: FAIL — fix the violations above (exit 1)")
+        print("\nRESULT: FAIL -- fix the violations above (exit 1)")
         return 1
-    print(f"\nRESULT: PASS — no violations (exit 0)")
+    print(f"\nRESULT: PASS -- no violations (exit 0)")
     if all_warns:
-        print(f"         ({len(all_warns)} advisory warning(s) — non-blocking)")
+        print(f"         ({len(all_warns)} advisory warning(s) -- non-blocking)")
     return 0
 
 

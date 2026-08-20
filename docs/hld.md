@@ -1,11 +1,11 @@
-# Clinical RAG Eval Harness — High-Level Design (HLD)
+# Clinical RAG Eval Harness -- High-Level Design (HLD)
 
 **Version:** 1.0.0 · **Date:** 2026-08-20 · **Status:** Implemented (iterative hardening)
 
 ## 1. Purpose
 
 A production-grade **evaluation and regression harness** for LLM-based clinical document
-pipelines — measuring *retrieval* quality (BM25 vs dense vs hybrid) and *extraction*
+pipelines -- measuring *retrieval* quality (BM25 vs dense vs hybrid) and *extraction*
 quality (structured field scoring across models), with a CI regression gate so pipeline
 changes cannot silently degrade results at live trial sites.
 
@@ -38,7 +38,7 @@ answer). Extraction eval alone catches half of it; this harness catches both.
             │        (LinkedIn InMail → live viewer link)          │
             └───────────────┬──────────────────┬──────────────────┘
                             │                  │
-              (mobile, zero-login)        (live run — POST /api/run)
+              (mobile, zero-login)        (live run -- POST /api/run)
                             ▼                  ▼
                  ┌────────────────────────┐   ┌──────────────────┐
                  │   web/ (Next.js)       │   │  API route       │
@@ -102,7 +102,7 @@ answer). Extraction eval alone catches half of it; this harness catches both.
 Single source of truth: the web app renders whatever the harness produced; the harness
 never hardcodes a schema the UI re-declares.
 
-### evals/ artifacts (all committed — honesty by construction)
+### evals/ artifacts (all committed -- honesty by construction)
 | File | Contents |
 |---|---|
 | `evals/runs/<model>.json` | raw candidate extraction per doc per model |
@@ -112,15 +112,15 @@ never hardcodes a schema the UI re-declares.
 | `evals/retrieval.json` | per-strategy × per-doc retrieval metrics |
 
 ## 6. Key Decisions (ADRs live in docs/Decisions.md)
-1. **Golden set from real public trials** (ACTT-1, CheckMate-017, DAPA-CKD) — verifiable,
+1. **Golden set from real public trials** (ACTT-1, CheckMate-017, DAPA-CKD) -- verifiable,
    no PHI, reproducible by any reviewer.
 2. **Hybrid RRF over BM25 + dense** as the reference strategy (best-practices survey,
    arXiv:2407.01219).
 3. **LLM-as-judge** for free-text fields with a strict, null-aware prompt; deterministic
    rules for everything else.
-4. **Regression gate replays committed runs** — no API keys in CI, deterministic gating.
-5. **Vercel, not LocalStack** — a live URL a founder can click, not a fake AWS.
-6. **Shard-by-study scale design** (see docs/architecture.md) — the demo shows the method;
+4. **Regression gate replays committed runs** -- no API keys in CI, deterministic gating.
+5. **Vercel, not LocalStack** -- a live URL a founder can click, not a fake AWS.
+6. **Shard-by-study scale design** (see docs/architecture.md) -- the demo shows the method;
    the doc shows the scale.
 
 ## 7. Quality Bar

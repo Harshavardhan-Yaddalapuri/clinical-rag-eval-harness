@@ -23,7 +23,7 @@ npm run build                       # web build (in web/)
   (`python3 -c` / `node -e`) in scripts or CI.
 - Every eval metric change ships with its test first (TDD for eval semantics).
 - Update docs/ (HLD/LLD/architecture/Decisions) and CHANGELOG.md when behavior
-  changes — stale docs are a P0.
+  changes -- stale docs are a P0.
 - CI must stay green; broken CI is a P0.
 
 ## Regression gate
