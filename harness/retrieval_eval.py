@@ -35,10 +35,11 @@ from __future__ import annotations
 
 import json
 import os
+import sys
 from typing import Dict, List, Optional, Tuple
 
 from .chunking import chunk_document_file, Chunk
-from .retrieval import Retriever, RRF_K
+from .retrieval import Retriever
 
 K = 5
 GOLDEN_DIR = os.path.join("data", "golden")
@@ -323,5 +324,5 @@ def print_eval_table(output: dict) -> str:
             )
 
     table = "\n".join(lines)
-    print(table)
+    sys.stdout.write(table + "\n")
     return table

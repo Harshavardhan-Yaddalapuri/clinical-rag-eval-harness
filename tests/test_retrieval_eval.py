@@ -23,7 +23,6 @@ from harness.retrieval_eval import (
     run_retrieval_eval,
     write_eval_output,
     print_eval_table,
-    K,
 )
 from harness.chunking import Chunk
 from harness.retrieval import Retriever, RRF_K
