@@ -1,0 +1,51 @@
+[
+  {
+    "id": "onc1-r1",
+    "question": "Can a patient with treated brain metastases who is on a stable dose of 8 mg prednisone daily enroll in this nivolumab trial, and what dose of nivolumab would they receive?",
+    "expected_spans": [
+      {"section": "Eligibility Criteria > Exclusion", "quote": "Subjects with untreated central nervous system (CNS) metastases are excluded. Subjects are eligible if CNS metastases are treated and subjects are neurologically returned to baseline for at least 2 weeks prior to enrollment. In addition, subjects must be either off corticosteroids, or on a stable or decreasing dose of <=10 mg daily prednisone"},
+      {"section": "Arms and Interventions > Arm: Nivolumab", "quote": "Nivolumab 3 mg/kg solution intravenously (IV) every 2 weeks"}
+    ],
+    "rationale": "Requires synthesizing the CNS metastasis exclusion exception (eligible if treated, stable, on <=10 mg prednisone) with the dosing schedule. The patient on 8 mg prednisone meets the <=10 mg threshold, so they ARE eligible. Cross-references eligibility with intervention dosing."
+  },
+  {
+    "id": "onc1-r2",
+    "question": "Would a patient with type 1 diabetes and a history of ipilimumab treatment be eligible for this trial, and what is the primary endpoint used to measure efficacy?",
+    "expected_spans": [
+      {"section": "Eligibility Criteria > Exclusion", "quote": "Subjects with type I diabetes mellitus ... are permitted to enroll"},
+      {"section": "Eligibility Criteria > Exclusion", "quote": "Prior therapy with anti-Programmed death-1 (PD-1), anti-Programmed cell death ligand 1 (PD-L1) ... anti-Cytotoxic T lymphocyte-associated antigen 4 (CTLA-4) antibody (including ipilimumab)"},
+      {"section": "Outcomes > Primary Outcomes", "quote": "Overall Survival (OS) Time in Months for All Randomized Participants at Primary Endpoint"}
+    ],
+    "rationale": "Two cross-references: (1) type 1 diabetes is explicitly permitted as an autoimmune disease exception, BUT (2) prior ipilimumab (anti-CTLA-4) excludes the patient. So the answer is NO, despite diabetes being allowed. Then connects to the primary efficacy endpoint (OS). Three sections synthesized."
+  },
+  {
+    "id": "onc1-r3",
+    "question": "What performance status and disease measurement requirements must a patient meet to enroll, and what radiologic criteria are used to assess their tumor response during the trial?",
+    "expected_spans": [
+      {"section": "Eligibility Criteria > Inclusion", "quote": "Eastern Cooperative Oncology Group (ECOG) performance status <=1"},
+      {"section": "Eligibility Criteria > Inclusion", "quote": "Measurable disease by computed tomography (CT)/Magnetic resonance imaging (MRI) per Response Evaluation Criteria in Solid Tumors (RECIST) 1.1 criteria"},
+      {"section": "Outcomes > Secondary Outcomes", "quote": "Objective Response Rate (ORR) in All Randomized Participants"}
+    ],
+    "rationale": "Connects the enrollment requirements (ECOG <= 1, measurable disease by RECIST 1.1) with the outcome measure that assesses tumor response (ORR). The RECIST 1.1 criteria mentioned in eligibility directly relate to how ORR is measured. Three sections involved."
+  },
+  {
+    "id": "onc1-r4",
+    "question": "If a patient on this trial experiences disease progression after 4 weeks of nivolumab, what is the alternative treatment arm they could have been randomized to, and how does the masking design affect blinding?",
+    "expected_spans": [
+      {"section": "Arms and Interventions > Arm: Nivolumab", "quote": "Nivolumab 3 mg/kg ... every 2 weeks until documented disease progression or unacceptable toxicity"},
+      {"section": "Arms and Interventions > Arm: Docetaxel", "quote": "Docetaxel 75 mg/m^2 concentrate for solution for intravenous infusion every 3 weeks"},
+      {"section": "Study Design", "quote": "Masking: NONE"}
+    ],
+    "rationale": "Synthesizes the treatment continuation criteria (until progression) with the comparator arm description (docetaxel) and the open-label design (masking: NONE means no blinding). Three distinct sections answer the question."
+  },
+  {
+    "id": "onc1-r5",
+    "question": "A patient with squamous NSCLC who previously received platinum-based chemotherapy wants to enroll. What tissue requirements must be met before randomization, and how long after randomization is the primary survival endpoint assessed?",
+    "expected_spans": [
+      {"section": "Eligibility Criteria > Inclusion", "quote": "A formalin fixed, paraffin-embedded (FFPE) tumor tissue block or unstained slides of tumor sample (archival or recent) must be available for biomarker evaluation. Specimens must be received by the central lab prior to randomization"},
+      {"section": "Eligibility Criteria > Inclusion", "quote": "Disease recurrence or progression during/after one prior platinum doublet-based chemotherapy regimen"},
+      {"section": "Outcomes > Primary Outcomes", "quote": "Overall Survival (OS) Time in Months ... Randomization until 199 deaths, up to November 2014"}
+    ],
+    "rationale": "Connects the tissue submission requirement (FFPE block must be at central lab before randomization) with the prior platinum therapy enrollment criterion and the primary endpoint timeline (until 199 deaths). Three sections: eligibility inclusion, prior therapy, and primary outcomes."
+  }
+]

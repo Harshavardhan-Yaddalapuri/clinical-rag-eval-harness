@@ -1,0 +1,14 @@
+node_modules/
+.next/
+out/
+.env
+.env.local
+.env*.local
+__pycache__/
+*.pyc
+.venv/
+venv/
+.DS_Store
+*.log
+.vercel/
+evals/embeddings.jsonl

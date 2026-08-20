@@ -1,0 +1,737 @@
+{
+  "version": "1.0.0",
+  "description": "Clinical RAG Eval Harness - Golden dataset schema and evaluation configuration",
+  "documents": [
+    {
+      "doc_id": "actt1",
+      "nct_id": "NCT04280705",
+      "title": "Adaptive COVID-19 Treatment Trial (ACTT)",
+      "disease_area": "COVID-19 / Infectious Disease",
+      "source_url": "https://clinicaltrials.gov/study/NCT04280705",
+      "fields": {
+        "doc_id": {
+          "type": "string",
+          "description": "Document identifier"
+        },
+        "nct_id": {
+          "type": "string",
+          "description": "ClinicalTrials.gov NCT identifier"
+        },
+        "brief_title": {
+          "type": "string",
+          "description": "Brief trial title"
+        },
+        "official_title": {
+          "type": "string",
+          "description": "Official full trial title"
+        },
+        "lead_sponsor": {
+          "type": "string",
+          "description": "Lead sponsor organization name"
+        },
+        "sponsor_class": {
+          "type": "categorical",
+          "description": "Sponsor category (NIH, INDUSTRY, OTHER, etc.)",
+          "valid_values": [
+            "NIH",
+            "INDUSTRY",
+            "OTHER",
+            "FED",
+            "UNKNOWN"
+          ]
+        },
+        "collaborators": {
+          "type": "list",
+          "description": "Collaborating organizations",
+          "item_type": "string"
+        },
+        "conditions": {
+          "type": "list",
+          "description": "Disease conditions studied",
+          "item_type": "string"
+        },
+        "phases": {
+          "type": "list",
+          "description": "Trial phases",
+          "item_type": "categorical",
+          "valid_values": [
+            "Phase 1",
+            "Phase 2",
+            "Phase 3",
+            "Phase 4",
+            "Early Phase 1",
+            "N/A"
+          ]
+        },
+        "study_type": {
+          "type": "categorical",
+          "description": "Type of study",
+          "valid_values": [
+            "INTERVENTIONAL",
+            "OBSERVATIONAL",
+            "EXPANDED_ACCESS"
+          ]
+        },
+        "allocation": {
+          "type": "categorical",
+          "description": "Randomization method",
+          "valid_values": [
+            "RANDOMIZED",
+            "NON_RANDOMIZED",
+            "NA"
+          ]
+        },
+        "primary_purpose": {
+          "type": "categorical",
+          "description": "Primary purpose of the trial",
+          "valid_values": [
+            "TREATMENT",
+            "PREVENTION",
+            "DIAGNOSTIC",
+            "SUPPORTIVE_CARE",
+            "SCREENING",
+            "HEALTH_SERVICES_RESEARCH",
+            "BASIC_SCIENCE",
+            "DEVICE_FEASIBILITY",
+            "OTHER"
+          ]
+        },
+        "masking": {
+          "type": "categorical",
+          "description": "Blinding method",
+          "valid_values": [
+            "NONE",
+            "SINGLE",
+            "DOUBLE",
+            "TRIPLE",
+            "QUADRUPLE"
+          ]
+        },
+        "who_masked": {
+          "type": "list",
+          "description": "Parties masked from treatment assignment",
+          "item_type": "categorical",
+          "valid_values": [
+            "PARTICIPANT",
+            "CARE_PROVIDER",
+            "INVESTIGATOR",
+            "OUTCOMES_ASSESSOR"
+          ]
+        },
+        "enrollment_count": {
+          "type": "integer",
+          "description": "Total enrollment count",
+          "tolerance": {
+            "abs": 0,
+            "pct": 0.0
+          }
+        },
+        "enrollment_type": {
+          "type": "categorical",
+          "description": "Whether enrollment count is estimated or actual",
+          "valid_values": [
+            "ACTUAL",
+            "ESTIMATED"
+          ]
+        },
+        "overall_status": {
+          "type": "categorical",
+          "description": "Trial status",
+          "valid_values": [
+            "RECRUITING",
+            "ACTIVE_NOT_RECRUITING",
+            "COMPLETED",
+            "TERMINATED",
+            "WITHDRAWN",
+            "SUSPENDED",
+            "UNKNOWN"
+          ]
+        },
+        "start_date": {
+          "type": "date",
+          "description": "Trial start date (YYYY-MM-DD)"
+        },
+        "primary_completion_date": {
+          "type": "date",
+          "description": "Primary completion date (YYYY-MM-DD)"
+        },
+        "completion_date": {
+          "type": "date",
+          "description": "Trial completion date (YYYY-MM-DD)"
+        },
+        "arms": {
+          "type": "list",
+          "description": "Trial arms",
+          "item_type": "object",
+          "fields": {
+            "label": "string",
+            "type": "categorical",
+            "description": "string"
+          }
+        },
+        "interventions": {
+          "type": "list",
+          "description": "Interventions studied",
+          "item_type": "object",
+          "fields": {
+            "type": "categorical",
+            "name": "string",
+            "description": "string"
+          }
+        },
+        "eligibility_sex": {
+          "type": "categorical",
+          "description": "Eligible sex",
+          "valid_values": [
+            "ALL",
+            "MALE",
+            "FEMALE"
+          ]
+        },
+        "eligibility_min_age": {
+          "type": "string",
+          "description": "Minimum age requirement"
+        },
+        "eligibility_max_age": {
+          "type": "string",
+          "description": "Maximum age requirement (null if no upper limit)"
+        },
+        "healthy_volunteers": {
+          "type": "boolean",
+          "description": "Whether healthy volunteers accepted"
+        },
+        "inclusion_criteria": {
+          "type": "list",
+          "description": "Inclusion criteria items",
+          "item_type": "string"
+        },
+        "exclusion_criteria": {
+          "type": "list",
+          "description": "Exclusion criteria items",
+          "item_type": "string"
+        },
+        "primary_outcomes": {
+          "type": "list",
+          "description": "Primary outcome measures",
+          "item_type": "object",
+          "fields": {
+            "measure": "string",
+            "time_frame": "string"
+          }
+        },
+        "secondary_outcomes": {
+          "type": "list",
+          "description": "Secondary outcome measures",
+          "item_type": "object",
+          "fields": {
+            "measure": "string",
+            "time_frame": "string"
+          }
+        }
+      }
+    },
+    {
+      "doc_id": "onc1",
+      "nct_id": "NCT01642004",
+      "title": "CheckMate 017: Nivolumab vs Docetaxel in Squamous NSCLC",
+      "disease_area": "Oncology / Lung Cancer",
+      "source_url": "https://clinicaltrials.gov/study/NCT01642004",
+      "fields": {
+        "doc_id": {
+          "type": "string",
+          "description": "Document identifier"
+        },
+        "nct_id": {
+          "type": "string",
+          "description": "ClinicalTrials.gov NCT identifier"
+        },
+        "brief_title": {
+          "type": "string",
+          "description": "Brief trial title"
+        },
+        "official_title": {
+          "type": "string",
+          "description": "Official full trial title"
+        },
+        "lead_sponsor": {
+          "type": "string",
+          "description": "Lead sponsor organization name"
+        },
+        "sponsor_class": {
+          "type": "categorical",
+          "description": "Sponsor category",
+          "valid_values": [
+            "NIH",
+            "INDUSTRY",
+            "OTHER",
+            "FED",
+            "UNKNOWN"
+          ]
+        },
+        "collaborators": {
+          "type": "list",
+          "description": "Collaborating organizations",
+          "item_type": "string"
+        },
+        "conditions": {
+          "type": "list",
+          "description": "Disease conditions studied",
+          "item_type": "string"
+        },
+        "phases": {
+          "type": "list",
+          "description": "Trial phases",
+          "item_type": "categorical",
+          "valid_values": [
+            "Phase 1",
+            "Phase 2",
+            "Phase 3",
+            "Phase 4",
+            "Early Phase 1",
+            "N/A"
+          ]
+        },
+        "study_type": {
+          "type": "categorical",
+          "description": "Type of study",
+          "valid_values": [
+            "INTERVENTIONAL",
+            "OBSERVATIONAL",
+            "EXPANDED_ACCESS"
+          ]
+        },
+        "allocation": {
+          "type": "categorical",
+          "description": "Randomization method",
+          "valid_values": [
+            "RANDOMIZED",
+            "NON_RANDOMIZED",
+            "NA"
+          ]
+        },
+        "primary_purpose": {
+          "type": "categorical",
+          "description": "Primary purpose",
+          "valid_values": [
+            "TREATMENT",
+            "PREVENTION",
+            "DIAGNOSTIC",
+            "SUPPORTIVE_CARE",
+            "SCREENING",
+            "HEALTH_SERVICES_RESEARCH",
+            "BASIC_SCIENCE",
+            "DEVICE_FEASIBILITY",
+            "OTHER"
+          ]
+        },
+        "masking": {
+          "type": "categorical",
+          "description": "Blinding method",
+          "valid_values": [
+            "NONE",
+            "SINGLE",
+            "DOUBLE",
+            "TRIPLE",
+            "QUADRUPLE"
+          ]
+        },
+        "who_masked": {
+          "type": "list",
+          "description": "Parties masked",
+          "item_type": "categorical",
+          "valid_values": [
+            "PARTICIPANT",
+            "CARE_PROVIDER",
+            "INVESTIGATOR",
+            "OUTCOMES_ASSESSOR"
+          ]
+        },
+        "enrollment_count": {
+          "type": "integer",
+          "description": "Total enrollment count",
+          "tolerance": {
+            "abs": 0,
+            "pct": 0.0
+          }
+        },
+        "enrollment_type": {
+          "type": "categorical",
+          "description": "Enrollment count type",
+          "valid_values": [
+            "ACTUAL",
+            "ESTIMATED"
+          ]
+        },
+        "overall_status": {
+          "type": "categorical",
+          "description": "Trial status",
+          "valid_values": [
+            "RECRUITING",
+            "ACTIVE_NOT_RECRUITING",
+            "COMPLETED",
+            "TERMINATED",
+            "WITHDRAWN",
+            "SUSPENDED",
+            "UNKNOWN"
+          ]
+        },
+        "start_date": {
+          "type": "date",
+          "description": "Trial start date"
+        },
+        "primary_completion_date": {
+          "type": "date",
+          "description": "Primary completion date"
+        },
+        "completion_date": {
+          "type": "date",
+          "description": "Trial completion date"
+        },
+        "arms": {
+          "type": "list",
+          "description": "Trial arms",
+          "item_type": "object",
+          "fields": {
+            "label": "string",
+            "type": "categorical",
+            "description": "string"
+          }
+        },
+        "interventions": {
+          "type": "list",
+          "description": "Interventions studied",
+          "item_type": "object",
+          "fields": {
+            "type": "categorical",
+            "name": "string",
+            "description": "string"
+          }
+        },
+        "eligibility_sex": {
+          "type": "categorical",
+          "description": "Eligible sex",
+          "valid_values": [
+            "ALL",
+            "MALE",
+            "FEMALE"
+          ]
+        },
+        "eligibility_min_age": {
+          "type": "string",
+          "description": "Minimum age requirement"
+        },
+        "eligibility_max_age": {
+          "type": "string",
+          "description": "Maximum age requirement (null if no upper limit)"
+        },
+        "healthy_volunteers": {
+          "type": "boolean",
+          "description": "Whether healthy volunteers accepted"
+        },
+        "inclusion_criteria": {
+          "type": "list",
+          "description": "Inclusion criteria",
+          "item_type": "string"
+        },
+        "exclusion_criteria": {
+          "type": "list",
+          "description": "Exclusion criteria",
+          "item_type": "string"
+        },
+        "primary_outcomes": {
+          "type": "list",
+          "description": "Primary outcome measures",
+          "item_type": "object",
+          "fields": {
+            "measure": "string",
+            "time_frame": "string"
+          }
+        },
+        "secondary_outcomes": {
+          "type": "list",
+          "description": "Secondary outcome measures",
+          "item_type": "object",
+          "fields": {
+            "measure": "string",
+            "time_frame": "string"
+          }
+        }
+      }
+    },
+    {
+      "doc_id": "area3",
+      "nct_id": "NCT03036150",
+      "title": "DAPA-CKD: Dapagliflozin in Chronic Kidney Disease",
+      "disease_area": "Nephrology / Cardiovascular",
+      "source_url": "https://clinicaltrials.gov/study/NCT03036150",
+      "fields": {
+        "doc_id": {
+          "type": "string",
+          "description": "Document identifier"
+        },
+        "nct_id": {
+          "type": "string",
+          "description": "ClinicalTrials.gov NCT identifier"
+        },
+        "brief_title": {
+          "type": "string",
+          "description": "Brief trial title"
+        },
+        "official_title": {
+          "type": "string",
+          "description": "Official full trial title"
+        },
+        "lead_sponsor": {
+          "type": "string",
+          "description": "Lead sponsor organization name"
+        },
+        "sponsor_class": {
+          "type": "categorical",
+          "description": "Sponsor category",
+          "valid_values": [
+            "NIH",
+            "INDUSTRY",
+            "OTHER",
+            "FED",
+            "UNKNOWN"
+          ]
+        },
+        "collaborators": {
+          "type": "list",
+          "description": "Collaborating organizations",
+          "item_type": "string"
+        },
+        "conditions": {
+          "type": "list",
+          "description": "Disease conditions studied",
+          "item_type": "string"
+        },
+        "phases": {
+          "type": "list",
+          "description": "Trial phases",
+          "item_type": "categorical",
+          "valid_values": [
+            "Phase 1",
+            "Phase 2",
+            "Phase 3",
+            "Phase 4",
+            "Early Phase 1",
+            "N/A"
+          ]
+        },
+        "study_type": {
+          "type": "categorical",
+          "description": "Type of study",
+          "valid_values": [
+            "INTERVENTIONAL",
+            "OBSERVATIONAL",
+            "EXPANDED_ACCESS"
+          ]
+        },
+        "allocation": {
+          "type": "categorical",
+          "description": "Randomization method",
+          "valid_values": [
+            "RANDOMIZED",
+            "NON_RANDOMIZED",
+            "NA"
+          ]
+        },
+        "primary_purpose": {
+          "type": "categorical",
+          "description": "Primary purpose",
+          "valid_values": [
+            "TREATMENT",
+            "PREVENTION",
+            "DIAGNOSTIC",
+            "SUPPORTIVE_CARE",
+            "SCREENING",
+            "HEALTH_SERVICES_RESEARCH",
+            "BASIC_SCIENCE",
+            "DEVICE_FEASIBILITY",
+            "OTHER"
+          ]
+        },
+        "masking": {
+          "type": "categorical",
+          "description": "Blinding method",
+          "valid_values": [
+            "NONE",
+            "SINGLE",
+            "DOUBLE",
+            "TRIPLE",
+            "QUADRUPLE"
+          ]
+        },
+        "who_masked": {
+          "type": "list",
+          "description": "Parties masked",
+          "item_type": "categorical",
+          "valid_values": [
+            "PARTICIPANT",
+            "CARE_PROVIDER",
+            "INVESTIGATOR",
+            "OUTCOMES_ASSESSOR"
+          ]
+        },
+        "enrollment_count": {
+          "type": "integer",
+          "description": "Total enrollment count",
+          "tolerance": {
+            "abs": 0,
+            "pct": 0.0
+          }
+        },
+        "enrollment_type": {
+          "type": "categorical",
+          "description": "Enrollment count type",
+          "valid_values": [
+            "ACTUAL",
+            "ESTIMATED"
+          ]
+        },
+        "overall_status": {
+          "type": "categorical",
+          "description": "Trial status",
+          "valid_values": [
+            "RECRUITING",
+            "ACTIVE_NOT_RECRUITING",
+            "COMPLETED",
+            "TERMINATED",
+            "WITHDRAWN",
+            "SUSPENDED",
+            "UNKNOWN"
+          ]
+        },
+        "start_date": {
+          "type": "date",
+          "description": "Trial start date"
+        },
+        "primary_completion_date": {
+          "type": "date",
+          "description": "Primary completion date"
+        },
+        "completion_date": {
+          "type": "date",
+          "description": "Trial completion date"
+        },
+        "arms": {
+          "type": "list",
+          "description": "Trial arms",
+          "item_type": "object",
+          "fields": {
+            "label": "string",
+            "type": "categorical",
+            "description": "string"
+          }
+        },
+        "interventions": {
+          "type": "list",
+          "description": "Interventions studied",
+          "item_type": "object",
+          "fields": {
+            "type": "categorical",
+            "name": "string",
+            "description": "string"
+          }
+        },
+        "eligibility_sex": {
+          "type": "categorical",
+          "description": "Eligible sex",
+          "valid_values": [
+            "ALL",
+            "MALE",
+            "FEMALE"
+          ]
+        },
+        "eligibility_min_age": {
+          "type": "string",
+          "description": "Minimum age requirement"
+        },
+        "eligibility_max_age": {
+          "type": "string",
+          "description": "Maximum age requirement (null if no upper limit)"
+        },
+        "healthy_volunteers": {
+          "type": "boolean",
+          "description": "Whether healthy volunteers accepted"
+        },
+        "inclusion_criteria": {
+          "type": "list",
+          "description": "Inclusion criteria",
+          "item_type": "string"
+        },
+        "exclusion_criteria": {
+          "type": "list",
+          "description": "Exclusion criteria",
+          "item_type": "string"
+        },
+        "primary_outcomes": {
+          "type": "list",
+          "description": "Primary outcome measures",
+          "item_type": "object",
+          "fields": {
+            "measure": "string",
+            "time_frame": "string"
+          }
+        },
+        "secondary_outcomes": {
+          "type": "list",
+          "description": "Secondary outcome measures",
+          "item_type": "object",
+          "fields": {
+            "measure": "string",
+            "time_frame": "string"
+          }
+        }
+      }
+    }
+  ],
+  "eval_config": {
+    "extraction": {
+      "scoring": {
+        "numeric": {
+          "tolerance_abs": 1,
+          "tolerance_pct": 0.05
+        },
+        "boolean": "exact_match",
+        "date": "fuzzy_match",
+        "categorical": "normalized_match",
+        "free_text": "llm_judge",
+        "list": "per_item_precision_recall"
+      },
+      "judge_model": "gpt-oss:120b",
+      "models": [
+        "glm-5.2",
+        "deepseek-v4-pro:0813",
+        "qwen3.5:397b"
+      ]
+    },
+    "retrieval": {
+      "strategies": [
+        "bm25",
+        "dense",
+        "hybrid"
+      ],
+      "metrics": [
+        "hit@k",
+        "recall@k",
+        "mrr"
+      ],
+      "k": 5,
+      "embedding_backend": "http://127.0.0.1:11434",
+      "embedding_fallback": "sentence-transformers/all-MiniLM-L6-v2"
+    }
+  },
+  "aggregation": {
+    "metrics": [
+      "precision",
+      "recall",
+      "f1"
+    ],
+    "per_field": true,
+    "per_document": true,
+    "baseline_file": "evals/baseline.json",
+    "regression_tolerance": 0.03
+  }
+}
